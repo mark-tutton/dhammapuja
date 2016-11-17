@@ -1,0 +1,189 @@
+/******************************************
+*******                             *******
+*******         Typography          *******
+*******                             *******
+******************************************/
+body {
+  color: #444;
+  background-color: #EEEEEE;
+
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6,p {
+  font-size: inherit;
+}
+p {
+  line-height: 1.9;
+}
+h1 {
+  padding-bottom: 3%;
+
+  font-weight: 900;
+  line-height: 1.3;
+}
+h2 {
+  padding-bottom: 3%;
+
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/******************************************
+*******                             *******
+*******         Nav Menu            *******
+*******                             *******
+******************************************/
+.navmenu-brand, .navmenu-brand:hover {
+  color: #444;
+
+  font-size: 24px;
+  font-weight: bolder;
+}
+.navbar-default {
+  border-color: transparent;
+  background-color: transparent;
+}
+.navmenu-default .navmenu-nav {
+  background-color: #f7f7f7;
+}
+.navmenu-default .navmenu-nav > li {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  border-bottom-width: 3px;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  display: block;
+
+  margin-bottom: 2%;
+}
+.navmenu-default .navmenu-nav > li > a {
+  color: #050709;
+  font-weight: 500;
+  line-height: 2.3;
+  font-size: 1.2em;
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navmenu-default .navmenu-nav > .active > a, .navmenu-default .navmenu-nav > .active > a:focus {
+  color: #000000;
+  background-color: #dbd9d9;
+
+  position: relative;
+  /*margin-right: -8px;*/
+  padding-right: 8px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navmenu-default .navmenu-nav > li > a:focus, .navmenu-default .navmenu-nav > li > a:hover {
+  background-color: #dbd9d9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-right: 8px;
+}
+
+/******************************************
+*******                             *******
+*******        Night Mode           *******
+*******                             *******
+******************************************/
+/* backgrounds & text */
+
+.day {
+  color: #444;
+  background-color: #EEEEEE;
+
+}
+.night {
+  color: #f2f1ef;
+  background-color: #262626;
+}
+.night p {
+  color: #fefefe;
+}
+.night ul.display .highlight {
+  background-color: #1ba39c
+}
+.night h3 {
+  color: #f2f1ef;
+}
+
+.night .navmenu-default {
+  background-color: #292929;
+}
+.night .navmenu-default .navmenu-nav {
+  background-color: transparent;
+}
+.night .navmenu-default .navmenu-brand {
+  color: #fff;
+}
+.night .navmenu-default .navmenu-nav > li {
+  background-color: #393939;
+  color: #ccc;
+
+  border: 1px solid #000;
+
+}
+.night .navmenu-default .navmenu-nav > li > a {
+  color: #8AD;
+}
+
+.night .navmenu-default .navmenu-nav.dropdown-menu {
+  background-color: #262626;
+}
+
+.night footer {
+  background-color: #4d4d4d;
+}
+/******************************************
+*******                             *******
+*******        Animation(s)         *******
+*******                             *******
+******************************************/
+/* backgrounds & text */
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+@media (min-width: 700px) {
+  .night .navmenu-default .navmenu-nav > li > a:hover {
+    background-color: #292929;
+  }
+  .night .navmenu-default .navmenu-brand:hover {
+    color: white;
+  }
+}

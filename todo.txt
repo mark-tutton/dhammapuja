@@ -1,0 +1,14 @@
+[  ] fix “the chant of metta” page
+[  ] sync audio and text of “the sublime attitudes” page
+[  ] check all chant pages to see if audio/text sync 
+    [  ] sync audio and text of all chant pages
+[  ] fix styling of chanting/index.html page
+[  ] fix font sizes on all chant pages
+[  ] fix styling of “Three Refuges and Eight Precepts” page
+
+[  ] create footer w/ credits/github link
+[ * ] set .thumbnail/caption background to transparent
+
+[  ] look into Server Side Includes (jekyll w/ Liquid templates?)
+
+[  ] upgrade to bootstrap v4 (wait for jasny or bootstrap v4.1)

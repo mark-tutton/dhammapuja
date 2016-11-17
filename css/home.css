@@ -1,0 +1,45 @@
+/******************************************
+*******                             *******
+*******        Home Page            *******
+*******                             *******
+******************************************/
+ul .img-thumbbail {
+  background-color: #fff;
+}
+.thumb-list {
+  margin-top: 13%; /*chanting/index.html thumbnail's spacing*/
+}
+.thumbnail {
+  background-color: transparent;
+  border: none;
+}
+.jumbotron {
+  margin-top: 2%;
+  background-color: transparent;
+}
+.jumbotron h1 {
+  padding-bottom: 0;
+}
+/******************************************
+*******                             *******
+*******           Footer            *******
+*******                             *******
+******************************************/
+
+.home {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  }
+footer {
+  flex: none;
+  background-color: #fff;
+  color: #aaa;
+  font-size: 14px;
+  padding: 2%;
+}
+.home-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head-home.html %}
+
+
+  <body class="home">
+  <main class="home-content">
+  {% include nav.html %}
+
+  <div class="container-fluid">
+
+    {{ content }}
+
+  </div>
+  </main>
+  {% include home.html %}
+
+    <!-- Bootstrap JS CDN -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Bootstrap local fallback -->
+    <script> if(typeof($.fn.modal) === 'undefined') {document.write('<script src="{{ page.url | prepend: site.github.url }}js/bootstrap.min.js"><\/script>')}</script>
+
+    <!-- Bootstrap CSS local fallback -->
+    <script>
+      $(document).ready(function() {
+        var bodyColor = $('body').css('color');
+        if(bodyColor != 'rgb(51, 51, 51)') {
+          $("head").prepend('<link rel="stylesheet" href="{{ page.url | prepend: site.github.url }}css/bootstrap.min.css">');
+        }
+      });
+    </script>
+
+    <script src="{{ page.url | prepend: site.github.url }}js/jasny-bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="{{ page.url | prepend: site.github.url }}js/flowtype.js"></script>
+
+    <script>
+    var $=jQuery.noConflict();
+    $(document).ready(function(){
+      $('h1').flowtype({
+        minimum   : 320,
+        maximum   : 1200,
+        minFont   : 16,
+        maxFont   : 50,
+      }),
+      $('h1').flowtype({
+        fontRatio: 15
+      });
+    });
+    </script>
+    <script type="text/javascript" src="{{ page.url | prepend: site.github.url }}js/time.js"></script>
+
+  </body>
+
+</html>

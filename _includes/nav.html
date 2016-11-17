@@ -1,0 +1,40 @@
+
+
+{% assign url = layout.url|remove:'.html' %}
+{% assign active = layout.url | downcase | split: '/' %}
+
+<div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+  <a class="navmenu-brand" href="#">Dhamma</a>
+  <ul class="nav navmenu-nav">
+    <li {% if page.url == '/' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="/">Home</a></li>
+  </ul>
+
+  <ul class="nav navmenu-nav">
+    <li {% if page.url == 'reading/index' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="reading/index">Reading Pāḷi</a></li>
+    <li class="dropdown">
+      <a href="chanting/index.html" class="dropdown-toggle" data-toggle="dropdown">Chanting</a>
+      <ul class="dropdown-menu navmenu-nav">
+        <li {% if page.url == 'chanting/abhayagiri-morning' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/abhayagiri-morning">Morning Chanting</a></li>
+        <li {% if page.url == 'chanting/abhayagiri-evening-pali' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/abhayagiri-evening-pali">Evening Chanting - Pāḷi</a></li>
+        <li {% if page.url == 'chanting/abhayagiri-evening-english' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/abhayagiri-evening-english">Evening Chanting - English</a></li>
+        <li class="divider"></li>
+        <li {% if page.url == 'chanting/taking-five-precepts'} %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/taking-five-precepts">Five Precepts</a></li>
+        <li {% if page.url == 'chanting/three-refuges-eight-precepts' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/three-refuges-eight-precepts">Three Refuges and Eight Precepts</a></li>
+        <li class="divider"></li>
+        <li {% if page.url == 'chanting/five-recollections' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/five-recollections">Five Recollections</a></li>
+        <li {% if page.url == 'chanting/body-contemplation' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/body-contemplation">Body Contemplation</a></li>
+        <li {% if page.url == 'chanting/sublime-attitudes' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/sublime-attitudes">Sublime Attitudes</a></li>
+        <li class="divider"></li>
+        <li {% if page.url == 'chanting/chant-of-metta' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="chanting/chant-of-metta">The Chant of Metta</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>

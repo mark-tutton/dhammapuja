@@ -1,0 +1,19 @@
+# URLs
+permalink: pretty
+
+
+# Structure configuration
+source: ./
+destination: ./site
+
+# Site settings
+title: 'Dhamma'
+description: 'A Collection of Dhamma (Chants & Pāḷi)'
+url: https://job-talk.github.io/buddhism-resource/
+
+exclude:
+  - .gitignore
+  - LICENSE
+  - README.MD
+  - todo.txt
+  - Gemfile

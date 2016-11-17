@@ -1,0 +1,216 @@
+
+#data {
+  display: none;
+}
+
+#audio {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 30px;
+
+  background-color: black;
+}
+
+#audio audio {
+  width: 100%;
+  height: 100%;
+}
+
+#time {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+
+  width: 3.3em;
+  height: 1em;
+  padding: 0.2em;
+
+  text-align: right;
+  vertical-align: bottom;
+
+  color: green;
+  border-top: 5px solid green;
+  border-left: 5px solid green;
+
+  font-size: 3em;
+}
+
+ul.display {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-left: 2.0em;
+  padding-right: 2.0em;
+}
+@media (min-width: 769px) {
+  ul.display {
+    padding-left: 6.0em;
+    padding-right: 6.0em;
+  }
+}
+
+  @media (max-width: 768px) {
+    ul.display {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    ul.display {
+      padding-left: 1.0em;
+      padding-right: 1.0em;
+    }
+  }
+
+  /* iPhone 6 Landscape */
+  @media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      ul.display {
+        padding-left: 2.0em;
+        padding-right: 2.0em;
+      }
+  }
+
+ul.display p {
+  margin: 0 auto;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+
+ul.display h1, h2, h3 {
+  color: inherit;
+
+  font-family: inherit;
+  font-weight: bold;
+
+  text-rendering: optimizeLegibility;
+}
+
+ul.display li {
+  position: relative;
+
+  margin: 0.5em 0;
+  padding: 0.1em 0.5em;
+
+  margin-top: 2.5%;
+
+  list-style-type: none;
+
+  cursor: pointer;
+  -webkit-transition: background 1s linear;
+  -moz-transition: background 1s linear;
+  -ms-transition: background 1s linear;
+  -o-transition: background 1s linear;
+  transition: background 1s linear;
+
+  border-radius: 20px;
+
+  text-overflow: ellipsis;
+
+}
+
+ul.display .highlight {
+  background-color: #ddffdd;
+}
+
+ul.display .time {
+  position: absolute;
+  top: 2.4em;
+  left: -4em;
+
+  display: none;
+
+  width: 3em;
+
+  text-align: right;
+
+  color: #cccccc;
+
+  font-size: 0.5em;
+}
+
+ul.display h3 {
+  font-style: italic;
+}
+ul.display .en {
+  margin-left: 1em;
+
+  font-style: italic;
+}
+
+ul.display p .un {
+  text-decoration: underline;
+}
+
+ul.display p span.t {
+  position: relative;
+
+  white-space: pre;
+}
+
+ul.display p span.t>span {
+  position: absolute;
+  top: 0;
+  left: -200%;
+
+  display: inline-block;
+
+  width: 500%;
+  height: 100%;
+}
+
+ul.display p span.t>span>span {
+  display: block;
+
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+
+  border-style: solid;
+}
+
+ul.display p span.t>span>.u {
+  border-width: 0 0.25em 0.15em 0.25em;
+  border-color: transparent transparent #ff8800 transparent;
+}
+
+ul.display p span.t>span>.d {
+  margin-top: 1.2em;
+
+  border-width: 0.15em 0.25em 0 0.25em;
+  border-color: blue transparent transparent transparent;
+}
+
+ul.display p span.t>span>.uu {
+  border-width: 0 0.5em 0.2em 0.5em;
+  border-color: transparent transparent #ff8800 transparent;
+}
+
+ul.display p span.t>span>.dd {
+  margin-top: 1.2em;
+
+  border-width: 0.2em 0.5em 0 0.5em;
+  border-color: blue transparent transparent transparent;
+}
+
+
+.stud {
+  color: rgb(226, 173, 56);
+}
