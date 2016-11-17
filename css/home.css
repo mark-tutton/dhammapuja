@@ -4,7 +4,7 @@
  *
  */
 ul .img-thumbbail { background-color: #fff; }
-.card-group { margin-top: 4%;}
+.card-group { margin-top: 5%;}
 .thumbnail {
   background-color: transparent;
   border: none;
@@ -30,7 +30,8 @@ footer {
   background-color: #fff;
   color: #aaa;
   font-size: 14px;
-  padding: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   margin-top: 15%;
 }
 .home-content {
