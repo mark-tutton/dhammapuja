@@ -7,11 +7,11 @@
 >My attempt at updating http://pali.ejinjue.org/ to Bootstrap 3 and transitioning it to GitHub pages.
 
 Updating https://github.com/job-talk/buddhism-resource to Bootstrap v4 and Jekyll
-***
+---
 
 
 # Credits
 
-***
+
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) [“Dhamma Schtuff”](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.

@@ -4,7 +4,7 @@ baseurl: /dhamma
 
 # Structure configuration
 source: ./
-destination: ./site
+destination: ./_site
 
 # Site settings
 title: 'Dhamma'
@@ -17,6 +17,6 @@ markdown: kramdown
 exclude:
   - .gitignore
   - LICENSE
-  - README.MD
+  - README.md
   - todo.txt
   - Gemfile
