@@ -9,7 +9,10 @@ destination: ./site
 # Site settings
 title: 'Dhamma'
 description: 'A Collection of Dhamma (Chants & Pāḷi)'
-url: https://job-talk.github.io/buddhism-resource/
+url: https://job-talk.github.io/dhamma/
+
+# Markdown
+markdown: kramdown
 
 exclude:
   - .gitignore
