@@ -1,7 +1,5 @@
 
-#data {
-  display: none;
-}
+#data { display: none; }
 
 #audio {
   position: fixed;
@@ -126,9 +124,7 @@ ul.display li {
 
 }
 
-ul.display .highlight {
-  background-color: #ddffdd;
-}
+ul.display .highlight { background-color: #ddffdd; }
 
 ul.display .time {
   position: absolute;
@@ -146,18 +142,14 @@ ul.display .time {
   font-size: 0.5em;
 }
 
-ul.display h3 {
-  font-style: italic;
-}
+ul.display h3 { font-style: italic; }
 ul.display .en {
   margin-left: 1em;
 
   font-style: italic;
 }
 
-ul.display p .un {
-  text-decoration: underline;
-}
+ul.display p .un { text-decoration: underline; }
 
 ul.display p span.t {
   position: relative;
@@ -211,6 +203,4 @@ ul.display p span.t>span>.dd {
 }
 
 
-.stud {
-  color: rgb(226, 173, 56);
-}
+.stud { color: rgb(226, 173, 56); }

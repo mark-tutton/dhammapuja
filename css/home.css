@@ -1,14 +1,10 @@
-/******************************************
-*******                             *******
-*******        Home Page            *******
-*******                             *******
-******************************************/
-ul .img-thumbbail {
-  background-color: #fff;
-}
-.thumb-list {
-  margin-top: 13%; /*chanting/index.html thumbnail's spacing*/
-}
+/**
+ *
+ * Home Page
+ *
+ */
+ul .img-thumbbail { background-color: #fff; }
+.card-group { margin-top: 4%;}
 .thumbnail {
   background-color: transparent;
   border: none;
@@ -17,15 +13,12 @@ ul .img-thumbbail {
   margin-top: 2%;
   background-color: transparent;
 }
-.jumbotron h1 {
-  padding-bottom: 0;
-}
-/******************************************
-*******                             *******
-*******           Footer            *******
-*******                             *******
-******************************************/
-
+.jumbotron h1 { padding-bottom: 0; }
+/**
+ *
+ * Footer
+ *
+ */
 .home {
   display: flex;
   min-height: 100%;
@@ -37,6 +30,7 @@ footer {
   color: #aaa;
   font-size: 14px;
   padding: 2%;
+  margin-top: 15%;
 }
 .home-content {
   flex: 1 0 auto;

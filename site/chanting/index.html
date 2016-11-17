@@ -22,17 +22,17 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <link rel="stylesheet" media="screen" href="css/jasny-bootstrap.min.css">
+  <link rel="stylesheet" media="screen" href="../../css/jasny-bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="css/navmenu-push.css">
+  <link rel="stylesheet" type="text/css" href="../../css/navmenu-push.css">
 
-  <link rel="stylesheet" type="text/css" href="css/global.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="../../css/global.css">
+  <link rel="stylesheet" type="text/css" href="../../css/home.css">
 
   <!-- jQuery CDN -->
   <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <!-- jQuery local fallback -->
-  <script>window.jQuery || document.write('<script src="js/jquery/jquery.min.js"><\/script>')</script>
+  <script>window.jQuery || document.write('<script src="../../js/jquery/jquery.min.js"><\/script>')</script>
 
   <script src="https://use.fontawesome.com/5a7e790e76.js"></script>
 
@@ -63,7 +63,6 @@
 
 
 
-
 <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
   <a class="navmenu-brand" href="#">Dhamma</a>
   <ul class="nav navmenu-nav">
@@ -73,9 +72,9 @@
   <ul class="nav navmenu-nav">
     <li  class="hvr-pop"><a href="reading/index">Reading Pāḷi</a></li>
     <li class="dropdown">
-      <a href="chanting/index.html" class="dropdown-toggle" data-toggle="dropdown">Chanting</a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chanting</a>
       <ul class="dropdown-menu navmenu-nav">
-        <li  class="hvr-pop"><a href="chanting/abhayagiri-morning">Morning Chanting</a></li>
+        <li  class="hvr-pop"><a href="/chanting/abhayagiri-morning">Morning Chanting</a></li>
         <li  class="hvr-pop"><a href="chanting/abhayagiri-evening-pali">Evening Chanting - Pāḷi</a></li>
         <li  class="hvr-pop"><a href="chanting/abhayagiri-evening-english">Evening Chanting - English</a></li>
         <li class="divider"></li>
@@ -103,48 +102,40 @@
 
   <div class="container-fluid">
 
-    <div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-6 col-md-4">
-      <div class="thumbnail thumb-list">
-        <div class="caption">
-          <h3>Abhayagiri Morning Chanting (Pāḷi and English)</h3>
-          <p></p>
-          <p><a href="../chanting/abhayagiri-morning" class="btn btn-primary" role="button">Chant</a></p>
+      <div class="card-group">
+
+      <div class="card card-block text-xs-center thumb-list">
+        <div class="card-block">
+          <h3 class="card-title">Abhayagiri Morning Chanting (Pāḷi and English)</h3>
+          <a href="../../chanting/abhayagiri-morning" class="btn btn-primary">Chant</a>
         </div>
       </div>
-    </div>
-    <div class="col-xs-6 col-md-4">
-      <div class="thumbnail thumb-list">
-        <div class="caption">
-          <h3>Abhayagiri Evening Chanting (Pāḷi)</h3>
-          <p></p>
-          <p><a href="../chanting/abhayagiri-evening-pali" class="btn btn-primary" role="button">Chant</a></p>
+
+
+      <div class="card card-block text-xs-center thumb-list">
+        <div class="card-block">
+          <h3 class="card-title">Abhayagiri Evening Chanting (Pāḷi)</h3>
+          <a href="../../chanting/abhayagiri-evening-pali" class="btn btn-primary">Chant</a>
         </div>
       </div>
-    </div>
-    <div class="col-xs-6 col-md-4">
-      <div class="thumbnail thumb-list">
-        <div class="caption">
-          <h3>Abhayagiri Evening Chanting (English)</h3>
-          <p></p>
-          <p><a href="../chanting/abhayagiri-evening-english" class="btn btn-primary" role="button">Chant</a></p>
+
+
+      <div class="card card-block text-xs-center thumb-list">
+        <div class="card-block">
+          <h3 class="card-title">Abhayagiri Evening Chanting (English)</h3>
+          <a href="../../chanting/abhayagiri-evening-english" class="btn btn-primary">Chant</a>
         </div>
       </div>
-    </div>
-  </div> <!-- end of row -->
-  <div class="row">
-    <div class="col-xs-6 col-md-4">
-      <div class="thumbnail thumb-list">
-        <div class="caption">
-          <h3>The Chant of Metta</h3>
-          <p></p>
-          <p><a href="../chanting/chant-of-metta" class="btn btn-primary" role="button">Chant</a></p>
+
+
+      <div class="card card-block text-xs-center thumb-list">
+        <div class="card-block">
+          <h3 class="card-title">The Chant of Metta</h3>
+          <a href="../../chanting/chant-of-metta" class="btn btn-primary">Chant</a>
         </div>
       </div>
-    </div>
-  </div> <!-- end of 2nd row -- >
-</div>
+
+  </div>
 
 
   </div>
@@ -169,21 +160,21 @@
     <!-- Bootstrap JS CDN -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Bootstrap local fallback -->
-    <script> if(typeof($.fn.modal) === 'undefined') {document.write('<script src="/chanting/js/bootstrap.min.js"><\/script>')}</script>
+    <script> if(typeof($.fn.modal) === 'undefined') {document.write('<script src="../../js/bootstrap.min.js"><\/script>')}</script>
 
     <!-- Bootstrap CSS local fallback -->
     <script>
       $(document).ready(function() {
         var bodyColor = $('body').css('color');
         if(bodyColor != 'rgb(51, 51, 51)') {
-          $("head").prepend('<link rel="stylesheet" href="/chanting/css/bootstrap.min.css">');
+          $("head").prepend('<link rel="stylesheet" href="../../css/bootstrap.min.css">');
         }
       });
     </script>
 
-    <script src="/chanting/js/jasny-bootstrap.min.js"></script>
+    <script src="../../js/jasny-bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="/chanting/js/flowtype.js"></script>
+    <script type="text/javascript" src="../../js/flowtype.js"></script>
 
     <script>
     var $=jQuery.noConflict();
@@ -199,7 +190,7 @@
       });
     });
     </script>
-    <script type="text/javascript" src="/chanting/js/time.js"></script>
+    <script type="text/javascript" src="../../js/time.js"></script>
 
   </body>
 
