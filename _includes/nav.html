@@ -1,11 +1,9 @@
 
 
-{% assign url = page.url | prepend: site.github.url %}
-
 <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
   <a class="navmenu-brand" href="#">Dhamma</a>
   <ul class="nav navmenu-nav">
-    <li {% if page.url == '/' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="/">Home</a></li>
+    <li {% if page.url == '{{ site.baseurl }}/' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="{{ site.baseurl }}/">Home</a></li>
   </ul>
 
   <ul class="nav navmenu-nav">
