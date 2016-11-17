@@ -10,8 +10,9 @@ ul .img-thumbbail { background-color: #fff; }
   border: none;
 }
 .jumbotron {
-  margin-top: 2%;
-  background-color: transparent;
+  margin-top: 3%;
+  /*background-color: transparent;*/
+  background: linear-gradient(to left, #7474BF, #348ac7);
 }
 .jumbotron h1 { padding-bottom: 0; }
 /**
