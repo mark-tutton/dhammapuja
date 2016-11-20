@@ -4,7 +4,7 @@
  *
  */
 ul .img-thumbbail { background-color: #fff; }
-.card-group { margin-top: 5%;}
+.card-deck-wrapper { margin-top: 5%;}
 .thumbnail {
   background-color: transparent;
   border: none;
@@ -27,12 +27,12 @@ ul .img-thumbbail { background-color: #fff; }
   }
 footer {
   flex: none;
-  background-color: #fff;
+  border-top: 1px solid #E6E6E6;
+  background-color: #FBFBFB;
   color: #aaa;
   font-size: 14px;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-top: 15%;
+  padding: 1rem .5rem 0 .5rem; /* top | right | bottom | left */
+  margin-top: 3.5rem;
 }
 .home-content {
   flex: 1 0 auto;
