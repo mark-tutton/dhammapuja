@@ -5,13 +5,23 @@
 
   <body>
 
-  {% include nav.html %}
+    {% include nav.html %}
+    <div id="wrapper">
 
-  <div class="container-fluid">
+      <div class="container-fluid">
 
-    {{ content }}
+        <button class="hamburger hamburger--vortex" id="my-icon" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-  </div>
+        {{ content }}
+
+      </div>
+
+    </div>
+
 
     <script src="../../js/pali.js" type="text/javascript"></script>
     <script src="../../js/chanting.js" type="text/javascript"></script>
@@ -30,8 +40,6 @@
         }
       });
     </script>
-
-    <script type="text/javascript" src="../../js/jasny-bootstrap.min.js"></script>
 
     <script type="text/javascript" src="../../js/flowtype.js"></script>
     <script type="text/javascript" src="../../js/jquery/jquery.smooth-scroll.js"></script>
@@ -58,4 +66,7 @@
       });
     </script>
     <script type="text/javascript" src="../../js/time.js"></script>
+
+    {% include mmenu-body.html %}
+
   </body>

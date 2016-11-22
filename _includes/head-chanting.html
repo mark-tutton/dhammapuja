@@ -18,12 +18,11 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <link rel="stylesheet" media="screen" href="../../css/jasny-bootstrap.min.css">
-
-  <link rel="stylesheet" type="text/css" href="../../css/navmenu-push.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/css/jquery.mmenu.all.css" integrity="sha256-iWSzBREqBoBgEdVMf+ipEslnI0AwBQ6MSJ+15TC3Alc=" crossorigin="anonymous" />
 
   <link rel="stylesheet" type="text/css" href="../../css/chanting.css">
   <link rel="stylesheet" type="text/css" href="../../css/global.css">
+  <link href="{{ page.url | prepend: site.github.url }}../../css/hamburgers.css" rel="stylesheet" type="text/css">
 
   <!-- jQuery CDN -->
   <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -40,6 +39,10 @@
     try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/js/jquery.mmenu.all.min.js" integrity="sha256-K/YNt0jvZYzulj8uYtEXPl7x/cFhBDSRwWUWpW89IiU=" crossorigin="anonymous"></script>
+
+  {% include mmenu-head.html %}
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

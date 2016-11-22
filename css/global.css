@@ -9,8 +9,11 @@ body {
 
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 18px;
+
+  -webkit-transform: translate3d(0);
+          transform: translate3d(0);
 }
-h1,h2,h3,h4,h5,h6,p { font-size: inherit; } /* consider removing */
+/*h1,h2,h3,h4,h5,h6,p { font-size: inherit; }*/ /* consider removing */
 p { line-height: 1.9; }
 h1 {
   padding-bottom: 3%;
@@ -40,6 +43,7 @@ h2 {
 .navbar-default {
   border-color: transparent;
   background-color: transparent;
+
 }
 .navmenu-default .navmenu-nav { background-color: #f7f7f7; }
 .navmenu-default .navmenu-nav > li {
@@ -51,10 +55,11 @@ h2 {
   border: 1px solid #ccc;
 
   box-shadow: none;
+  /*
   border-bottom-width: 3px;
   border-right: none;
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;*/
 }
 .navmenu-default .navmenu-nav > li > a {
   display: block;
@@ -75,9 +80,9 @@ h2 {
 
   color: #000000;
   background-color: #dbd9d9;
-
+/*
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;*/
 }
 
 .navmenu-default .navmenu-nav > li > a:focus,
@@ -85,8 +90,8 @@ h2 {
   padding-right: 8px;
 
   background-color: #dbd9d9;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  /*border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;*/
 }
 
 /**

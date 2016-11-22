@@ -34,7 +34,7 @@ footer {
   border-top: 1px solid #E6E6E6;
   background-color: #FBFBFB;
   color: #aaa;
-  font-size: 14px;
+  font-size: 0.88em;
   padding: 1rem .5rem 0 .5rem; /* top | right | bottom | left */
   margin-top: 3.5rem;
 }

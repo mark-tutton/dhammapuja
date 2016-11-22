@@ -5,16 +5,24 @@
 
 
   <body class="home">
-  <main class="home-content">
-  {% include nav.html %}
+    {% include nav.html %}
+    <div id="wrapper">
+      <main class="home-content">
 
-  <div class="container-fluid">
+        <div class="container-fluid">
 
-    {{ content }}
+          <button class="hamburger hamburger--vortex" id="my-icon" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          {{ content }}
 
-  </div>
-  </main>
-  {% include footer.html %}
+        </div>
+      </main>
+      {% include footer.html %}
+    </div>
+
 
     <!-- Bootstrap JS CDN -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -30,8 +38,6 @@
         }
       });
     </script>
-
-    <script src="{{ page.url | prepend: site.github.url }}../js/jasny-bootstrap.min.js"></script>
 
     <script type="text/javascript" src="../../js/flowtype.js"></script>
 
@@ -50,6 +56,8 @@
     });
     </script>
     <script type="text/javascript" src="../../js/time.js"></script>
+
+  {% include mmenu-body.html %}
 
   </body>
 

@@ -1,14 +1,36 @@
-[  ] fix “the chant of metta” page
-[  ] sync audio and text of “the sublime attitudes” page
-[  ] check all chant pages to see if audio/text sync 
-    [  ] sync audio and text of all chant pages
-[  ] fix styling of chanting/index.html page
-[  ] fix font sizes on all chant pages
-[  ] fix styling of “Three Refuges and Eight Precepts” page
+[   ] ORGANISE TODO.TXT BY PRIORITY FROM TOP(MOST IMPORTANT) TO BOTTOM (LEAST IMPORTANT)
 
-[  ] create footer w/ credits/github link
-[ * ] set .thumbnail/caption background to transparent
+CHANTING
+  [ * ] add media query for desktop <ul.display> padding right/left to centre
+  [ * ] add media query for mobile landscape <ul.display> padding right/left to centre
+  [   ] add credits to each chant below chant title
+  [   ] fix “the chant of metta” page
+  [   ] sync audio and text of “the sublime attitudes” page
+  [   ] check all chant pages to see if audio/text sync 
+    [   ] sync audio and text of all chant pages
 
-[  ] look into Server Side Includes (jekyll w/ Liquid templates?)
+  [   ] fix font sizes on all chant pages
+  [   ] fix styling of “Three Refuges and Eight Precepts” page
+  [ * ] add five precepts
 
-[  ] upgrade to bootstrap v4 (wait for jasny or bootstrap v4.1)
+INDEX.HTML & CHANTING/INDEX.HTML
+  [   ] fix styling of chanting/index.html page
+  [ * ] create footer w/ credits/github link
+    [   ] style footer
+  [ * ] set .thumbnail/caption background to transparent
+   AUDIO
+    [   ] look into adding an option to slow/fast playback speed AND/OR skip/rewind 10 secs
+
+ 
+SITE WIDE
+  [ * ] switch to jQuery.mmenu
+  [   ] restyle the navmenu
+    [   ] make restyle consistent site wide
+  [   ] consider restyling with google material design
+
+JEKYLL
+  [ * ] fix jekyll config/directory issues!!!!
+  [ * ] look into Server Side Includes (jekyll w/ Liquid templates?)
+    [ * ] transfer git repo from current to jekyll (look into a new branch?)
+
+  [ * ] upgrade to bootstrap v4 (wait for jasny or bootstrap v4.1)
