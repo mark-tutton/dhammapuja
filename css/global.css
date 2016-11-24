@@ -6,8 +6,6 @@
 body {
   color: #444;
   background-color: #EEEEEE;
-
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   font-size: 18px;
 
   -webkit-transform: translate3d(0);
@@ -94,6 +92,10 @@ h2 {
   border-bottom-left-radius: 5px;*/
 }
 
+#my-menu:not( .mm-menu ) {
+   display: none;
+}
+
 /**
  *
  * Night Mode
@@ -168,4 +170,13 @@ h2 {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
+}
+
+
+.sidr ul.submenu {
+    display:none;
+}
+
+.active {
+  color: red;
 }

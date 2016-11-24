@@ -5,6 +5,7 @@
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
+ /*
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -20,7 +21,8 @@
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; }
+  overflow: visible;
+  }
   .hamburger:hover {
     opacity: 0.7; }
 
@@ -28,12 +30,12 @@
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; }
+  vertical-align: top;}
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
+  margin-top: -2px; position: fixed;}
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
@@ -52,10 +54,11 @@
     top: -10px; }
   .hamburger-inner::after {
     bottom: -10px; }
-
+*/
 /*
  * Vortex
  */
+ /*
 .hamburger--vortex .hamburger-inner {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
@@ -83,10 +86,11 @@
     bottom: 0;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
-
+*/
 /*
  * Vortex Reverse
  */
+/*
 .hamburger--vortex-r .hamburger-inner {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
@@ -114,3 +118,16 @@
     bottom: 0;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
+*/
+
+
+.cd-main-content {
+  /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
+  min-height: 100%;
+  z-index: 2;
+  transition-property: transform;
+  transition-duration: 0.4s;
+}
+.cd-main-content.lateral-menu-is-open {
+  transform: translateX(-260px);
+}
