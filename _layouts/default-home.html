@@ -3,26 +3,28 @@
 
   {% include head-home.html %}
 
-  <body class="home">
-    {% include nav.html %}
-    <div id="wrapper">
-      <main class="home-content">
+<body class="home">
 
-        <div class="container-fluid">
+  <header> {% include nav.html %} </header>
 
-          <button class="hamburger hamburger--vortex" id="my-icon" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+  <section class="home-content">
 
-          {{ content }}
+    <div class="container-fluid">
 
-        </div>
+      <button class="hamburger hamburger--vortex" id="my-icon" href="#sidr" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
 
-      </main>
-      {% include footer.html %}
+      {{ content }}
+
     </div>
+
+  </section>
+
+  {% include footer.html %}
+
   <!-- Bootstrap JS CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   <!-- Bootstrap local fallback -->
@@ -56,8 +58,29 @@
   </script>
   <script type="text/javascript" src="{{ page.url | prepend: site.github.url }}js/time.js"></script>
 
-  {% include mmenu-body.html %}
+  <script src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js" integrity="sha256-/VeucihXSoNSfLiRfsWg/5RKp4eTTuW4Wnl28lm3rjE=" crossorigin="anonymous"></script>
 
-  </body>
+  <script>
+    $(document).ready(function() {
+      $('#my-icon').sidr({
+        renaming: false
+      });
+
+      $('.submenu-button').click(function(e) {
+          e.preventDefault();
+          $(this).next().slideToggle();
+      });
+    });
+  </script>
+
+  <script>
+    var $hamburger = $(".hamburger");
+      $hamburger.on("click", function(e) {
+        $hamburger.toggleClass("is-active");
+        // Do something else, like open/close menu
+    });
+  </script>
+
+</body>
 
 </html>

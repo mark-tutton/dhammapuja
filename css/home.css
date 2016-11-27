@@ -4,24 +4,29 @@
  *
  */
 ul .img-thumbbail { background-color: #fff; }
-.card-deck-wrapper { margin-top: 5%;}
-.thumbnail {
-  background-color: transparent;
-  border: none;
-}
-.jumbotron {
-  margin-top: 4.5%;
-  background: linear-gradient(to left, #7474BF, #348ac7);
-}
+.card-deck-wrapper { margin-top: 5%; }
+.thumbnail { background-color: transparent; border: none; }
+.jumbotron { background: linear-gradient(to left, #7474BF, #348ac7); margin-top: 3%; }
 .jumbotron h1 { padding-bottom: 0; }
+
+
+.chanting_img {
+  background: url(../images/chanting.jpg) no-repeat center center;
+  height: auto;
+}
+.reading_img {
+  background: url(../images/pali.jpg) no-repeat center center;
+}
 /**
  *
  * Footer
  *
  */
+
 .home {
   display: flex;
-  min-height: 100%;
+  min-height: 100vh;
+  height: 100%;
   flex-direction: column;
 }
 .home-content {
@@ -29,8 +34,21 @@ ul .img-thumbbail { background-color: #fff; }
   padding: var(--space) var(--space) 0;
   width: 100%;
 }
-footer {
-  flex: none;
+
+/*
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}*/
+.footer {
+  /*position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;*/
+
   border-top: 1px solid #E6E6E6;
   background-color: #FBFBFB;
   color: #aaa;
