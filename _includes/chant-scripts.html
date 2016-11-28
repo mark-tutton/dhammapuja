@@ -1,0 +1,43 @@
+  <!-- jQuery CDN -->
+  <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/materialize/0.97.8/js/materialize.min.js" integrity="sha256-pVJ6toFhRjat2LSvxugXvMnNDp33i00nfn0CpPXZevs=" crossorigin="anonymous"></script>
+
+  <script src="{{ site.baseurl }}../../js/pali.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}../../js/chanting.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}../../js/jquery/jquery.smooth-scroll.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}../../js/flowtype.js" type="text/javascript"></script>
+  <script src="{{ site.baseurl }}../../js/night_mode.js" type="text/javascript"></script>
+  <script>
+    var $ = jQuery.noConflict();
+    $(document).ready(function(){
+      $('p').flowtype({
+        minimum   : 320,
+        maximum   : 1200,
+        minFont   : 12,
+        maxFont   : 40,
+        fontRatio : 22
+      });
+      $('h1').flowtype({
+        fontRatio : 15
+      }),
+      $('h2').flowtype({
+        fontRatio : 20
+      }),
+      $('h3').flowtype({
+        fontRatio : 30
+      })
+    });
+  </script>
+
+  <script>
+    // Initialize collapse button
+    $(".button-collapse").sideNav({
+      menuWidth: 240,
+      edge: 'left',
+      closeOnClick: true,
+      draggable: true
+    });
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    $('.collapsible').collapsible();
+  </script>

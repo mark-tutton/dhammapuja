@@ -1,34 +1,38 @@
 ---
-  layout: default-home
-  title: Dhamma
-  name: index
+layout: home
+title: Home
 ---
 
-
-  <div class="jumbotron">
-    <h1>A Collection of Dhamma</h1>
-  </div>
-
+<div class="container">
   <div class="row">
-      <div class="col-xs-6">
-        <div class="card chanting_img">
-          <a href="chanting/index.html">
-            <!--<img class="card-img-top img-fluid" src="images/chanting.jpg" alt="Chanting index">-->
-          </a>
-          <div class="card-block">
-            <div class="card-title">Chanting</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-xs-6">
-        <div class="card reading_img">
-          <a href="reading/index.html">
-            <!--<img class="card-img-top img-fluid" src="images/pali.jpg" alt="Reading Pali">-->
-          </a>
-          <div class="card-block">
-            <div class="card-title">Reading Pāḷi</div>
+    <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/chanting.jpg" />
+          <span class="card-title" style="color: #000;">Chanting</span>
+        </div>
+        <div class="card-stacked">
+          <div class="card-action">
+            <a href="{{ site.baseurl }}/chanting/">Chanting</a>
           </div>
         </div>
       </div>
-  </div> <!-- ./row -->
+    </div>
+
+    <div class="col s6">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/pali.jpg" />
+          <span class="card-title" style="color: #000;">Reading</span>
+        </div>
+        <div class="card-stacked">
+          <div class="card-action">
+            <a href="{{ site.baseurl }}/reading/">Reading</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

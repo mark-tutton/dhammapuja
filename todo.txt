@@ -27,6 +27,9 @@ SITE WIDE
   [   ] restyle the navmenu
     [   ] make restyle consistent site wide
   [   ] consider restyling with google material design
+  [   ] make favicon show on mobile
+  [   ] mmenu fix night/day mode theme
+  [   ] add hammer.js and hammer-time.js (ONLY LOAD IF DEVICE IS TOUCHSCREEN)
 
 JEKYLL
   [ * ] fix jekyll config/directory issues!!!!

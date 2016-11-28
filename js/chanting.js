@@ -10,8 +10,12 @@ var timeLineNodes = [];
 
 if (data && data.val()) {
   display = $('<ul class="display"></ul>');
-  $('body').append('<div id="time">00:00.0</div>');
-  $('body').append(display);
+  time = $('<div id="time">00:00.0</div>');
+  var contain= $("#main"); // for materialize <main>
+  contain.append(display); // for materialize <main>
+  //$('body').append('<div id="time">00:00.0</div>'); // bootstrap
+  //$('body').append(display); //boostrap
+
   data.val().split(/\n+/).forEach(function (line) {
     var match = line.match(/^\s*(\[(.+?)\])?(\s*)(.+)\s*$/);
     if (match) {

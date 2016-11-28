@@ -9,8 +9,8 @@
   data-duration= "300"
   data-clickSelector=".toggle-panel"
   enableEscapeKey: "true"
->
--->
+> -->
+<!--
   <div id="sidr">
     <ul>
       <li><a href="{{ site.baseurl }}/" class="hvr-pop">Home</a></li>
@@ -32,7 +32,27 @@
       </li>
     </ul>
   </div>
-
+-->
 <!--
   <li {% if page.url == '{{ site.baseurl }}/chanting/abhayagiri-morning' %}class="active hvr-pop"{% endif %} class="hvr-pop"><a href="{{ site.baseurl }}/chanting/abhayagiri-morning">Morning Chanting</a></li>
 -->
+
+
+
+<ul class="cd-navigation cd-single-item-wrapper">
+  <li><a href="#0">Home</a></li>
+  <li><a href="#0">Reading</a></li>
+</ul> <!-- cd-single-item-wrapper -->
+
+<nav id="cd-lateral-nav">
+  <ul class="cd-navigation">
+    <li class="item-has-children">
+      <a href="#0">Chanting</a>
+      <ul class="sub-menu">
+        <li><a href="#0">Morning</a></li>
+        <li><a href="#0">Evening</a></li>
+        <li><a href="#0">Evening English</a></li>
+      </ul>
+    </li> <!-- item-has-children -->
+
+</nav>

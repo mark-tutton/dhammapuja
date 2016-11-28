@@ -3,56 +3,16 @@
  * Home Page
  *
  */
-ul .img-thumbbail { background-color: #fff; }
-.card-deck-wrapper { margin-top: 5%; }
-.thumbnail { background-color: transparent; border: none; }
-.jumbotron { background: linear-gradient(to left, #7474BF, #348ac7); margin-top: 3%; }
-.jumbotron h1 { padding-bottom: 0; }
 
-
-.chanting_img {
-  background: url(../images/chanting.jpg) no-repeat center center;
-  height: auto;
-}
-.reading_img {
-  background: url(../images/pali.jpg) no-repeat center center;
-}
 /**
  *
  * Footer
  *
  */
 
-.home {
+body {
   display: flex;
   min-height: 100vh;
-  height: 100%;
   flex-direction: column;
 }
-.home-content {
-  flex: 1 0 auto;
-  padding: var(--space) var(--space) 0;
-  width: 100%;
-}
-
-/*
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  margin-bottom: 60px;
-}*/
-.footer {
-  /*position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;*/
-
-  border-top: 1px solid #E6E6E6;
-  background-color: #FBFBFB;
-  color: #aaa;
-  font-size: 0.88em;
-  padding: 1rem .5rem 0 .5rem; /* top | right | bottom | left */
-  margin-top: 3.5rem;
-}
+main { flex: 1 0 auto; }
