@@ -23,8 +23,6 @@ h2 {
  * Nav Menu
  *
  */
-
-nav .brand-logo.hide-on-med-and-down { padding-left: 1%; border: 1px solid yellow; }
 #sidenav-overlay { z-index: 1 /* removes the sidenav overlay shadow */ }
 
 @media (max-width: 992px) {
@@ -33,6 +31,7 @@ nav .brand-logo.hide-on-med-and-down { padding-left: 1%; border: 1px solid yello
     box-shadow: none;
   }
   .material-icons { color: rgba(0, 0, 0, 0.54);  }
+  .night .material-icons {  color: rgba(255, 255, 255, 1); }
 }
 
 /**
