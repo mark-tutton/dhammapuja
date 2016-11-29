@@ -1,4 +1,3 @@
-
 #data { display: none; }
 
 #audio {
@@ -92,18 +91,12 @@ ul.display p {
   text-rendering: optimizeLegibility;
 }
 
-ul.display h1, h2, h3 {
-  text-rendering: optimizeLegibility;
-}
+ul.display h1, h2, h3 { text-rendering: optimizeLegibility; }
 ul.display h1, h3 {
   text-align: center;
 }
-ul.display h1 {
-  margin-bottom: .5%;
-}
-ul.display h3 {
-  margin-bottom: 8%;
-}
+ul.display h1 { margin-bottom: .5%; }
+ul.display h3 { margin-bottom: 8%; }
 ul.display li {
   position: relative;
 

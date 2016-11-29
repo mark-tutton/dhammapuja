@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head_home_chant.html %}
+{% include head_home_chant.html %}
 
 <body>
 
-  <header> {% include sidebar.html %} </header>
+  <header>
+    {% include sidebar.html %}
+  </header>
 
   <main>
     {{ content }}
@@ -54,6 +56,6 @@
     $('.collapsible').collapsible();
   </script>
 
-  </body>
+</body>
 
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
 {% include head_chant.html %}
 
@@ -15,7 +15,7 @@
 
   </main>
 
-{% include chant-scripts.html %}
+  {% include chant-scripts.html %}
 
 </body>
 
