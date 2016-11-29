@@ -3,7 +3,6 @@
 CHANTING
   [ * ] add media query for desktop <ul.display> padding right/left to centre
   [ * ] add media query for mobile landscape <ul.display> padding right/left to centre
-  [ * ] add credits to each chant below chant title
   [   ] fix “the chant of metta” page
   [ * ] sync audio and text of “the sublime attitudes” page
   [   ] check all chant pages to see if audio/text sync
@@ -11,18 +10,12 @@ CHANTING
 
   [   ] fix font sizes on all chant pages
   [   ] fix styling of “Three Refuges and Eight Precepts” page
-  [ * ] add five precepts
+  [ * ] add five precepts *50%* done
+  [   ] look into adding an option to slow/fast playback speed AND/OR skip/rewind 10 secs
 
 INDEX.HTML & CHANTING/INDEX.HTML
   [   ] fix styling of chanting/index.html page
-  [ * ] create footer w/ credits/github link
     [   ] style footer
-  [ * ] set .thumbnail/caption background to transparent
-   AUDIO
-    [   ] look into adding an option to slow/fast playback speed AND/OR skip/rewind 10 secs
-
 
 SITE WIDE
-  [ * ] consider restyling with google material design
-  [ * ] make favicon show on mobile
   [   ] add hammer.js and hammer-time.js (ONLY LOAD IF DEVICE IS TOUCHSCREEN)
