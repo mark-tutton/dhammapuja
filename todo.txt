@@ -3,10 +3,10 @@
 CHANTING
   [ * ] add media query for desktop <ul.display> padding right/left to centre
   [ * ] add media query for mobile landscape <ul.display> padding right/left to centre
-  [   ] add credits to each chant below chant title
+  [ * ] add credits to each chant below chant title
   [   ] fix “the chant of metta” page
-  [   ] sync audio and text of “the sublime attitudes” page
-  [   ] check all chant pages to see if audio/text sync 
+  [ * ] sync audio and text of “the sublime attitudes” page
+  [   ] check all chant pages to see if audio/text sync
     [   ] sync audio and text of all chant pages
 
   [   ] fix font sizes on all chant pages
@@ -21,19 +21,8 @@ INDEX.HTML & CHANTING/INDEX.HTML
    AUDIO
     [   ] look into adding an option to slow/fast playback speed AND/OR skip/rewind 10 secs
 
- 
+
 SITE WIDE
-  [ * ] switch to jQuery.mmenu
-  [   ] restyle the navmenu
-    [   ] make restyle consistent site wide
-  [   ] consider restyling with google material design
-  [   ] make favicon show on mobile
-  [   ] mmenu fix night/day mode theme
+  [ * ] consider restyling with google material design
+  [ * ] make favicon show on mobile
   [   ] add hammer.js and hammer-time.js (ONLY LOAD IF DEVICE IS TOUCHSCREEN)
-
-JEKYLL
-  [ * ] fix jekyll config/directory issues!!!!
-  [ * ] look into Server Side Includes (jekyll w/ Liquid templates?)
-    [ * ] transfer git repo from current to jekyll (look into a new branch?)
-
-  [ * ] upgrade to bootstrap v4 (wait for jasny or bootstrap v4.1)
