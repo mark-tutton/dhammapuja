@@ -1,7 +1,5 @@
-/**
- *
+/*
  * Typography
- *
  */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -18,12 +16,12 @@ h2 {
   line-height: 1.3;
 }*/
 
-/**
- *
+/*
  * Nav Menu
- *
  */
-#sidenav-overlay { z-index: 1 /* removes the sidenav overlay shadow */ }
+
+.brand-logo { padding-left: 1%; }
+#sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
 
 @media (max-width: 992px) {
   nav {
@@ -34,13 +32,9 @@ h2 {
   .night .material-icons {  color: rgba(255, 255, 255, 1); }
 }
 
-/**
- *
+/*
  * Night Mode
- *
  */
-/* backgrounds & text */
-
 .day {
   color: #373a3c;
   background-color: #EEEEEE;
@@ -59,9 +53,7 @@ h2 {
 .night .navmenu-default .navmenu-nav > li {
   background-color: #393939;
   color: #ccc;
-
   border: 1px solid #000;
-
 }
 .night .navmenu-default .navmenu-nav > li > a { color: #8AD; }
 @media (min-width: 700px) {
