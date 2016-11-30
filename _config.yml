@@ -20,3 +20,6 @@ exclude:
   - README.md
   - todo.txt
   - Gemfile
+
+gems:
+  - jekyll-sitemap
