@@ -20,15 +20,26 @@ h2 {
  * Nav Menu
  */
 .brand-logo { padding-left: 1%; }
+nav .brand-logo {
+  padding-left: 1%;
+  color: #050709;
+  font-weight: 600;
+}
 #sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
+nav ul a {
+  color: #050709;
+}
 
 @media (max-width: 992px) {
   nav {
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none;
   }
-  .material-icons { color: rgba(0, 0, 0, 0.54);  }
-  .night .material-icons {  color: rgba(255, 255, 255, 1); }
+  nav .yellow.darken-1 {
+    background-color: transparent !important;
+  }
+  .fa-bars { color: rgba(0, 0, 0, 0.54);  }
+  .night .fa-bars {  color: rgba(255, 255, 255, 1); }
 }
 
 /*
