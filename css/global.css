@@ -54,11 +54,12 @@ nav ul a {
   background-color: #262626;
 }
 .night p { color: #fefefe; }
-.night ul.display .highlight { background-color: #1ba39c }
+.night ul.display .highlight { background-color: #419691 } /*org #1ba39c */
 .night h3 { color: #f2f1ef; }
 
 .night .card { background-color: #151616; }
 .night .dropdown-content { background-color: #262626; }
+
 
 /*
  * Floating Botton
