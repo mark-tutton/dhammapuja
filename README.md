@@ -15,3 +15,12 @@ Updating https://github.com/job-talk/buddhism-resource to Bootstrap v4 and Jekyl
 
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) [“Dhamma Schtuff”](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
+
+
+
+# Local testing
+
+- navigate to ./dhamma
+- run "  bundle exec jekyll -s --baseurl ''  "
+- in a new terminal tab/window, navigate to ./dhamma/_site
+- run "  browser-sync start --server --files="**/*"   "
