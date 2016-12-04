@@ -10,17 +10,42 @@ Updating https://github.com/job-talk/buddhism-resource to Bootstrap v4 and Jekyl
 ---
 
 
-# Credits
+## Credits
 
 
-
-This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) [“Dhamma Schtuff”](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
-
+This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) ['Dhamma Schtuff'](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
 
-# Local testing
+***
 
-- navigate to ./dhamma
-- run "  bundle exec jekyll -s --baseurl ''  "
-- in a new terminal tab/window, navigate to ./dhamma/_site
-- run "  browser-sync start --server --files="**/*"   "
+## Local testing
+
+
+####For jekyll
+ - navigate to ./dhamma
+ - run
+    ```bundle exec jekyll -s --baseurl ''```
+
+####For browser-sync
+ - in a new terminal, navigate to ./dhamma/_site
+ - run
+    ```browser-sync start --server --files="**/*"```
+
+
+***
+
+## Project Goals
+
+- [ ] Responsively designed
+
+- [ ] Mobile first
+
+- [ ] Collection of Dhamma chants, arranged: [ Morning, Evening, Etc.]
+
+- [ ] Clean, material design
+
+- [ ] Ability to toggle a day || night mode
+
+- [ ] Speech recognition? See johndyer's [audiosync](https://github.com/johndyer/audiosync) for an idea. Would make adding new chants much less laborious
+
+- [ ] much more to learn, improve & implement..
