@@ -60,6 +60,8 @@ nav ul a {
 .night .card { background-color: #151616; }
 .night .dropdown-content { background-color: #262626; }
 
+.night .nav-wrapper { background-color: #212121;}
+.night .page-footer { background-color: #212121; }
 
 /*
  * Floating Botton
