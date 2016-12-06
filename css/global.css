@@ -26,18 +26,14 @@ nav .brand-logo {
   font-weight: 600;
 }
 #sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
-nav ul a {
-  color: #050709;
-}
 
 @media (max-width: 992px) {
   nav {
     background-color: transparent !important;
     box-shadow: none;
   }
-  nav .yellow.darken-1 {
-    background-color: transparent !important;
-  }
+  .grey.lighten-5 { background-color: transparent !important; }
+  .night .grey.lighten-5 { background-color: transparent !important; }
   .fa-bars { color: rgba(0, 0, 0, 0.54);  }
   .night .fa-bars, body.invert .fa-bars {  color: rgba(255, 255, 255, 1); }
 }
@@ -53,15 +49,26 @@ nav ul a {
   color: #f2f1ef;
   background-color: #262626;
 }
-.night p { color: #fefefe; }
-.night ul.display .highlight { background-color: #419691 } /*org #1ba39c */
+
+.night ul.display .highlight { background-color: #419691; } /*org #1ba39c */
 .night h3 { color: #f2f1ef; }
 
 .night .card { background-color: #151616; }
 .night .dropdown-content { background-color: #262626; }
 
-.night .nav-wrapper { background-color: #212121;}
-.night .page-footer { background-color: #212121; }
+.night .nav-wrapper { background-color: #212121 !important; }
+.night .page-footer { background-color: #212121 !important; }
+
+.night .brand-logo { color: #f2f1ef; }
+.day nav ul a { color: #050709; }
+.night nav ul a { color: #f2f1ef; }
+
+.day .page-footer h5,a { color: #000000; }
+.day .page-footer p { color: #212132; }
+.night .page-footer h5 { color: #f2f1ef; }
+.night .page-footer p {color: #f2f1ef; }
+.page-footer a { color: rgb(27, 107, 191); }
+.night p { color: #fefefe; }
 
 /*
  * Floating Botton
