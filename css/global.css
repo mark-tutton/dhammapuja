@@ -78,6 +78,8 @@ nav .brand-logo {
   .night .page-footer p {color: #f2f1ef; }
   .page-footer a { color: rgb(27, 107, 191); }
 
+/* chanting */
+  .night ul.display p span.t>span>.d { border-color: rgb(28, 224, 219) transparent transparent transparent;}
 /*
  * Floating Botton
  */
