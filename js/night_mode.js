@@ -1,5 +1,6 @@
 // https://codepen.io/jamesbarnett/pen/kdDBL
 // "auto" night mode
+/*
   $(document).ready(function(){
   	var d = new Date();
   	var n = d.getHours();
@@ -11,16 +12,20 @@
   	  document.body.className = 'day';
   });
 
-
+*/
 // toggleable inverter with sessionStorage
 // from http://stackoverflow.com/questions/28239337/store-a-css-class-on-browser
   $('#inverter').click(function () {
     $('body').toggleClass('day night');
     if ($('body').hasClass('night')) {
       sessionStorage.setItem('theme', 'night');
-    } else {
-      sessionStorage.setItem('theme', 'day');
     }
+    else if ($('body').hasClass('day')) {
+      sessionStorage.setItem('theme', 'day');
+    } else {
+      $('body').removeClass('night day').addClass('day');
+    }
+
   });
 
   $(document).ready(function() {
