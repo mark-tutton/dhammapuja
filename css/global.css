@@ -36,10 +36,13 @@ nav .brand-logo {
   .fa-bars { color: rgba(0, 0, 0, 0.54);  }
   .night .fa-bars, body.invert .fa-bars {  color: rgba(255, 255, 255, 1); }
 
-  .night nav ul a { color: #f2f1ef; }
+  .night nav ul a { color: #8CB3CD; }
+  .night .side-nav { background-color: #393939; }
+  .night .side-nav a { color: #8CB3CD; }
+  .night .side-nav .collapsible-body { background-color: #494949;}
 }
 @media (min-width: 993px) {
-  .night nav ul a { color: #f2f1ef !important; }
+  .night nav ul a { color: #8CB3CD !important; }
 }
 /*
  * Night Mode
@@ -68,7 +71,7 @@ nav .brand-logo {
   .night .brand-logo { color: #f2f1ef; }
   nav ul a { color: #050709;}
   .day nav ul a { color: #050709;}
-  .night .side-nav a { color: rgba(0,0,0,0.87) !important; }
+
 
 
 /* footer */
@@ -80,7 +83,7 @@ nav .brand-logo {
   .page-footer a { color: rgb(27, 107, 191); }
 
 /* chanting */
-  .night ul.display p span.t>span>.d { border-color: rgb(28, 224, 219) transparent transparent transparent;}
+  .night ul.display p span.t>span>.d { border-color: rgb(123, 235, 12) transparent transparent transparent;}
 /*
  * Floating Botton
  */
