@@ -92,7 +92,7 @@ ul.display p {
 }
 
 ul.display h1, h2, h3 { text-rendering: optimizeLegibility; }
-ul.display h1, h3 {
+ul.display h1, h2, h3 {
   text-align: center;
 }
 ul.display h1 { margin-bottom: .5%; }
@@ -120,7 +120,7 @@ ul.display li {
 
 }
 
-ul.display .highlight { background-color: #ddffdd; }
+ul.display .highlight { background-color: #ddffdd;}
 
 ul.display .time {
   position: absolute;
@@ -144,6 +144,10 @@ ul.display .en {
 
   font-style: italic;
 }
+.night ul.display .highlight p,
+.night ul.display .highlight h1,
+.night ul.display .highlight h2,
+.night ul.display .highlight h3  { color: #050709; }
 
 ul.display p .un { text-decoration: underline; }
 
