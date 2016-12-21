@@ -28,21 +28,23 @@
   <script>
     var $ = jQuery.noConflict();
     $(document).ready(function(){
-      $('p').flowtype({
+      $('.card-title a').flowtype({
         minimum   : 320,
         maximum   : 1200,
         minFont   : 12,
         maxFont   : 40,
-        fontRatio : 22
+        fontRatio : 18
       });
-      $('h1').flowtype({
-        fontRatio : 15
-      }),
-      $('h2').flowtype({
+      $('.card-action').flowtype({
         fontRatio : 20
       }),
-      $('h3').flowtype({
-        fontRatio : 30
+      $('.memo').flowtype({
+        minFont   : 14,
+        fontRatio : 20
+      }),
+      $('.credits').flowtype({
+        minFont   : 12,
+        fontRatio : 18
       })
     });
   </script>

@@ -12,10 +12,7 @@
   background-color: black;
 }
 
-#audio audio {
-  width: 100%;
-  height: 100%;
-}
+#audio audio { width: 100%; height: 100%; }
 
 #time {
   position: fixed;
@@ -53,24 +50,14 @@ ul.display {
   padding-right: 2.0em;
 }
 @media (min-width: 769px) {
-  ul.display {
-    padding-left: 6.0em;
-    padding-right: 6.0em;
+  ul.display { padding-left: 6.0em; padding-right: 6.0em;
   }
 }
-
   @media (max-width: 768px) {
-    ul.display {
-      padding-left: 1.5em;
-      padding-right: 1.5em;
-    }
+    ul.display { padding-left: 1.5em; padding-right: 1.5em; }
   }
-
   @media (max-width: 480px) {
-    ul.display {
-      padding-left: 1.0em;
-      padding-right: 1.0em;
-    }
+    ul.display { padding-left: 1.0em; padding-right: 1.0em; }
   }
 
   /* iPhone 6 Landscape */
@@ -79,10 +66,7 @@ ul.display {
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-      ul.display {
-        padding-left: 2.0em;
-        padding-right: 2.0em;
-      }
+      ul.display { padding-left: 2.0em; padding-right: 2.0em; }
   }
 
 ul.display p {
@@ -131,11 +115,7 @@ ul.display .time {
   font-size: 0.5em;
 }
 ul.display h3 { font-style: italic; }
-ul.display .en {
-  margin-left: 1em;
-
-  font-style: italic;
-}
+ul.display .en { margin-left: 1em; font-style: italic; }
 ul.display .highlight { background-color: #ddffdd; }
 .night ul.display .highlight { background-color: #419691; }
 .night ul.display .highlight p,
@@ -145,11 +125,7 @@ ul.display .highlight { background-color: #ddffdd; }
 
 ul.display p .un { text-decoration: underline; }
 
-ul.display p span.t {
-  position: relative;
-
-  white-space: pre;
-}
+ul.display p span.t { position: relative; white-space: pre; }
 
 ul.display p span.t>span {
   position: absolute;
