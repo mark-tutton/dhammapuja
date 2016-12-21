@@ -35,9 +35,8 @@
     }
   });
 
-
-    $(function() {
-      $('.invert').click(function (){
-        $(this).find('i').toggleClass('fa-sun-o fa-moon-o');
-      });
+  $(function() {
+    $('.invert').click(function (){
+      $(this).find('i').toggleClass('fa-sun-o fa-moon-o');
     });
+  });

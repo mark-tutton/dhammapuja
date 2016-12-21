@@ -12,20 +12,23 @@
     var $ = jQuery.noConflict();
     $(document).ready(function(){
       $('p').flowtype({
-        minimum   : 320,
+        minimum   : 300,
         maximum   : 1200,
-        minFont   : 12,
+        minFont   : 14,
         maxFont   : 40,
-        fontRatio : 22
+        fontRatio : 18
       });
       $('h1').flowtype({
-        fontRatio : 15
+        minFont   : 22,
+        fontRatio : 11.2
       }),
       $('h2').flowtype({
-        fontRatio : 20
+        minFont   : 20,
+        fontRatio : 14
       }),
       $('h3').flowtype({
-        fontRatio : 30
+        minFont   : 14,
+        fontRatio : 25
       })
     });
   </script>
