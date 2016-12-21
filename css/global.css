@@ -86,3 +86,6 @@ nav .brand-logo {
  * Floating Botton
  */
 .btn-floating { margin-bottom: 1.5rem; }
+.fa-sun-o { color: #FFC107 !important; background-color: #009688;}
+
+.fa-moon-o { color: #000 !important; }
