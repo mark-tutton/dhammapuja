@@ -26,11 +26,9 @@ nav .brand-logo {
   .night nav ul a { color: #8CB3CD; }
   .night .side-nav { background-color: #393939; }
   .night .side-nav a { color: #8CB3CD; }
-  .night .side-nav .collapsible-body { background-color: #494949;}
+  .night .side-nav .collapsible-body { background-color: #494949; }
 }
-@media (min-width: 993px) {
-  .night nav ul a { color: #8CB3CD !important; }
-}
+@media (min-width: 993px) { .night nav ul a { color: #8CB3CD !important; } }
 /*
  * Night Mode
  */
@@ -40,9 +38,6 @@ nav .brand-logo {
   .night h3 { color: #f2f1ef; }
   .night p { color: #fefefe; }
 
-/* home */
-  .night .card { background-color: #151616; }
-
 /* nav */
   .night .dropdown-content { background-color: #262626; }
   .night .nav-wrapper { background-color: #212121 !important; }
@@ -50,19 +45,10 @@ nav .brand-logo {
   nav ul a { color: #050709; }
   .day nav ul a { color: #050709; }
 
-/* footer */
-  .night .page-footer { background-color: #212121 !important; }
-  .day .page-footer h5,a { color: #000000; }
-  .day .page-footer p { color: #212132; }
-  .night .page-footer h5 { color: #f2f1ef; }
-  .night .page-footer p { color: #f2f1ef; }
-  .page-footer a { color: #7b9db3; }
-
 /*
  * Floating Botton
  */
 .btn-floating { margin-bottom: 1.5rem; }
 .fa-sun-o { color: #FFC107 !important; background-color: #009688; }
-
 .day .fa-cog { color: #050709; }
 .day .fa-arrow-up { color: #050709; }

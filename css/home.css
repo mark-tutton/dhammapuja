@@ -8,8 +8,16 @@ body {
 }
 main { flex: 1 0 auto; }
 
+.page-footer a { color: #039be5; }
+.night .page-footer { background-color: #212121 !important; }
+.day .page-footer h5 { color: #000000; }
+.day .page-footer p { color: #212132; }
+.night .page-footer h5 { color: #f2f1ef; }
+.night .page-footer p { color: #f2f1ef; }
+
 /**
  * Chanting Home
  */
 .card-title a { font-weight: 400;}
 .night .card-title a { color: #fefefe; }
+.night .card { background-color: #151616; }
