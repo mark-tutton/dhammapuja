@@ -1,7 +1,10 @@
 /*
  * Typography
  */
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; overflow: scroll; }
+@media screen and (max-width: 768px) {
+  body { -webkit-overflow-scrolling: touch; }
+}
 p { line-height: 1.9; }
 h1 { font-weight: 900; line-height: 1.3; }
 h2 { font-weight: 600; line-height: 1.3; }
@@ -10,6 +13,7 @@ h2 { font-weight: 600; line-height: 1.3; }
  * Nav Menu
  */
 #sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
+.button-collapse { font-size: 2.5rem; cursor: pointer; }
 .brand-logo { padding-left: 1%; }
 nav .brand-logo {
   padding-left: 1%;
@@ -52,3 +56,4 @@ nav .brand-logo {
 .fa-sun-o { color: #FFC107 !important; background-color: #009688; }
 .day .fa-cog { color: #050709; }
 .day .fa-arrow-up { color: #050709; }
+.fa-arrow-up { background-color: #00BCD4; }
