@@ -1,3 +1,4 @@
+
 /*
  * Typography
  */
@@ -24,8 +25,8 @@ nav .brand-logo {
   nav { background-color: transparent !important; box-shadow: none; }
   .grey.lighten-5 { background-color: transparent !important; }
   .night .grey.lighten-5 { background-color: transparent !important; }
-  .fa-bars { color: rgba(0, 0, 0, 0.54);  }
-  .night .fa-bars, body.invert .fa-bars {  color: rgba(255, 255, 255, 1); }
+  .ent-menu { color: rgba(0, 0, 0, 0.54);  }
+  .night .ent-menu {  color: rgba(255, 255, 255, 1); }
 
   .night nav ul a { color: #8CB3CD; }
   .night .side-nav { background-color: #393939; }
@@ -53,7 +54,9 @@ nav .brand-logo {
  * Floating Botton
  */
 .btn-floating { margin-bottom: 1.5rem; }
-.fa-sun-o { color: #FFC107 !important; background-color: #009688; }
-.day .fa-cog { color: #050709; }
-.day .fa-arrow-up { color: #050709; }
-.fa-arrow-up { background-color: #00BCD4; }
+.fixed-action-btn { font-size: 2rem !important; }
+.night .ent-light-up {background-color: #009688;  color: #FFC107 !important; }
+.day .ent-cog { color: #050709; }
+.day .ent-chevron-up { color: #050709; }
+.day .ent-moon { color: #050709; }
+.ent-chevron-up { background-color: #00BCD4; }

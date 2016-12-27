@@ -37,6 +37,6 @@
 
   $(function() {
     $('.invert').click(function (){
-      $(this).find('i').toggleClass('fa-sun-o fa-moon-o');
+      $(this).find('i').toggleClass('ent-moon ent-light-up');
     });
   });

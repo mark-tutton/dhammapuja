@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'entypo';
+  src: url('fonts/entypo.woff?y842qp') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ent-"], [class*=" ent-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  display: inline-block;
+  font-family: 'entypo' !important;
+  font: normal normal normal 14px/1 entypo;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ent-arrow-long-right:before { content: "\e905"; }
+.ent-arrow-right:before { content: "\e906"; }
+.ent-chevron-right:before { content: "\e907"; }
+.ent-chevron-thin-right:before { content: "\e908"; }
+.ent-cog:before { content: "\e903"; }
+.ent-light-down:before { content: "\e909"; }
+.ent-light-up:before { content: "\e90a"; }
+.ent-menu2:before { content: "\e90b"; }
+.ent-moon:before { content: "\e90c"; }
+.ent-tools:before { content: "\e90d"; }
+.ent-menu:before { content: "\e904"; }
+.ent-github-with-circle:before { content: "\e901"; }
+.ent-github:before { content: "\e902"; }
+.ent-home:before { content: "\e900"; }
+.ent-chevron-small-down:before { content: "\e90f"; }
+.ent-chevron-down:before { content: "\e910"; }
+.ent-chevron-thin-up:before { content: "\e911"; }
+.ent-chevron-up:before { content: "\e912"; }
