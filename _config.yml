@@ -1,6 +1,6 @@
 # URLs
 permalink: pretty
-baseurl: /dhamma
+baseurl:
 
 # Structure configuration
 source: ./
