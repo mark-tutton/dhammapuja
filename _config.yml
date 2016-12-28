@@ -9,7 +9,7 @@ destination: ./_site
 # Site settings
 title: 'Dhammapuja'
 description: 'A Karaoke for Chanting Dhamma in English and Pāli'
-url: http://dhammapuja.com
+url: https://dhammapuja.com
 
 # Markdown
 markdown: kramdown
