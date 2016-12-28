@@ -7,9 +7,9 @@ source: ./
 destination: ./_site
 
 # Site settings
-title: 'Dhamma'
-description: 'A Collection of Dhamma (Chants & Pāḷi)'
-url: https://job-talk.github.io
+title: 'Dhamma Chanting Karaoke'
+description: 'A Karaoke for Chanting Dhamma in English and Pāli'
+url: http://dhammapuja.com
 
 # Markdown
 markdown: kramdown
