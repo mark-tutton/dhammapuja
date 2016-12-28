@@ -8,3 +8,4 @@ _site
 ._*
 .Spotlight-V100
 .Trashes
+*.cache

@@ -24,6 +24,7 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-assets
+  - jekyll-seo-tag
 
 assets:
   compress:
@@ -62,3 +63,7 @@ assets:
     integrity: false
     automatic_img_size: true
     automatic_img_alt : true
+
+seo:
+  title: 'Dhammapuja'
+  description: 'A Karaoke for Chanting Dhamma in English and Pāli'
