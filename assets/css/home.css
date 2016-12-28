@@ -21,3 +21,11 @@ main { flex: 1 0 auto; }
 .card-title a { font-weight: 400;}
 .night .card-title a { color: #fefefe; }
 .night .card { background-color: #151616; }
+
+
+    .card
+    {
+      min-height: 20%;
+      flex-wrap: wrap;
+      flex: initial;
+    }

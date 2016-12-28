@@ -23,8 +23,40 @@ exclude:
 
 gems:
   - jekyll-sitemap
+  - jekyll-assets
 
-compress_html:
-  comments: ["<!-- ", " -->"]
-  ignore:
-    clippings: []
+assets:
+  compress:
+    css: true
+    js: true
+
+  #
+
+  autowrite: true
+  cache: default
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  digest: true
+
+  #
+
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.svg"
+
+  #
+
+  sources:
+    - assets/css
+    - assets/images
+    - assets/js
+
+  #
+
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true
+    automatic_img_alt : true
