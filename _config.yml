@@ -50,8 +50,10 @@ assets:
 
   sources:
     - assets/css
-    - assets/images
+    - assets/_sass
+    - assets/img
     - assets/js
+    - assets/audio
 
   #
 
