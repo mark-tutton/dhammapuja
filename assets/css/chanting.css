@@ -14,6 +14,7 @@
 
 #audio audio { width: 100%; height: 100%; }
 
+
 #time {
   position: fixed;
   z-index: 1000;
@@ -43,21 +44,18 @@ ul.display {
   height: auto;
 
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 
-  padding-left: 2.0em;
-  padding-right: 2.0em;
+  padding: 0 2em;
 }
-@media (min-width: 769px) {
-  ul.display { padding-left: 6.0em; padding-right: 6.0em;
+  @media (min-width: 769px) {
+    ul.display { padding: 0 6em; }
   }
-}
   @media (max-width: 768px) {
-    ul.display { padding-left: 1.5em; padding-right: 1.5em; }
+    ul.display { padding: 0 1.5em; }
   }
   @media (max-width: 480px) {
-    ul.display { padding-left: 1.0em; padding-right: 1.0em; }
+    ul.display { padding: 0 1em; }
   }
 
   /* iPhone 6 Landscape */
@@ -66,7 +64,7 @@ ul.display {
     and (max-device-width: 667px)
     and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-      ul.display { padding-left: 2.0em; padding-right: 2.0em; }
+      ul.display { padding: 0 2em; }
   }
 
 ul.display p {
@@ -76,13 +74,13 @@ ul.display p {
   line-height: 2.5;
 }
 
-ul.display h1, h2, h3 { text-rendering: optimizeLegibility; text-align: center; }
+ul.display h1, h2, h3 { text-rendering: optimizeLegibility; }
 ul.display h3 { margin-bottom: 8%; }
 ul.display li {
   position: relative;
 
-  margin: 0.5em 0;
-  padding: 0.1em 0.5em;
+  margin: auto;
+  padding: 0.1em 2em;
 
   list-style-type: none;
 
@@ -96,9 +94,19 @@ ul.display li {
   border-radius: 20px;
 
   text-overflow: ellipsis;
-
 }
-
+  @media (min-width: 992px) {
+    ul.display li { padding: 0.1em 2em; }
+  }
+  @media (max-width: 991px) {
+    ul.display li { padding: 0.1em 1em; }
+  }
+  @media (max-width: 480px) {
+    ul.display li { padding: 0.1em .5em; }
+  }
+ul.display p {
+  margin: 0.5em auto;
+}
 ul.display .time {
   position: absolute;
   top: 2.4em;
@@ -117,6 +125,7 @@ ul.display .time {
 ul.display h3 { font-style: italic; }
 ul.display .en { margin-left: 1em; font-style: italic; }
 ul.display .highlight { background-color: #ddffdd; }
+ul.display .highlight p { font-weight: 700; }
 .night ul.display .highlight { background-color: #419691; }
 .night ul.display .highlight p,
 .night ul.display .highlight h1,
@@ -172,6 +181,6 @@ ul.display p span.t>span>.dd {
   border-color: blue transparent transparent transparent;
 }
 
-.night ul.display p span.t>span>.d { border-color: #E91E63 transparent transparent transparent;}
+.night ul.display p span.t>span>.d { border-color: #E91E63 transparent transparent transparent; }
 
 .stud { color: rgb(226, 173, 56); }
