@@ -27,7 +27,7 @@
 // =================
       changes = function(el) {
          var $el = $(el),
-            elw = $el.width(),
+            elw = $el.outerWidth(),
             width = elw > settings.maximum ? settings.maximum : elw < settings.minimum ? settings.minimum : elw,
             fontBase = width / settings.fontRatio,
             fontSize = fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;
