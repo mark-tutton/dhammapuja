@@ -71,10 +71,13 @@ ul.display p {
   margin: 0 auto;
   padding: 0;
   text-rendering: optimizeLegibility;
-  line-height: 2.5;
+  line-height: 2.0;
+  letter-spacing: 0.060em;
 }
+.night ul.display p { letter-spacing: 0.070em; }
+.night ul.display h1, h2, h3 { letter-spacing: 0.035em;}
 
-ul.display h1, h2, h3 { text-rendering: optimizeLegibility; }
+ul.display h1, h2, h3 { text-rendering: optimizeLegibility; letter-spacing: 0.025em; }
 ul.display h3 { margin-bottom: 8%; }
 ul.display li {
   position: relative;
@@ -125,7 +128,7 @@ ul.display .time {
 ul.display h3 { font-style: italic; }
 ul.display .en { margin-left: 1em; font-style: italic; }
 ul.display .highlight { background-color: #ddffdd; }
-ul.display .highlight p { font-weight: 700; }
+ul.display .highlight p { font-weight: 600; }
 .night ul.display .highlight { background-color: #419691; }
 .night ul.display .highlight p,
 .night ul.display .highlight h1,

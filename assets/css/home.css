@@ -8,7 +8,7 @@ body {
 }
 main { flex: 1 0 auto; }
 
-.page-footer a { color: #039be5; }
+.page-footer a { color: #8CB3CD; }
 .night .page-footer { background-color: #212121 !important; }
 .day .page-footer h5 { color: #000000; }
 .day .page-footer p { color: #212132; }
