@@ -15,7 +15,8 @@ h2 { font-weight: 500; line-height: 1.3; }
  */
 #sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
 .button-collapse { font-size: 2.5rem; cursor: pointer; }
-.brand-logo { padding-left: 1%; }
+.brand-logo { letter-spacing: .09em; }
+nav li a { letter-spacing: .08em; }
 nav .brand-logo {
   padding-left: 1%;
   color: #050709;
