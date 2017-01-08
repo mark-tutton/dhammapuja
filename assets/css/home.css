@@ -21,11 +21,47 @@ main { flex: 1 0 auto; }
 .card-title a { font-weight: 400;}
 .night .card-title a { color: #fefefe; }
 .night .card { background-color: #151616; }
+.card {
+  min-height: 20%;
+  flex-wrap: wrap;
+  flex: initial;
+}
 
+.contribute-contain {
+  bottom: 20px;
+  /*right: 20px;*/
+  margin-left: 1em;
+  position: fixed;
+  padding: 10px;
+  background-color: #fff;
+  z-index: 1000;
+}
 
-    .card
-    {
-      min-height: 20%;
-      flex-wrap: wrap;
-      flex: initial;
-    }
+.contribute-contain a.contribute-close {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  z-index: 1;
+  transition: background-color .2s;
+}
+.contribute {
+  max-width: 150px;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+.contribute-text {
+  top: 0;
+  left: 0;
+  width: 130px;
+  display: block;
+  font-size: 13px;
+
+}
