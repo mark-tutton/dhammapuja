@@ -18,7 +18,7 @@ nav li > a.active { color: #000 !important; }
 .night nav li > a.active { color: #8CB3CD !important; }
 .night .dropdown-content.active li > a.active { color: #8CB3CD !important;}
 
-#sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
+/*#sidenav-overlay { z-index: 1; } /* removes the sidenav overlay shadow */
 .button-collapse { font-size: 2.5rem; cursor: pointer; }
 .brand-logo { letter-spacing: .09em; }
 nav li a { letter-spacing: .08em; }
@@ -28,6 +28,7 @@ nav .brand-logo {
   font-weight: 600;
 }
 .navbar-fixed { transition: top 0.2s ease-in-out; }
+
 .nav-up { top: -70px; }
 @media (max-width: 992px) {
   /*nav { background-color: transparent !important; box-shadow: none; }
