@@ -27,10 +27,12 @@ nav .brand-logo {
   color: #050709;
   font-weight: 600;
 }
+.navbar-fixed { transition: top 0.2s ease-in-out; }
+.nav-up { top: -70px; }
 @media (max-width: 992px) {
-  nav { background-color: transparent !important; box-shadow: none; }
+  /*nav { background-color: transparent !important; box-shadow: none; }
   .grey.lighten-5 { background-color: transparent !important; }
-  .night .grey.lighten-5 { background-color: transparent !important; }
+  .night .grey.lighten-5 { background-color: transparent !important; }*/
   .ent-menu { color: rgba(0, 0, 0, 0.54);  }
   .night .ent-menu {  color: rgba(255, 255, 255, 1); }
 

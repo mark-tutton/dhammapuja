@@ -6,7 +6,6 @@
   <script src="{{ site.baseurl }}../../assets/js/chanting.js" type="text/javascript"></script>
   <script src="{{ site.baseurl }}../../assets/js/flowtype.js" type="text/javascript"></script>
 
-
   <script>
     // Add a script element as a child of the body
      function downloadJSAtOnload() {
@@ -28,6 +27,22 @@
      function downloadJSAtOnload() {
      var element = document.createElement("script");
      element.src = "{{ site.baseurl }}../../assets/js/night_mode.js";
+     document.body.appendChild(element);
+     }
+
+     // Check for browser support of event handling capability
+     if (window.addEventListener)
+     window.addEventListener("load", downloadJSAtOnload, false);
+     else if (window.attachEvent)
+     window.attachEvent("onload", downloadJSAtOnload);
+     else window.onload = downloadJSAtOnload;
+  </script>
+
+  <script>
+    // Add a script element as a child of the body
+     function downloadJSAtOnload() {
+     var element = document.createElement("script");
+     element.src = "{{ site.baseurl }}../../assets/js/head_scroll.js";
      document.body.appendChild(element);
      }
 
