@@ -42,6 +42,16 @@
       <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-yellow">Sublime Attitudes</a></li>
     {% endif %}
     <li class="divider"></li>
+    {% if page.active == "metta-sutta-pali" %}
+      <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-purple active">Metta Sutta (Pāḷi)</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-purple">Metta Sutta (Pāḷi)</a></li>
+    {% endif %}
+    {% if page.active == "metta-sutta-eng" %}
+      <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-purple active">Metta Sutta (Eng.)</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-purple">Metta Sutta (Eng.)</a></li>
+    {% endif %}
     {% if page.active == "chant-of-metta" %}
       <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-purple active">The Chant of Metta</a></li>
     {% else %}
@@ -171,12 +181,22 @@
                         <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-yellow">Sublime Attitudes</a></li>
                       {% endif %}
                       <li class="divider"></li>
+                      {% if page.active == "metta-sutta-pali" %}
+                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-purple active">Metta Sutta (Pāḷi)</a></li>
+                      {% else %}
+                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-purple">Metta Sutta (Pāḷi)</a></li>
+                      {% endif %}
+                      {% if page.active == "metta-sutta-eng" %}
+                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-purple active">Metta Sutta (Eng.)</a></li>
+                      {% else %}
+                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-purple">Metta Sutta (Eng.)</a></li>
+                      {% endif %}
                       {% if page.active == "chant-of-metta" %}
                         <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-purple active">The Chant of Metta</a></li>
                       {% else %}
                         <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-purple">The Chant of Metta</a></li>
                       {% endif %}
-                      <li><a href="#"></a></li>
+                      <li class="divider"></li>
                     </ul>
                   </div>
                 </li>
@@ -214,6 +234,7 @@
                       {% else %}
                         <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-yellow">Sublime Attitudes</a></li>
                       {% endif %}
+                      <li class="divider"></li>
                     </ul>
                   </div>
                 </li>
@@ -251,6 +272,7 @@
                       {% else %}
                         <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-yellow">Sublime Attitudes</a></li>
                       {% endif %}
+                      <li class="divider"></li>
                     </ul>
                   </div>
                 </li>
