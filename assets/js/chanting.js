@@ -46,6 +46,10 @@ if (data && data.val()) {
       if (time !== null) {
         var timeNode = $('<div class="time" data-time="' + time + '">' + timeToHuman(time) + '</div>');
         node.on("click", function(event) {
+          // Binding event
+          audio.oncanplay = function() {
+              console.log("Can start playing audio");
+          };
           audio.currentTime = time;
           audio.play();
         });
