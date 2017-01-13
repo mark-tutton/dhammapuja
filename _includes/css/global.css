@@ -13,8 +13,8 @@ h2 { font-weight: 500; line-height: 1.3; }
 /*
  * Nav Menu
  */
-nav li > a.active { color: #000 !important; }
-.dropdown-content.active li > a.active { color: #000 !important; }
+nav li > a.active { color: #8CB3CD  !important; }
+.dropdown-content.active li > a.active { color: #8CB3CD  !important; }
 .night nav li > a.active { color: #8CB3CD !important; }
 .night .dropdown-content.active li > a.active { color: #8CB3CD !important;}
 
