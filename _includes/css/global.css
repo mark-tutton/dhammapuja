@@ -47,7 +47,7 @@ nav .brand-logo {
  * Night Mode
  */
 /* site wide */
-  .day { background-color: #EEEEEE; color: #373a3c; }
+  .day { background-color: #FFFFFF; color: #373a3c; }
   .night { background-color: #262626; color: #f2f1ef; }
   .night h3 { color: #f2f1ef; }
   .night p { color: #fefefe; }
