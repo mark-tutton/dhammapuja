@@ -7,14 +7,14 @@
   <script src="{{ site.baseurl }}../../assets/js/flowtype.js" type="text/javascript"></script>
 
   <script>
-    // Add a script element as a child of the body
+    /* Add a script element as a child of the body */
      function downloadJSAtOnload() {
      var element = document.createElement("script");
      element.src = "{{ site.baseurl }}../../assets/js/jquery/jquery.smooth-scroll.js";
      document.body.appendChild(element);
      }
 
-     // Check for browser support of event handling capability
+     /* Check for browser support of event handling capability */
      if (window.addEventListener)
      window.addEventListener("load", downloadJSAtOnload, false);
      else if (window.attachEvent)
@@ -23,14 +23,14 @@
   </script>
 
   <script>
-    // Add a script element as a child of the body
+    /* Add a script element as a child of the body */
      function downloadJSAtOnload() {
      var element = document.createElement("script");
      element.src = "{{ site.baseurl }}../../assets/js/night_mode.js";
      document.body.appendChild(element);
      }
 
-     // Check for browser support of event handling capability
+     /* Check for browser support of event handling capability */
      if (window.addEventListener)
      window.addEventListener("load", downloadJSAtOnload, false);
      else if (window.attachEvent)
@@ -39,14 +39,14 @@
   </script>
 
   <script>
-    // Add a script element as a child of the body
+    /* Add a script element as a child of the body */
      function downloadJSAtOnload() {
      var element = document.createElement("script");
      element.src = "{{ site.baseurl }}../../assets/js/head_scroll.js";
      document.body.appendChild(element);
      }
 
-     // Check for browser support of event handling capability
+     /* Check for browser support of event handling capability */
      if (window.addEventListener)
      window.addEventListener("load", downloadJSAtOnload, false);
      else if (window.attachEvent)
@@ -80,39 +80,39 @@
   </script>
 
   <script>
-    // Initialize collapse button
+    /* Initialize collapse button */
     $(".button-collapse").sideNav({
       menuWidth: 260,
       edge: 'right',
       closeOnClick: true,
       draggable: true
     });
-    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-    //$('.collapsible').collapsible();
+    /*Initialize collapsible (uncomment the line below if you use the dropdown variation) */
+    /*$('.collapsible').collapsible();*/
 
   </script>
 
   <script type="text/javascript">
-  // pauses the track on button click-'jump-to-top'
+  /* pauses the track on button click-'jump-to-top' */
     var audioElem = document.getElementById('track');
 
-    // Initializing values
+    /* Initializing values */
     var onplaying = true;
     var onpause = false;
 
-    // On audio playing toggle values
+    /* On audio playing toggle values */
     audioElem.onplaying = function() {
       onplaying = true;
       onpause = false;
     };
 
-    // On audio pause toggle values
+    /* On audio pause toggle values */
     audioElem.onpause = function() {
       onplaying = false;
       onpause = true;
     };
 
-    // Pause audio function
+    /* Pause audio function */
     function togSound () {
       if (!audioElem.paused) {
           if(!onpause){

@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
@@ -11,8 +14,7 @@
 
   <main id="main">
     {% include tog_invert.html %}
-    {{ content }}
-
+      {{ content }}
   </main>
 
   {% include chant-scripts.html %}
