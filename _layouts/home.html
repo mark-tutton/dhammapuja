@@ -47,20 +47,25 @@ layout: compress
   <script>
     var $ = jQuery.noConflict();
     $(document).ready(function(){
-      $('p').flowtype({
+      $('.memo').flowtype({
+        minimum   : 400,
+        maximum   : 1200,
+        minFont   : 12,
+        maxFont   : 40,
+        fontRatio : 23
+      }),
+      $('.credits').flowtype({
+        minimum   : 400,
+        maximum   : 1200,
+        minFont   : 12,
+        maxFont   : 40,
+        fontRatio : 25
+      }),
+      $('.license').flowtype({
         minimum   : 320,
         maximum   : 1200,
         minFont   : 14,
-        maxFont   : 40,
-        fontRatio : 22
-      });
-      $('h1').flowtype({
-        fontRatio : 15
-      }),
-      $('h2').flowtype({
-        fontRatio : 20
-      }),
-      $('h3').flowtype({
+        maxFont   : 30,
         fontRatio : 30
       })
     });
