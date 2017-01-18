@@ -12,6 +12,10 @@ footer { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0
 .page-footer a { color: #8CB3CD; }
 .night .page-footer { background-color: #333333 !important; }
 .night .footer-copyright { background-color: #222222 !important;}
+.page-footer { background-color: #F7F7F7 !important;}
+.day .page-footer { background-color: #F7F7F7 !important; }
+.footer-copyright { background-color: #E6E6E6 !important; }
+.day .footer-copyright { background-color: #E6E6E6 !important; }
 .day .page-footer h5 { color: #000000; }
 .day .page-footer p { color: #212132; }
 .night .page-footer h5 { color: #f2f1ef; }
