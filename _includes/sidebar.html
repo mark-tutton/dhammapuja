@@ -232,15 +232,10 @@
                   <a class="collapsible-header waves-effect waves-teal slide-title">Morning<i class="fa ent-chevron-small-down"></i></a>
                   <div class="collapsible-body">
                     <ul>
-                      {% if page.active == "eve - pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-teal active">Evening - Pali</a></li>
+                      {% if page.active == "morning" %}
+                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-teal active">Morning</a></li>
                       {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-teal">Evening - Pali</a></li>
-                      {% endif %}
-                      {% if page.active == "eve - eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-teal active">Evening - English</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-teal">Evening - English</a></li>
+                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-teal">Morning</a></li>
                       {% endif %}
                       {% if page.active == "body-contemplation" %}
                         <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-green active">Body Contemplation</a></li>
