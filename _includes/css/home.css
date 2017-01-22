@@ -21,17 +21,36 @@ footer { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0
 .night .page-footer h5 { color: #f2f1ef; }
 .night .page-footer p { color: #f2f1ef; }
 
+.memo { font-size: 16px; }
+.credits { font-size: 13px; }
 /**
  * Chanting Home
  */
 .card-title a { font-weight: 400;}
 .night .card-title a { color: #fefefe; }
-.night .card { background-color: #151616; }
+.night .card { background-color: #434343; }
 .card {
   min-height: 20%;
   flex-wrap: wrap;
   flex: initial;
 }
+
+/*
+ * Index
+ */
+#home_chant_link {
+  color: #ffab40;
+  transition: color .3s ease;
+  text-transform: uppercase;
+
+  display: block;
+
+   text-decoration: none;
+   cursor: pointer;
+   overflow: hidden;
+
+  border: 1px solid red;
+  }
 
 .contribute-contain {
   bottom: 20px;

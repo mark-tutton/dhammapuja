@@ -64,10 +64,13 @@ nav .brand-logo {
 /*
  * Floating Botton
  */
-.btn-floating { margin-bottom: 1.5rem; }
+.btn-floating { margin-bottom: 1.5rem; background-color: #e67e22; }
+.night .btn-floating { background-color: #d35400; }
+
 .fixed-action-btn { font-size: 2rem !important; }
-.night .ent-light-up {background-color: #009688;  color: #FFC107 !important; }
-.day .ent-cog { color: #050709; }
-.day .ent-chevron-up { color: #050709; }
-.day .ent-moon { color: #050709; }
-.ent-chevron-up { background-color: #00BCD4; }
+.night .ent-light-up { background-color: #d35400; color: #FFF176 !important; }
+.day .ent-light-up { background-color: #e67e22; }
+.day .ent-moon { background-color: #e67e22; color: #050709; }
+.day .ent-cog { background-color: #e67e22; }
+.ent-chevron-up { background-color: #e67e22; }
+.night .ent-chevron-up { background-color: #d35400; }
