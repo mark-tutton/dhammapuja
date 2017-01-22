@@ -7,22 +7,28 @@ body {
   flex-direction: column;
 }
 main { flex: 1 0 auto; }
+
 footer { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2); }
 
-.page-footer a { color: #8CB3CD; }
-.night .page-footer { background-color: #333333 !important; }
-.night .footer-copyright { background-color: #222222 !important;}
 .page-footer { background-color: #F7F7F7 !important;}
 .day .page-footer { background-color: #F7F7F7 !important; }
+.night .page-footer { background-color: #333333 !important; }
+
 .footer-copyright { background-color: #E6E6E6 !important; }
 .day .footer-copyright { background-color: #E6E6E6 !important; }
+.night .footer-copyright { background-color: #222222 !important;}
+
+.page-footer a { color: #8CB3CD; }
+
 .day .page-footer h5 { color: #000000; }
-.day .page-footer p { color: #212132; }
 .night .page-footer h5 { color: #f2f1ef; }
+
+.day .page-footer p { color: #212132; }
 .night .page-footer p { color: #f2f1ef; }
 
 .memo { font-size: 16px; }
 .credits { font-size: 13px; }
+
 /**
  * Chanting Home
  */
@@ -38,19 +44,51 @@ footer { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0
 /*
  * Index
  */
+
 #home_chant_link {
-  color: #ffab40;
-  transition: color .3s ease;
+  font-size: 3em;
+  font-weight: 800;
   text-transform: uppercase;
+  text-decoration: none;
+  color: white /*#ffab40*/;
+  background-color: transparent;
+  letter-spacing: .5em;
 
-  display: block;
+  vertical-align: middle;
+  text-align: center;
+  transition: color .3s ease;
+  cursor: pointer;
 
-   text-decoration: none;
-   cursor: pointer;
-   overflow: hidden;
+  border: 2px solid black;
+}
+#home_chant_link:hover {
+  background-color: white;
+  color: black;
+}
 
-  border: 1px solid red;
-  }
+.vertical-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.align-item {
+  max-width: 50%;
+}
+
+.align-item--top { align-self: flex-start; }
+.align-item--bottom { align-self: flex-end; }
+.btn {
+  display: inline-block;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 2px solid transparent;
+  transition: all .2s ease-in-out;
+}
 
 .contribute-contain {
   bottom: 20px;

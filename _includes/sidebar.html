@@ -136,17 +136,17 @@
           <a href="#" data-activates="slide-out" class="button-collapse right" aria-label="Mobile navigation menu toggle"><i class="ent-menu" aria-hidden="true"></i></a>
           <ul class="right hide-on-med-and-down">
             {% if page.active == "home" %}
-              <li class="waves-effect waves-light"><a class="active" aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
+              <li class="waves-effect waves-light hoverable"><a class="active" aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
             {% else %}
-              <li class="waves-effect waves-light"><a  aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
+              <li class="waves-effect waves-light hoverable"><a  aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
             {% endif %}
             {% if page.active == "chant-home" %}
-              <li><a class="dropdown-button active" href="#!" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+              <li><a class="dropdown-button active hoverable" href="#!" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
             {% else %}
-              <li><a class="dropdown-button" href="#!" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+              <li><a class="dropdown-button hoverable" href="#!" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
             {% endif %}
-              <li><a class="dropdown-button" href="#!" aria-label="Morning Chanting list dropdown" data-activates="dropdown-morn" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Morning<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
-              <li><a class="dropdown-button" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+              <li><a class="dropdown-button hoverable" href="#!" aria-label="Morning Chanting list dropdown" data-activates="dropdown-morn" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Morning<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+              <li><a class="dropdown-button hoverable" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
           </ul>
           <ul id="slide-out" class="side-nav">
             {% if page.active == "home" %}
