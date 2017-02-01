@@ -1,0 +1,22 @@
+#home_chant_link {
+  color: white; //#FFAB40
+  background-color: transparent;
+  border: 2px solid black;
+
+  font: {
+    size: 3em;
+    weight: 800;
+  }
+
+  text: {
+    decoration: none;
+    transform: uppercase;
+    align: center;
+  }
+
+  letter-spacing: .5em;
+  transition: color .3s ease;
+  vertical-align: middle;
+  cursor: pointer;
+
+}

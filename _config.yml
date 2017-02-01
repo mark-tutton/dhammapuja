@@ -26,6 +26,10 @@ gems:
   - jekyll-assets
   - jekyll-seo-tag
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 assets:
   compress:
     css: true

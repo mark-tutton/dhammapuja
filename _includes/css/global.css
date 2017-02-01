@@ -61,6 +61,8 @@ nav .brand-logo {
   nav ul a { color: #050709; }
   .day nav ul a { color: #050709; }
 
+
+
 /*
  * Floating Botton
  */
@@ -70,6 +72,7 @@ nav .brand-logo {
 .fixed-action-btn { font-size: 2rem !important; }
 .night .ent-light-up { background-color: #d35400; color: #FFF176 !important; }
 .day .ent-light-up { background-color: #e67e22; }
+
 .day .ent-moon { background-color: #e67e22; color: #050709; }
 .day .ent-cog { background-color: #e67e22; }
 .ent-chevron-up { background-color: #e67e22; }

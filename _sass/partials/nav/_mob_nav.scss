@@ -1,0 +1,35 @@
+
+
+#sidenav-overlay {
+  z-index: 1; /* removes the sidenav overlay shadow */
+}
+
+.button-collapse {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+// hamburger
+.ent-menu {
+  color: $day_ent_menu;
+
+  .night & {
+    color: $night_ent_menu;
+  }
+}
+
+// sidenav
+
+.side-nav {
+  .night & {
+    background-color: $night_side_nav_bg;
+
+    & a {
+      color: $night_side_nav_a;
+    }
+
+    & .collapsible-body {
+      background-color: $night_side_nav_coll_bod_bg;
+    }
+  }
+}

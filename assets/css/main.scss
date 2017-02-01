@@ -1,0 +1,25 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+
+// Modules and Variables
+//@import "modules/base.scss";
+@import "modules/colours";
+@import "modules/mixins";
+
+// Partials
+@import "partials/typography";
+@import "partials/nav/desk_nav";
+@import "partials/nav/mob_nav";
+@import "partials/float_button";
+@import "partials/footer";
+@import "partials/chanting";
+@import "partials/home";
+@import "partials/home_chant";
+@import "partials/global";
+
+// ...
+
+// Third-party
+@import "entypo.css";

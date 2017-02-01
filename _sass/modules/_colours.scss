@@ -1,0 +1,67 @@
+/**************
+*    Global   *
+**************/
+
+// Navbar Colours
+  $day_nav_active: #8CB3CD;
+  $night_nav_active: #4495d4;
+
+  $night_dropdown_content_bg: #444444;
+  $night_nav_wrapper_bg: #333333;
+
+  $night_nav_brand_logo: #F2F1EF;
+
+  $day_nav_ul_a: #050709;
+  $day_ul_a: $day_nav_ul_a;
+  $night_nav_ul_a: #fff;
+
+  // Mobile Nav
+    // hamburger
+    $night_ent_menu: rgba(255, 255, 255, 1);
+    $day_ent_menu: rgba(0, 0, 0, 0.54);
+
+    // sidenav
+    $night_side_nav_bg: #393939;
+    $night_side_nav_a: #fff;
+    $night_side_nav_coll_bod_bg: #494949;
+
+// Body Colours
+  $day_body_bg: #F7F7F7;
+  $night_body_bg: #333333;
+
+  $day_body_txt: #373A3C;
+  $night_body_txt: #E6E6E6;
+
+// Headers & Paragraph Colours
+
+  $night_h3: #F2F1EF;
+  $night_p: #FEFEFE;
+
+// Floating Button
+  $day_fl_button_bg: #E67E22;
+  $night_fl_button_bg: #D35400;
+
+  $night_ent_light_up: #FFF176;
+  $day_ent_moon: #050709;
+
+// Chanting
+
+  $time: green;
+  $ul_display_time: #CCCCCC;
+
+  $day_highlight: #CCFFCC; //#DDFFDD
+  $night_highlight: #CCFFE6; //#4196B0;
+  $night_highlight_text: #050709;
+
+// Footer
+  $day_footer_bg: #F7F7F7;
+  $night_footer_bg: #333333;
+
+  $day_footer_copy_bg: #E6E6E6;
+  $night_footer_copy_bg: #222222;
+
+  $footer_a: #8CB3CD;
+  $day_footer_h5: #000000;
+  $night_footer_h5: #F2F1EF;
+  $day_footer_p: #212132;
+  $night_footer_p: #F2F1Ef;

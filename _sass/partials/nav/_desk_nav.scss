@@ -1,0 +1,71 @@
+
+
+$day_nav_active: #8CB3CD;
+$night_nav_active: #4495d4;
+
+.brand-logo {
+  letter-spacing: .09em;
+
+  .night & {
+    color: $night_nav_brand_logo;
+  }
+}
+
+.dropdown-content {
+  &.active li > a.active {
+    color: $day_nav_active !important;
+
+    .night & {
+      color: $night_nav_active !important;
+    }
+  }
+
+  .night & {
+    background-color: $night_dropdown_content_bg;
+  }
+}
+
+.nav-wrapper {
+  .night & {
+    background-color: $night_nav_wrapper_bg !important;
+  }
+}
+
+nav {
+  li > a {
+    letter-spacing: .08em;
+
+    &.active {
+      color: $day_nav_active;
+
+      .night & {
+        color: $night_nav_active;
+      }
+    }
+
+  }
+
+  .brand-logo {
+    padding-left: 1%;
+    color: #050709;
+    font-weight: 600;
+  }
+
+  ul a {
+    color: $day_nav_ul_a;
+
+    .night & {
+      color: $night_nav_ul_a !important;
+    }
+  }
+
+  .day & ul a {
+    color: $day_nav_ul_a;
+  }
+}
+
+.nav-up { top: -70px; }
+
+.navbar-fixed {
+  transition: top 0.2s ease-in-out;
+}

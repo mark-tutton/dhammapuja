@@ -1,0 +1,34 @@
+
+.btn-floating {
+  margin-bottom: 1.5rem;
+  background-color: $day_fl_button_bg;
+
+  .night & {
+    background-color: $night_fl_button_bg;
+  }
+}
+
+.fixed-action-btn {
+  font-size: 2rem;
+}
+
+.ent-light-up {
+  color: $night_ent_light_up;
+  background-color: $day_fl_button_bg;
+
+  .night & {
+    background-color: $night_fl_button_bg;
+  }
+}
+
+.ent-moon {
+  color: $day_ent_moon;
+}
+
+.ent-cog, .ent-chevron-up, .ent-moon {
+  background-color: $day_fl_button_bg;
+
+  .night & {
+    background-color: $night_fl_button_bg;
+  }
+}

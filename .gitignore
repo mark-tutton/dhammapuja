@@ -1,6 +1,8 @@
 # Jekyll build destination
 _site
 
+.sass-cache
+
 # OS generated files #
 ######################
 .DS_Store

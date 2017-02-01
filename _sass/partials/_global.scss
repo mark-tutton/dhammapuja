@@ -1,0 +1,17 @@
+
+body, .day {
+  background-color: $day_body_bg;
+  color: $day_body_txt;
+}
+
+.night {
+  background-color: $night_body_bg;
+  color: $night_body_txt;
+
+  h3 {
+    color: $night_h3;
+  }
+  p {
+    color: $night_p;
+  }
+}

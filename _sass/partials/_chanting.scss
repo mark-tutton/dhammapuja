@@ -1,0 +1,206 @@
+#data { display: none; }
+
+#audio {
+  background-color: #000;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 30px;
+
+  audio {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#time {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+
+  display: none;
+  width: 3.3em;
+  height: 1em;
+  padding: 0.2em;
+
+  text-align: right;
+  vertical-align: bottom;
+
+  color: $time;
+  border: {
+    top: 5px solid $time;
+    left: 5px solid $time;
+  }
+  font-size: 3em;
+}
+
+ul.display {
+  position: relative;
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  margin: 0 auto;
+
+  @media (min-width: 750px) {
+    & {
+      padding: 0 2em;
+    }
+  }
+  @media (min-width: 1000px) {
+    & {
+      padding: 0 5em;
+    }
+  }
+
+  p {
+    margin: 0.5em auto;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    line-height: 2.0;
+    letter-spacing: 0.060em;
+
+    .night & {
+      letter-spacing: 0.070em;
+    }
+
+    & .un {
+      text-decoration: underline;
+    }
+
+    & span.t {
+      position: relative;
+      white-space: pre;
+
+      & > span {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -200%;
+        width: 500%;
+        height: 100%;
+
+        & > span {
+          display: block;
+          width: 0;
+          height: 0;
+          margin: 0 auto;
+
+          border-style: solid;
+        }
+        & > .u {
+          border: {
+            width: 0 0.25em 0.15em 0.25em;
+            color: transparent transparent #FF8800 transparent;
+          }
+        }
+        & > .d {
+          margin-top: 1.2em;
+
+          border: {
+            width: 0.15em 0.25em 0 0.25em;
+            color: blue transparent transparent transparent;
+          }
+        }
+        & > .uu {
+          border: {
+            width: 0 0.5em 0.2em 0.5em;
+            color: transparent transparent #FF8800 transparent;
+          }
+        }
+        & > .dd {
+          margin-top: 1.2em;
+
+          border: {
+            width: 0.2em 0.5em 0 0.5em;
+            color: blue transparent transparent transparent;
+          }
+        }
+        .night & > .d {
+          border-color: #E91E63 transparent transparent transparent;
+        }
+      }
+    }
+
+  }
+
+  h1, h2, h3 {
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.025em;
+
+    .night & {
+      letter-spacing: 0.035em;
+    }
+  }
+
+  h3 {
+    margin-bottom: 8%;
+  }
+
+  li {
+    position: relative;
+
+    margin: 0;
+    padding: 0 2em;
+
+    list-style: none;
+
+    cursor: pointer;
+    -webkit-transition: background 1s linear;
+    -moz-transition: background 1s linear;
+    -ms-transition: background 1s linear;
+    -o-transition: background 1s linear;
+    transition: background 1s linear;
+
+    border-radius: 20px;
+    text-overflow: ellipsis;
+
+    & p, h2, h3 {
+      @media (min-width: 1000px) {
+        padding: 0.1em 0;
+      }
+      @media (max-width: 750px) {
+        padding: 0.1em 0;
+      }
+    }
+  }
+
+  .time {
+    position: absolute;
+    display: none;
+    top: 2.4em;
+    left: -4em;
+    width: 3em;
+
+    text-align: right;
+
+    color: $ul_display_time;
+
+    font-size: 0.5em;
+  }
+
+  .en {
+    margin-left: 1em;
+    font-style: italic;
+  }
+
+  .highlight {
+    background-color: $day_highlight;
+
+    .night & {
+      background-color: $night_highlight;
+
+      & p, h1, h2, h3 { color: $night_highlight_text; }
+    }
+
+  }
+}
+
+.stud {
+  color: rgb(226, 173, 56);
+}

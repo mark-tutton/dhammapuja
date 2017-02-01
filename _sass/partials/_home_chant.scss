@@ -1,0 +1,19 @@
+.card-title {
+  a {
+    font-weight: 400;
+
+    .night & {
+      color: #FEFEFE;
+    }
+  }
+}
+
+.card {
+  min-height: 20%;
+  flex-wrap: wrap;
+  flex: initial;
+
+  .night & {
+    background-color: #434343;
+  }
+}
