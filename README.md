@@ -6,15 +6,16 @@
 
 >My attempt at updating http://pali.ejinjue.org/ to Bootstrap 3 and transitioning it to GitHub pages.
 
-Updating https://github.com/job-talk/buddhism-resource to Bootstrap v4 and Jekyll
----
+Updating https://github.com/job-talk/buddhism-resource to materializecss and Jekyll
+
+***
 
 ## Credits
 
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) ['Dhamma Schtuff'](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
----
+***
 
 #### What does Dhammapuja mean?
 
@@ -40,22 +41,6 @@ The worship through ( practice of ) the Dhamma is the
 better of the two” ( A. II ).
 
 - http://urbandharma.org/pdf/palidict.pdf pg. 273/402
-
-***
-
-## Local testing
-
-
-####For jekyll
- - navigate to ./dhamma
- - run
-    ```bundle exec jekyll -s --baseurl ''```
-
-####For browser-sync
- - in a new terminal, navigate to ./dhamma/_site
- - run
-    ```browser-sync start --server --files="**/*"```
-
 
 ***
 
