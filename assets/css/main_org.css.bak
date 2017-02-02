@@ -1,8 +1,0 @@
----
----
-/*
-{% include css/entypo.css %}
-{% include css/global.css %}
-{% include css/chanting.css %}
-{% include css/home.css %}
-*/

@@ -9,12 +9,37 @@
 Updating https://github.com/job-talk/buddhism-resource to Bootstrap v4 and Jekyll
 ---
 
-
 ## Credits
 
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) ['Dhamma Schtuff'](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
+---
+
+#### What does Dhammapuja mean?
+
+Pūjā : (1) honour, respect, homage, (2) worship,
+devotional observances, devotional offerings; also
+offerings to monks.
+   (1) The Mahā-mangala Sutta (Sn. 259) says that
+“Honour and respect towards those worthy of it, is
+conducive to great blessing” ( pūjā ca pūjaniyesu etaṃ mangalam uttamaṃ ). See Dhp. 195f.
+
+2) The Buddha did not think much of mere outer
+worship. “Not thus, Ananda, is the Tathāgata respected,
+venerated, esteemed, worshipped and honoured in the
+highest degree. But, Ananda, whatsoever bhikkhu or
+bhikkhuni, lay man or lay woman, abides by the
+Teaching, lives uprightly in the Teaching, walks in the
+way of the Teaching, it is by him that the Tathāgata is
+respected, venerated, esteemed, worshipped and
+honoured in the highest degree” (D. 16). – “There are
+two kinds of worship: in a material way ( āmisa-pūjā )
+and through ( practice of ) the Dhamma ( dhamma-pūjā ).
+The worship through ( practice of ) the Dhamma is the
+better of the two” ( A. II ).
+
+- http://urbandharma.org/pdf/palidict.pdf pg. 273/402
 
 ***
 

@@ -4,7 +4,21 @@
   <a class="contribute-close" href="#">X</a>
   <div class="contribute">
     <span>
-      <a class="contribute-text" href="#!"> This site is under development. Please feel free to contribute on <a href="https://github.com/job-talk/dhammapuja">Github</a></a>
+      <span class="contribute-text" href="#!"> This site is under development.
+        <br /><br />
+         Please feel free to contribute on <a href="https://github.com/job-talk/dhammapuja">Github</a></span>
     </span>
   </div>
 </div>
+
+goes on index.html page
+<script>
+$('.pushpin').each(function() {
+  var $this = $(this);
+  var $target = $('#' + $(this).attr('data-target'));
+  $this.pushpin({
+    top: $target.offset().top,
+    bottom: $target.offset().top + $target.outerHeight() - $this.height()
+  });
+});
+</script>
