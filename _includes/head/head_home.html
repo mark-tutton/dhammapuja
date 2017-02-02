@@ -22,11 +22,6 @@
     loadCSS( "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" );
   </script>
 
-  <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" integrity="sha256-fGJODaGYSINeMscXSbyu3k+sCt9ON9XOpsVOcvco3Qg=" crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
-  </noscript>
-
   <style type="text/css">
     body {
       background-image: linear-gradient(to right, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
@@ -41,7 +36,15 @@
     footer.page-footer {
       margin-top: 0;
     }
+
+    {% include head/styles/inline.css %}
+
   </style>
+
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" integrity="sha256-fGJODaGYSINeMscXSbyu3k+sCt9ON9XOpsVOcvco3Qg=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
+  </noscript>
 
   {% seo %}
 

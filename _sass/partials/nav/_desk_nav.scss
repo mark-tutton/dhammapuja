@@ -4,7 +4,7 @@ $day_nav_active: #8CB3CD;
 $night_nav_active: #4495d4;
 
 .brand-logo {
-  letter-spacing: .09em;
+  //letter-spacing: .09em;
 
   .night & {
     color: $night_nav_brand_logo;
@@ -33,10 +33,10 @@ $night_nav_active: #4495d4;
 
 nav {
   li > a {
-    letter-spacing: .08em;
+    //letter-spacing: .08em;
 
     &.active {
-      color: $day_nav_active;
+      //color: $day_nav_active;
 
       .night & {
         color: $night_nav_active;
@@ -45,14 +45,14 @@ nav {
 
   }
 
-  .brand-logo {
+  /*.brand-logo {
     padding-left: 1%;
     color: #050709;
     font-weight: 600;
-  }
+  }*/
 
   ul a {
-    color: $day_nav_ul_a;
+    //color: $day_nav_ul_a;
 
     .night & {
       color: $night_nav_ul_a !important;
