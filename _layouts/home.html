@@ -21,10 +21,7 @@ layout: compress
 
   {% include footer.html %}
 
-  <!-- jQuery CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js" integrity="sha256-pVJ6toFhRjat2LSvxugXvMnNDp33i00nfn0CpPXZevs=" crossorigin="anonymous"></script>
+  {% include common_scripts.html %}
 
   <script src="{{ site.baseurl }}/assets/js/flowtype.js" type="text/javascript"></script>
 
@@ -55,18 +52,6 @@ layout: compress
         fontRatio : 30
       })
     });
-  </script>
-
-  <script>
-    /* Initialize collapse button */
-    $(".button-collapse").sideNav({
-      menuWidth: 260,
-      edge: 'right',
-      closeOnClick: true,
-      draggable: true
-    });
-    /* Initialize collapsible (uncomment the line below if you use the dropdown variation) */
-    $('.collapsible').collapsible();
   </script>
 
 </body>
