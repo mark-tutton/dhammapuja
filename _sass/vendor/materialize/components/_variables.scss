@@ -46,8 +46,8 @@ $link-color: color("light-blue", "darken-1") !default;
 // 2. Badges
 // ==========================================================================
 
-$badge-bg-color: $secondary-color !default;
-$badge-height: 22px !default;
+// $badge-bg-color: $secondary-color !default;
+// $badge-height: 22px !default;
 
 
 // 3. Buttons
@@ -117,12 +117,12 @@ $chip-margin: 5px !default;
 // 7. Date Picker
 // ==========================================================================
 
-$datepicker-weekday-bg: darken($secondary-color, 7%) !default;
-$datepicker-date-bg: $secondary-color !default;
-$datepicker-year: rgba(255, 255, 255, .4) !default;
-$datepicker-focus: rgba(0,0,0, .05) !default;
-$datepicker-selected: $secondary-color !default;
-$datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !default;
+// $datepicker-weekday-bg: darken($secondary-color, 7%) !default;
+// $datepicker-date-bg: $secondary-color !default;
+// $datepicker-year: rgba(255, 255, 255, .4) !default;
+// $datepicker-focus: rgba(0,0,0, .05) !default;
+// $datepicker-selected: $secondary-color !default;
+// $datepicker-selected-outfocus: desaturate(lighten($secondary-color, 35%), 15%) !default;
 
 
 // 8. Dropdown
@@ -137,7 +137,7 @@ $dropdown-item-height: 50px !default;
 // 9. Fonts
 // ==========================================================================
 
-$roboto-font-path: "../fonts/roboto/" !default;
+// $roboto-font-path: "../fonts/roboto/" !default;
 
 
 // 10. Forms
@@ -240,15 +240,15 @@ $sidenav-line-height: $sidenav-item-height !default;
 // 15. Photo Slider
 // ==========================================================================
 
-$slider-bg-color: color('grey', 'base') !default;
-$slider-bg-color-light: color('grey', 'lighten-2') !default;
-$slider-indicator-color: color('green', 'base') !default;
+// $slider-bg-color: color('grey', 'base') !default;
+// $slider-bg-color-light: color('grey', 'lighten-2') !default;
+// $slider-indicator-color: color('green', 'base') !default;
 
 
 // 16. Spinners | Loaders
 // ==========================================================================
 
-$spinner-default-color: $secondary-color !default;
+// $spinner-default-color: $secondary-color !default;
 
 
 // 17. Tabs
@@ -269,9 +269,9 @@ $table-striped-color: #f2f2f2 !default;
 // 19. Toasts
 // ==========================================================================
 
-$toast-height: 48px !default;
-$toast-color: #323232 !default;
-$toast-text-color: #fff !default;
+// $toast-height: 48px !default;
+// $toast-color: #323232 !default;
+// $toast-text-color: #fff !default;
 
 
 // 20. Typography
