@@ -1,6 +1,8 @@
-#home_chant_link {
-  color: white; //#FFAB40
-  background-color: transparent;
+#home-chant-link {
+  position: relative;
+
+  color: white;//#ffab40;
+  //background-color: white;
   border: 2px solid black;
 
   font: {
@@ -11,12 +13,12 @@
   text: {
     decoration: none;
     transform: uppercase;
-    align: center;
+    //align: center;
   }
 
-  letter-spacing: .5em;
-  transition: color .3s ease;
-  vertical-align: middle;
+  letter-spacing: .5px;
+  //transition: color .3s ease;
+  //vertical-align: middle;
   cursor: pointer;
 
 }
