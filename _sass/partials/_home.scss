@@ -1,13 +1,11 @@
 #home-chant-link {
-  position: relative;
 
-  color: white;//#ffab40;
-  //background-color: white;
-  border: 2px solid black;
+  color: #fff;//#ffab40;
+  border: 2px solid #fff;
 
   font: {
-    size: 3em;
-    weight: 800;
+    size: 2em;
+    weight: bold;
   }
 
   text: {
@@ -16,9 +14,30 @@
     //align: center;
   }
 
-  letter-spacing: .5px;
-  //transition: color .3s ease;
-  //vertical-align: middle;
+  letter-spacing: 3px;
+
   cursor: pointer;
 
+  &:hover {
+    background-color: #fff;
+    color: #111;
+  }
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  max-width: 50%;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
 }
