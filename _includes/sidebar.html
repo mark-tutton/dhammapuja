@@ -148,16 +148,17 @@
               <li><a class="dropdown-button" href="#!" aria-label="Morning Chanting list dropdown" data-activates="dropdown-morn" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Morning<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
               <li><a class="dropdown-button" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
           </ul>
+
           <ul id="slide-out" class="side-nav">
             {% if page.active == "home" %}
-              <li><a href="{{ site.baseurl }}/" aria-label="Home" class="waves-effect waves-light active slide-title"><i class="ent-home" aria-hidden="true"></i>Home</a></li>
+              <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light active"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
             {% else %}
-              <li><a href="{{ site.baseurl }}/" aria-label="Home" class="waves-effect waves-light slide-title"><i class="ent-home" aria-hidden="true"></i>Home</a></li>
+              <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
             {% endif %}
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
-                  <a class="collapsible-header waves-effect waves-light slide-title">Chanting<i class="fa ent-chevron-small-down"></i></a>
+                  <a class="collapsible-header">Chanting<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Chanting dropdown menu"></i></a>
                   <div class="collapsible-body">
                     <ul>
                       {% if page.active == "morning" %}
@@ -229,7 +230,7 @@
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
-                  <a class="collapsible-header waves-effect waves-light slide-title">Morning<i class="fa ent-chevron-small-down"></i></a>
+                  <a class="collapsible-header waves-effect waves-light">Morning<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Morning chanting dropdown menu"></i></a>
                   <div class="collapsible-body">
                     <ul>
                       {% if page.active == "morning" %}
@@ -274,7 +275,7 @@
             <li class="no-padding">
               <ul class="collapsible collapsible-accordion">
                 <li>
-                  <a class="collapsible-header waves-effect waves-light slide-title">Evening<i class="fa ent-chevron-small-down"></i></a>
+                  <a class="collapsible-header waves-effect waves-light">Evening<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Evening chanting dropdown menu"></i></a>
                   <div class="collapsible-body">
                     <ul>
                       {% if page.active == "eve - pali" %}
