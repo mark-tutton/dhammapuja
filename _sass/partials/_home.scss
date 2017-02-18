@@ -1,6 +1,13 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+}
+
+
 #home-chant-link {
 
-  color: #fff;//#ffab40;
+  color: #fff;/*#ffab40;*/
   border: 2px solid #fff;
 
   font: {
@@ -10,8 +17,9 @@
 
   text: {
     decoration: none;
-    transform: uppercase;
-    //align: center;
+    -webkit-transform: uppercase;
+            transform: uppercase;
+    /*align: center;*/
   }
 
   letter-spacing: 3px;
@@ -25,9 +33,15 @@
 }
 
 .aligner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .aligner-item {
@@ -35,9 +49,11 @@
 }
 
 .aligner-item--top {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .aligner-item--bottom {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
