@@ -32,13 +32,13 @@ if (data && data.val()) {
             depth = match[1].length,
             text  = match[2];
         console.log(match);
-        node = $('<li><h' + depth + '>' + text + '</h' + depth + '></li>');
+        node = $('<li><h' + depth +'>' + text + '</h' + depth + '></li>');
       } else {
         var pclass;
         if (indent.length > 1) {
-          pclass = "en";
+          pclass = "en flow-text";
         } else {
-          pclass = "pali";
+          pclass = "pali flow-text";
         }
         text = vocalize(text);
         text = underline(text);

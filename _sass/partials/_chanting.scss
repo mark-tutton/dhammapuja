@@ -48,14 +48,10 @@ ul.display {
   margin: 0 auto;
 
   @media (min-width: 750px) {
-    & {
-      padding: 0 2em;
-    }
+    padding: 0 2em;
   }
   @media (min-width: 1000px) {
-    & {
-      padding: 0 5em;
-    }
+    padding: 0 5em;
   }
 
   p {
@@ -138,8 +134,11 @@ ul.display {
     }
   }
 
-  h3 {
+  /*h3 {
     margin-bottom: 8%;
+  }*/
+  hr {
+    margin-bottom: 5%;
   }
 
   li {
@@ -152,22 +151,22 @@ ul.display {
 
     cursor: pointer;
     -webkit-transition: background 1s linear;
-    -moz-transition: background 1s linear;
-    -ms-transition: background 1s linear;
-    -o-transition: background 1s linear;
-    transition: background 1s linear;
+      -moz-transition: background 1s linear;
+       -ms-transition: background 1s linear;
+        -o-transition: background 1s linear;
+           transition: background 1s linear;
 
     border-radius: 20px;
     text-overflow: ellipsis;
 
-    & p, h2, h3 {
+    /*& p, h2, h3 {
       @media (min-width: 1000px) {
         padding: 0.1em 0;
       }
       @media (max-width: 750px) {
         padding: 0.1em 0;
       }
-    }
+    }*/
   }
 
   .time {
@@ -183,10 +182,24 @@ ul.display {
 
     font-size: 0.5em;
   }
+  .pali {
+    font-weight: 500;
 
+    @media screen and (max-width: 500px) {
+      font-weight: 400;
+    }
+  }
   .en {
     margin-left: 1em;
-    font-style: italic;
+
+    font: {
+      style: italic;
+      weight: 400;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-weight: 300;
+    }
   }
 
   .highlight {

@@ -1,13 +1,10 @@
 
-body {
+/*body {
   @include flexbox-display-flex;
   @include flexbox-direction-column;
   min-height: 100vh;
-}
+}*/
 
-main {
-  flex: 1 0 auto;
-}
 
 footer {
   @include box-shadow;
