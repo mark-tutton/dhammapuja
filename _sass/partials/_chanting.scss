@@ -46,13 +46,7 @@ ul.display {
   height: auto;
 
   margin: 0 auto;
-
-  @media (min-width: 750px) {
-    padding: 0 2em;
-  }
-  @media (min-width: 1000px) {
-    padding: 0 5em;
-  }
+  overflow-x: auto;
 
   p {
     margin: 0.5em auto;
@@ -146,6 +140,17 @@ ul.display {
 
     margin: 0;
     padding: 0 2em;
+
+    @media screen and (min-width: 1200px) {
+      padding: 0 4em;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 0 1em;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 0 .5em;
+    }
+
 
     list-style: none;
 
