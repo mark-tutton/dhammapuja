@@ -132,7 +132,11 @@ ul.display {
     margin-bottom: 8%;
   }*/
   hr {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+
+    @media screen and (max-width: 600px) {
+      margin-bottom: 10%;
+    }
   }
 
   li {
