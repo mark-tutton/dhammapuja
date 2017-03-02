@@ -2,12 +2,12 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-.brand-logo {
+/*.brand-logo {
   letter-spacing: .09em;
-}
+}*/
 
 nav li>a {
-  letter-spacing: .08em;
+  letter-spacing: .06em;
 }
 
 nav li>a.active {
@@ -35,13 +35,14 @@ nav ul a {
 
 body {
   display: -webkit-box;
-  display: -moz-box;
+  display:    -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  -ms-flex-direction: column;
+  display:         flex;
   -webkit-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
   min-height: 100vh;
 }
 
