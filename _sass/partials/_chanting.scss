@@ -149,10 +149,10 @@ ul.display {
       padding: 0 4em;
     }
     @media screen and (max-width: 900px) {
-      padding: 0 1em;
+      padding: 0 2em;
     }
     @media screen and (max-width: 600px) {
-      padding: 0 .5em;
+      padding: 0 1em;
     }
 
 
@@ -168,14 +168,6 @@ ul.display {
     border-radius: 20px;
     text-overflow: ellipsis;
 
-    /*& p, h2, h3 {
-      @media (min-width: 1000px) {
-        padding: 0.1em 0;
-      }
-      @media (max-width: 750px) {
-        padding: 0.1em 0;
-      }
-    }*/
   }
 
   .time {

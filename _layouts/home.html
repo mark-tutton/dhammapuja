@@ -23,8 +23,6 @@ layout: compress
 
   {% include scripts/common_scripts.html %}
 
-  <script src="{{ site.baseurl }}/assets/js/flowtype.js" type="text/javascript"></script>
-
   <script>
     /* Add a script element as a child of the body */
      function downloadJSAtOnload() {
@@ -39,19 +37,6 @@ layout: compress
      else if (window.attachEvent)
      window.attachEvent("onload", downloadJSAtOnload);
      else window.onload = downloadJSAtOnload;
-  </script>
-
-  <script>
-    var $ = jQuery.noConflict();
-    $(document).ready(function(){
-      $('.license').flowtype({
-        minimum   : 320,
-        maximum   : 1200,
-        minFont   : 14,
-        maxFont   : 30,
-        fontRatio : 30
-      })
-    });
   </script>
 
 </body>
