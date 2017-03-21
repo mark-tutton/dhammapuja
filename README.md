@@ -58,4 +58,4 @@ better of the two” ( A. II ).
 
 - [ ] Speech recognition? See johndyer's [audiosync](https://github.com/johndyer/audiosync) for an idea. Would make adding new chants much less laborious
 
-- [ ] much more to learn, improve & implement..
+- [ ] much more to learn, improve..
