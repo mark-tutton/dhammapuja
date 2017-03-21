@@ -1,9 +1,3 @@
-
-
-#sidenav-overlay {
-  z-index: 1; /* removes the sidenav overlay shadow */
-}
-
 .button-collapse {
   //font-size: 2.5rem;
   cursor: pointer;
@@ -30,6 +24,14 @@
 
     & .collapsible-body {
       background-color: $night_side_nav_coll_bod_bg;
+    }
+  }
+
+  & li a.active {
+    color: $day_nav_active !important;
+
+    .night & {
+      color: $night_nav_active !important;
     }
   }
 }

@@ -129,9 +129,9 @@
       <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
     {% endif %}
   </ul>
-    <div class="navbar-fixed nav-down">
-      <nav>
-        <div class="nav-wrapper grey lighten-5">
+  <div class="navbar-fixed nav-down">
+    <nav>
+      <div class="nav-wrapper grey lighten-5">
           <a href="{{ site.baseurl }}/" class="brand-logo ">Dhammapuja</a><!--hide-on-med-and-down-->
           <a href="#" data-activates="slide-out" class="button-collapse right" aria-label="Mobile navigation menu toggle"><i class="ent-menu" aria-hidden="true"></i></a>
           <ul class="right hide-on-med-and-down">
@@ -149,179 +149,182 @@
               <li><a class="dropdown-button" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
           </ul>
 
-          <ul id="slide-out" class="side-nav">
-            {% if page.active == "home" %}
-              <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light active"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
-            {% else %}
-              <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
-            {% endif %}
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header">Chanting<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Chanting dropdown menu"></i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      {% if page.active == "morning" %}
-                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light active">Morning</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light">Morning</a></li>
-                      {% endif %}
-                      {% if page.active == "eve - pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light active">Evening - Pali</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light">Evening - Pali</a></li>
-                      {% endif %}
-                      {% if page.active == "eve - eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light active">Evening - English</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light">Evening - English</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      {% if page.active == "five-precepts" %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-precepts" class="waves-effect waves-light active">Five Precepts</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-precepts" class="waves-effect waves-light">Five Precepts</a></li>
-                      {% endif %}
-                      {% if page.active == "eight-precepts" %}
-                        <li><a href="{{ site.baseurl }}/chanting/eight-precepts" class="waves-effect waves-light active">Eight Precepts</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/eight-precepts" class="waves-effect waves-light">Eight Precepts</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      {% if page.active == "body-contemplation" %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
-                      {% endif %}
-                      {% if page.active == "five-recollections" %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
-                      {% endif %}
-                      {% if page.active == "sublime-attitudes" %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      {% if page.active == "metta-sutta-pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
-                      {% endif %}
-                      {% if page.active == "metta-sutta-eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
-                      {% endif %}
-                      {% if page.active == "chant-of-metta" %}
-                        <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-light active">The Chant of Metta</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-light">The Chant of Metta</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
 
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header waves-effect waves-light">Morning<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Morning chanting dropdown menu"></i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      {% if page.active == "morning" %}
-                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light active">Morning</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light">Morning</a></li>
-                      {% endif %}
-                      {% if page.active == "body-contemplation" %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
-                      {% endif %}
-                      {% if page.active == "five-recollections" %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
-                      {% endif %}
-                      {% if page.active == "sublime-attitudes" %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      {% if page.active == "metta-sutta-pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
-                      {% endif %}
-                      {% if page.active == "metta-sutta-eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-            <li class="no-padding">
-              <ul class="collapsible collapsible-accordion">
-                <li>
-                  <a class="collapsible-header waves-effect waves-light">Evening<i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Evening chanting dropdown menu"></i></a>
-                  <div class="collapsible-body">
-                    <ul>
-                      {% if page.active == "eve - pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light active">Evening - Pali</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light">Evening - Pali</a></li>
-                      {% endif %}
-                      {% if page.active == "eve - eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light active">Evening - English</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light">Evening - English</a></li>
-                      {% endif %}
-                      {% if page.active == "body-contemplation" %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
-                      {% endif %}
-                      {% if page.active == "five-recollections" %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
-                      {% endif %}
-                      {% if page.active == "sublime-attitudes" %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      {% if page.active == "metta-sutta-pali" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
-                      {% endif %}
-                      {% if page.active == "metta-sutta-eng" %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
-                      {% else %}
-                        <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
-                      {% endif %}
-                      <li class="divider"></li>
-                      <li><a href=""></a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-
-          </ul>
         </div>
-      </nav>
-    </div>
+    </nav>
+  </div>
+
+  <ul id="slide-out" class="side-nav">
+    {% if page.active == "home" %}
+      <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light active"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light"><i class="ent-home" aria-hidden="true" aria-label="Home"></i>Home</a></li>
+    {% endif %}
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <div class="collapsible-header"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Chanting dropdown menu"></i><a href="{{ site.baseurl }}/chanting/">Chanting</a></div>
+
+          <div class="collapsible-body">
+            <ul>
+              {% if page.active == "morning" %}
+                <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light active">Morning</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light">Morning</a></li>
+              {% endif %}
+              {% if page.active == "eve - pali" %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light active">Evening - Pali</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light">Evening - Pali</a></li>
+              {% endif %}
+              {% if page.active == "eve - eng" %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light active">Evening - English</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light">Evening - English</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              {% if page.active == "five-precepts" %}
+                <li><a href="{{ site.baseurl }}/chanting/five-precepts" class="waves-effect waves-light active">Five Precepts</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/five-precepts" class="waves-effect waves-light">Five Precepts</a></li>
+              {% endif %}
+              {% if page.active == "eight-precepts" %}
+                <li><a href="{{ site.baseurl }}/chanting/eight-precepts" class="waves-effect waves-light active">Eight Precepts</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/eight-precepts" class="waves-effect waves-light">Eight Precepts</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              {% if page.active == "body-contemplation" %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
+              {% endif %}
+              {% if page.active == "five-recollections" %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
+              {% endif %}
+              {% if page.active == "sublime-attitudes" %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              {% if page.active == "metta-sutta-pali" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
+              {% endif %}
+              {% if page.active == "metta-sutta-eng" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
+              {% endif %}
+              {% if page.active == "chant-of-metta" %}
+                <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-light active">The Chant of Metta</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/chant-of-metta" class="waves-effect waves-light">The Chant of Metta</a></li>
+              {% endif %}
+              <li class="divider"></li>
+
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Morning chanting dropdown menu"></i><a href="#">Morning</a></div>
+          <div class="collapsible-body">
+            <ul>
+              {% if page.active == "morning" %}
+                <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light active">Morning</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/morning" class="waves-effect waves-light">Morning</a></li>
+              {% endif %}
+              {% if page.active == "body-contemplation" %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
+              {% endif %}
+              {% if page.active == "five-recollections" %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
+              {% endif %}
+              {% if page.active == "sublime-attitudes" %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              {% if page.active == "metta-sutta-pali" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
+              {% endif %}
+              {% if page.active == "metta-sutta-eng" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
+              {% endif %}
+              <li class="divider"></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Evening chanting dropdown menu"></i><a href="#">Evening</a></div>
+          <div class="collapsible-body">
+            <ul>
+              {% if page.active == "eve - pali" %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light active">Evening - Pali</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-pali" class="waves-effect waves-light">Evening - Pali</a></li>
+              {% endif %}
+              {% if page.active == "eve - eng" %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light active">Evening - English</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/evening-english" class="waves-effect waves-light">Evening - English</a></li>
+              {% endif %}
+              {% if page.active == "body-contemplation" %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light active">Body Contemplation</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/body-contemplation" class="waves-effect waves-light">Body Contemplation</a></li>
+              {% endif %}
+              {% if page.active == "five-recollections" %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light active">Five Recollections</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/five-recollections" class="waves-effect waves-light">Five Recollections</a></li>
+              {% endif %}
+              {% if page.active == "sublime-attitudes" %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light active">Sublime Attitudes</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/sublime-attitudes" class="waves-effect waves-light">Sublime Attitudes</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              {% if page.active == "metta-sutta-pali" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light active">Metta Sutta (Pāḷi)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-pali" class="waves-effect waves-light">Metta Sutta (Pāḷi)</a></li>
+              {% endif %}
+              {% if page.active == "metta-sutta-eng" %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light active">Metta Sutta (Eng.)</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/metta-sutta-eng" class="waves-effect waves-light">Metta Sutta (Eng.)</a></li>
+              {% endif %}
+              <li class="divider"></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
