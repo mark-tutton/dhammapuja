@@ -132,21 +132,21 @@
   <div class="navbar-fixed nav-down">
     <nav>
       <div class="nav-wrapper grey lighten-5">
-          <a href="{{ site.baseurl }}/" class="brand-logo ">Dhammapuja</a><!--hide-on-med-and-down-->
-          <a href="#" data-activates="slide-out" class="button-collapse right" aria-label="Mobile navigation menu toggle"><i class="ent-menu" aria-hidden="true"></i></a>
-          <ul class="right hide-on-med-and-down">
-            {% if page.active == "home" %}
-              <li class="waves-effect waves-light"><a class="active" aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
-            {% else %}
-              <li class="waves-effect waves-light"><a aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
-            {% endif %}
-            {% if page.active == "chant-home" %}
-              <li><a class="dropdown-button active" href="#" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
-            {% else %}
-              <li><a class="dropdown-button" href="#" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
-            {% endif %}
-              <li><a class="dropdown-button" href="#!" aria-label="Morning Chanting list dropdown" data-activates="dropdown-morn" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Morning<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
-              <li><a class="dropdown-button" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+        <a href="{{ site.baseurl }}/" class="brand-logo ">Dhammapuja</a>
+        <a href="#" data-activates="slide-out" class="button-collapse right" aria-label="Mobile navigation menu toggle"><i class="ent-menu" aria-hidden="true"></i></a>
+        <ul class="right hide-on-med-and-down">
+          {% if page.active == "home" %}
+            <li class="waves-effect waves-light"><a class="active" aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
+          {% else %}
+            <li class="waves-effect waves-light"><a aria-label="Home" href="{{ site.baseurl }}/">Home</a></li>
+          {% endif %}
+          {% if page.active == "chant-home" %}
+            <li><a class="dropdown-button active" href="#" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+          {% else %}
+            <li><a class="dropdown-button" href="#" aria-label="Chant list dropdown" data-activates="dropdown1" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Chanting<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+          {% endif %}
+            <li><a class="dropdown-button" href="#!" aria-label="Morning Chanting list dropdown" data-activates="dropdown-morn" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Morning<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
+            <li><a class="dropdown-button" href="#!" aria-label="Evening Chanting list dropdown" data-activates="dropdown-eve" data-constrainwidth="false" data-beloworigin="true" data-gutter="1">Evening<i class="ent-chevron-down right" aria-hidden="true"></i></a></li>
           </ul>
 
 
@@ -236,7 +236,7 @@
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
-          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Morning chanting dropdown menu"></i><a href="#">Morning</a></div>
+          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Morning chanting dropdown menu"></i><a href="javascript:void(0);" class="collapsible-header">Morning</a></div>
           <div class="collapsible-body">
             <ul>
               {% if page.active == "morning" %}
@@ -280,7 +280,7 @@
     <li class="no-padding">
       <ul class="collapsible collapsible-accordion">
         <li>
-          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Evening chanting dropdown menu"></i><a href="#">Evening</a></div>
+          <div class="collapsible-header waves-effect waves-light"><i class="fa ent-chevron-small-down" aira-hidden="true" aria-label="Evening chanting dropdown menu"></i><a href="javascript:void(0);" class="collapsible-header">Evening</a></div>
           <div class="collapsible-body">
             <ul>
               {% if page.active == "eve - pali" %}
