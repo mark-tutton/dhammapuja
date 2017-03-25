@@ -34,4 +34,12 @@
       color: $night_nav_active !important;
     }
   }
+
+  &-home {
+    padding: 0 22px !important;
+
+    &-icon {
+      margin-right: 28px !important;
+    }
+  }
 }

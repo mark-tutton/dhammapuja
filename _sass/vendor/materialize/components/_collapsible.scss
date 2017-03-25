@@ -9,7 +9,7 @@
 .collapsible-header {
   display: block;
   cursor: pointer;
-  min-height: $collapsible-height;
+  //min-height: $collapsible-height;
   line-height: $collapsible-line-height;
   padding: 0 1rem;
   background-color: $collapsible-header-color;
@@ -30,8 +30,7 @@
   display: none;
   border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
-  //padding: 2rem;
-  padding: 0 .3rem;
+  padding: 2rem;
 }
 
 // sideNav collapsible styling
