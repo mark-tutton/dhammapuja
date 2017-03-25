@@ -39,7 +39,7 @@ nav {
       //color: $day_nav_active;
 
       .night & {
-        color: $night_nav_active;
+        color: $night_nav_active !important;
       }
     }
 
