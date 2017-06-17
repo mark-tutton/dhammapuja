@@ -4,8 +4,8 @@
 }
 
 // hamburger
-.ent-menu {
-  //color: $day_ent_menu;
+.feather-menu {
+  color: #050709; //$day_ent_menu;
 
   .night & {
     color: $night_ent_menu;
@@ -39,7 +39,11 @@
     padding: 0 22px !important;
 
     &-icon {
-      margin-right: 28px !important;
+      margin-right: 12px !important;
     }
   }
+}
+
+.night .side-nav li>a>i {
+  color: #fefefe;
 }

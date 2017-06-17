@@ -1,11 +1,4 @@
-
-
-$day_nav_active: #8CB3CD;
-$night_nav_active: #4495d4;
-
 .brand-logo {
-  //letter-spacing: .09em;
-
   .night & {
     color: $night_nav_brand_logo;
   }
@@ -36,7 +29,7 @@ nav {
     //letter-spacing: .08em;
 
     &.active {
-      //color: $day_nav_active;
+      color: $day_nav_active;
 
       .night & {
         color: $night_nav_active !important;

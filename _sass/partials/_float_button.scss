@@ -1,34 +1,36 @@
 
 .btn-floating {
   margin-bottom: 1.5rem;
-  background-color: $day_fl_button_bg;
+  //background-color: $day_fl_button_bg;
+  //background-color: #ff8f00;
+  background-color: #FCBA04;
 
   .night & {
-    background-color: $night_fl_button_bg;
+    //background-color: $night_fl_button_bg;
+    //background-color: #ff6f00;
+    background-color: #FCBA04;
   }
 }
 
 .fixed-action-btn {
   font-size: 2rem;
 }
-
-.ent-light-up {
-  color: $night_ent_light_up;
+/*
+.feather-sun {
+  //color: $night_ent_light_up;
   background-color: $day_fl_button_bg;
 
   .night & {
     background-color: $night_fl_button_bg;
   }
-}
+}*/
 
-.ent-moon {
-  color: $day_ent_moon;
-}
-
-.ent-cog, .ent-chevron-up, .ent-moon {
+.feather-cog, .feather-chevron-up, .feather-moon, .feather-sun {
   background-color: $day_fl_button_bg;
+  color: #212132 !important;
 
   .night & {
     background-color: $night_fl_button_bg;
+    color: #fefefe !important;
   }
 }

@@ -3,13 +3,15 @@
 **************/
 
 // Navbar Colours
-  $day_nav_active: #8CB3CD;
-  $night_nav_active: #4495d4;
+  //$day_nav_active: #8cb3cd;
+  $day_nav_active: #1eaedb;
+  //$night_nav_active: #4495d4;
+  $night_nav_active: #a3e7fc;
 
   $night_dropdown_content_bg: #444444;
   $night_nav_wrapper_bg: #333333;
 
-  $night_nav_brand_logo: #F2F1EF;
+  $night_nav_brand_logo: #f2f1ef;
 
   $day_nav_ul_a: #050709;
   $day_ul_a: $day_nav_ul_a;
@@ -26,42 +28,47 @@
     $night_side_nav_coll_bod_bg: #494949;
 
 // Body Colours
-  $day_body_bg: #F7F7F7;
+  $day_body_bg: #f7f7f7;
   $night_body_bg: #333333;
 
-  $day_body_txt: #373A3C;
-  $night_body_txt: #E6E6E6;
+  $day_body_txt: #373a3c;
+  $night_body_txt: #e6e6e6;
 
 // Headers & Paragraph Colours
 
-  $night_h3: #F2F1EF;
-  $night_p: #FEFEFE;
+  $night_h3: #f2f1ef;
+  $night_p: #fefefe;
 
 // Floating Button
-  $day_fl_button_bg: #E67E22;
-  $night_fl_button_bg: #D35400;
+  //$day_fl_button_bg: #e67e22;
+  $day_fl_button_bg: #FCBA04;
+  //$night_fl_button_bg: #d35400;
+  $night_fl_button_bg: #FCBA04;
 
-  $night_ent_light_up: #FFF176;
+  $night_ent_light_up: #fff176;
   $day_ent_moon: #050709;
 
 // Chanting
 
   $time: green;
-  $ul_display_time: #CCCCCC;
+  $ul_display_time: #cccccc;
 
-  $day_highlight: #CCFFCC; //#DDFFDD
-  $night_highlight: #CCFFE6; //#4196B0;
+  $day_highlight: #ccffcc; //#ddffdd
+  $night_highlight: #ccffe6; //#4196b0;
   $night_highlight_text: #050709;
 
 // Footer
-  $day_footer_bg: #F7F7F7;
+  $day_footer_bg: #f7f7f7;
   $night_footer_bg: #333333;
 
-  $day_footer_copy_bg: #E6E6E6;
+  $day_footer_copy_bg: #e6e6e6;
   $night_footer_copy_bg: #222222;
 
-  $footer_a: #1eaedb;//#8CB3CD;
+  //$footer_a: #1eaedb;//#8cb3cd;
+  //$footer_a: #48a9a6;
+  $footer_a: #1eaedb;
+  $footer_a_night: #a3e7fc;
   $day_footer_h5: #000000;
-  $night_footer_h5: #F2F1EF;
+  $night_footer_h5: #f2f1ef;
   $day_footer_p: #212132;
-  $night_footer_p: #F2F1Ef;
+  $night_footer_p: #f2f1ef;
