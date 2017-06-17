@@ -1,17 +1,17 @@
 
 body, .day {
-  background-color: $day_body_bg;
-  color: $day_body_txt;
+  background-color: $body-bg-colour-day;
+  color: $body-txt-colour-day;
 }
 
 .night {
-  background-color: $night_body_bg;
-  color: $night_body_txt;
+  background-color: $body-bg-colour-night;
+  color: $body-txt-colour-night;
 
   h3 {
-    color: $night_h3;
+    color: $h3-colour-night;
   }
   p {
-    color: $night_p;
+    color: $p-colour-night;
   }
 }

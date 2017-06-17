@@ -5,10 +5,10 @@
 
 // hamburger
 .feather-menu {
-  color: #050709; //$day_ent_menu;
+  color: $nav-hamburger-day;
 
   .night & {
-    color: $night_ent_menu;
+    color: $nav-hamburger-night;
   }
 }
 
@@ -16,22 +16,22 @@
 
 .side-nav {
   .night & {
-    background-color: $night_side_nav_bg;
+    background-color: $side-nav-bg-colour-night;
 
     & a {
-      color: $night_side_nav_a;
+      color: $side-nav-a-colour-night;
     }
 
     & .collapsible-body {
-      background-color: $night_side_nav_coll_bod_bg;
+      background-color: $side-nav-collapse-bod-bg-colour-night;
     }
   }
 
   & li a.active {
-    color: $day_nav_active !important;
+    color: $nav-active-colour-day !important;
 
     .night & {
-      color: $night_nav_active !important;
+      color: $nav-active-colour-night !important;
     }
   }
 

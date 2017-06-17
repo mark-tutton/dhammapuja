@@ -1,25 +1,27 @@
 
-/* Mixins */
+// Mixins
 @mixin flexbox-display-flex {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
+     display: -moz-box;
+
   display: -webkit-flex;
-  display: flex;
+          display: flex;
 }
 
 @mixin flexbox-display-inline-flex {
   display: -webkit-inline-box;
-  display: -moz-inline-box;
   display: -ms-inline-flexbox;
+     display: -moz-inline-box;
+
   display: -webkit-inline-flex;
-  display: inline-flex;
+          display: inline-flex;
 }
 
 @mixin flexbox-direction-column {
-  -ms-flex-direction: column;
   -webkit-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @mixin box-shadow {
@@ -27,14 +29,14 @@
     0 2px 2px 0 rgba(0,0,0,0.14),
     0 1px 5px 0 rgba(0,0,0,0.12),
     0 3px 1px -2px rgba(0,0,0,0.2);
-  -moz-box-shadow:
-    0 2px 2px 0 rgba(0,0,0,0.14),
-    0 1px 5px 0 rgba(0,0,0,0.12),
-    0 3px 1px -2px rgba(0,0,0,0.2);
-  box-shadow:
-    0 2px 2px 0 rgba(0,0,0,0.14),
-    0 1px 5px 0 rgba(0,0,0,0.12),
-    0 3px 1px -2px rgba(0,0,0,0.2);
+     -moz-box-shadow:
+       0 2px 2px 0 rgba(0,0,0,0.14),
+       0 1px 5px 0 rgba(0,0,0,0.12),
+       0 3px 1px -2px rgba(0,0,0,0.2);
+          box-shadow:
+            0 2px 2px 0 rgba(0,0,0,0.14),
+            0 1px 5px 0 rgba(0,0,0,0.12),
+            0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 @mixin foot-box-shadow {
@@ -42,12 +44,12 @@
     0 -2px 2px 0 rgba(0,0,0,0.14),
     0 -1px 5px 0 rgba(0,0,0,0.12),
     0 -3px 1px -2px rgba(0,0,0,0.2);
-  -moz-box-shadow:
-    0 -2px 2px 0 rgba(0,0,0,0.14),
-    0 -1px 5px 0 rgba(0,0,0,0.12),
-    0 -3px 1px -2px rgba(0,0,0,0.2);
-  box-shadow:
-    0 -2px 2px 0 rgba(0,0,0,0.14),
-    0 -1px 5px 0 rgba(0,0,0,0.12),
-    0 -3px 1px -2px rgba(0,0,0,0.2);
+     -moz-box-shadow:
+       0 -2px 2px 0 rgba(0,0,0,0.14),
+       0 -1px 5px 0 rgba(0,0,0,0.12),
+       0 -3px 1px -2px rgba(0,0,0,0.2);
+          box-shadow:
+            0 -2px 2px 0 rgba(0,0,0,0.14),
+            0 -1px 5px 0 rgba(0,0,0,0.12),
+            0 -3px 1px -2px rgba(0,0,0,0.2);
 }

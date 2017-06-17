@@ -1,26 +1,26 @@
 .brand-logo {
   .night & {
-    color: $night_nav_brand_logo;
+    color: $nav-brand-logo-colour-night;
   }
 }
 
 .dropdown-content {
   &.active li > a.active {
-    color: $day_nav_active !important;
+    color: $nav-active-colour-day !important;
 
     .night & {
-      color: $night_nav_active !important;
+      color: $nav-active-colour-night !important;
     }
   }
 
   .night & {
-    background-color: $night_dropdown_content_bg;
+    background-color: $nav-dropdown-content-bg-colour-night;
   }
 }
 
 .nav-wrapper {
   .night & {
-    background-color: $night_nav_wrapper_bg !important;
+    background-color: $nav-wrapper-bg-colour-night !important;
   }
 }
 
@@ -29,10 +29,10 @@ nav {
     //letter-spacing: .08em;
 
     &.active {
-      color: $day_nav_active;
+      color: $nav-active-colour-day;
 
       .night & {
-        color: $night_nav_active !important;
+        color: $nav-active-colour-night !important;
       }
     }
 
@@ -45,15 +45,15 @@ nav {
   }*/
 
   ul a {
-    //color: $day_nav_ul_a;
+    //color: $nav-ul-a-colour-day;
 
     .night & {
-      color: $night_nav_ul_a !important;
+      color: $nav-ul-a-colour-night !important;
     }
   }
 
   .day & ul a {
-    color: $day_nav_ul_a;
+    color: $nav-ul-a-colour-day;
   }
 }
 

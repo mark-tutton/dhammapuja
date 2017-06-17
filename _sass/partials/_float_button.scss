@@ -1,36 +1,34 @@
 
 .btn-floating {
   margin-bottom: 1.5rem;
-  //background-color: $day_fl_button_bg;
-  //background-color: #ff8f00;
-  background-color: #FCBA04;
+  background-color: $fl-button-bg-colour-day;
 
   .night & {
-    //background-color: $night_fl_button_bg;
-    //background-color: #ff6f00;
-    background-color: #FCBA04;
+    background-color: $fl-button-bg-colour-night;
   }
 }
 
 .fixed-action-btn {
   font-size: 2rem;
 }
-/*
-.feather-sun {
-  //color: $night_ent_light_up;
-  background-color: $day_fl_button_bg;
-
-  .night & {
-    background-color: $night_fl_button_bg;
-  }
-}*/
 
 .feather-cog, .feather-chevron-up, .feather-moon, .feather-sun {
-  background-color: $day_fl_button_bg;
-  color: #212132 !important;
+  background-color: $fl-button-bg-colour-day;
+  //color: #212132 !important;
+  color: $fl-button-icon-colour-day !important;
 
   .night & {
-    background-color: $night_fl_button_bg;
-    color: #fefefe !important;
+    background-color: $fl-button-bg-colour-night;
+    //color: #fefefe !important;
+    color: $fl-button-icon-colour-night !important;
   }
 }
+
+//.feather-sun {
+  //color: $fl-button-icon-feather-sun-colour;
+  //background-color: $fl-button-bg-colour-day;
+
+//  .night & {
+//    color: $fl-button-icon-feather-sun-colour !important;
+//  }
+//}

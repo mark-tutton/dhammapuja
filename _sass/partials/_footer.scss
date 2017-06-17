@@ -11,46 +11,45 @@ footer {
 }
 
 .page-footer {
-  background-color: $day_footer_bg !important;
+  background-color: $footer-bg-colour-day !important;
 
   .day & {
-    background-color: $day_footer_bg !important;
+    background-color: $footer-bg-colour-day !important;
   }
   .night & {
-    background-color: $night_footer_bg !important;
+    background-color: $footer-bg-colour-night !important;
   }
 
   a {
-    color: $footer_a;
-
+    color: $footer-a-colour;
   }
 
   .day & h5 {
-    color: $day_footer_h5;
+    color: $footer-h5-colour-day;
   }
   .night & h5 {
-    color: $night_footer_h5;
+    color: $footer-h5-colour-night;
   }
 
   .day & p {
-    color: $day_footer_p;
+    color: $footer-p-colour-day;
   }
   .night & p {
-    color: $night_footer_p;
+    color: $footer-p-colour-night;
   }
 }
 
 .night .page-footer a {
-  color: $footer_a_night;
+  color: $footer-a-colour-night;
 }
 .footer-copyright {
-  background-color: $day_footer_copy_bg !important;
+  background-color: $footer-copyr-bg-colour-day !important;
 
   .day & {
-    background-color: $day_footer_copy_bg !important;
+    background-color: $footer-copyr-bg-colour-day !important;
   }
   .night & {
-    background-color: $night_footer_copy_bg !important;
+    background-color: $footer-copyr-bg-colour-night !important;
   }
 }
 

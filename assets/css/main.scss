@@ -3,6 +3,10 @@
 ---
 $baseurl: "{{ site.baseurl }}";
 
+// Third-party
+@import "vendor/materialize/materialize";
+@import "vendor/feather/feather";
+
 // Modules and Variables
 //@import "modules/base.scss";
 @import "modules/colours";
@@ -21,6 +25,3 @@ $baseurl: "{{ site.baseurl }}";
 @import "partials/links";
 
 // ...
-
-// Third-party
-@import "feather.css";

@@ -30,10 +30,10 @@
   text-align: right;
   vertical-align: bottom;
 
-  color: $time;
+  color: $chanting-time-colour;
   border: {
-    top: 5px solid $time;
-    left: 5px solid $time;
+    top: 5px solid $chanting-time-colour;
+    left: 5px solid $chanting-time-colour;
   }
   font-size: 3em;
 }
@@ -128,9 +128,10 @@ ul.display {
     }
   }
 
-  /*h3 {
-    margin-bottom: 8%;
-  }*/
+  //h3 {
+  //  margin-bottom: 8%;
+  //}
+
   hr {
     margin-bottom: 5%;
 
@@ -160,10 +161,10 @@ ul.display {
 
     cursor: pointer;
     -webkit-transition: background 1s linear;
-      -moz-transition: background 1s linear;
-       -ms-transition: background 1s linear;
-        -o-transition: background 1s linear;
-           transition: background 1s linear;
+       -moz-transition: background 1s linear;
+        -ms-transition: background 1s linear;
+         -o-transition: background 1s linear;
+            transition: background 1s linear;
 
     border-radius: 20px;
     text-overflow: ellipsis;
@@ -179,7 +180,7 @@ ul.display {
 
     text-align: right;
 
-    color: $ul_display_time;
+    color: $chanting-ul-display-time-colour;
 
     font-size: 0.5em;
   }
@@ -204,12 +205,12 @@ ul.display {
   }
 
   .highlight {
-    background-color: $day_highlight;
+    background-color: $chanting-highlight-colour-day;
 
     .night & {
-      background-color: $night_highlight;
+      background-color: $chanting-highlight-colour-night;
 
-      & p, h1, h2, h3 { color: $night_highlight_text; }
+      & p, h1, h2, h3 { color: $chanting-highlight-text-colour-night; }
     }
 
   }
