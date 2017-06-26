@@ -59,9 +59,10 @@
 // Floating Button
 
   //$day_fl_button_bg: #FCBA04;
-  $fl-button-bg-colour-day: #212132; //#fcba04;
+  $fl-button-bg-colour-day: rgba(33, 33, 50, .85); //#212132; //#fcba04;
+
   //$night_fl_button_bg: #fcba04;
-  $fl-button-bg-colour-night: #f2f1ef; //#fcba04;
+  $fl-button-bg-colour-night: rgba(242, 241, 239, 0.8); //#f2f1ef; //#fcba04;
 
   $fl-button-icon-colour-day: #f7f7f7;
   $fl-button-icon-colour-night: #333333;

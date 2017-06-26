@@ -1,9 +1,11 @@
 
 .btn-floating {
   margin-bottom: 1.5rem;
+  background-color: #212132;
   background-color: $fl-button-bg-colour-day;
 
   .night & {
+    background-color: #f2f1ef;
     background-color: $fl-button-bg-colour-night;
   }
 }
@@ -13,11 +15,13 @@
 }
 
 .feather-cog, .feather-chevron-up, .feather-moon, .feather-sun {
+  background-color: #212132;
   background-color: $fl-button-bg-colour-day;
   //color: #212132 !important;
   color: $fl-button-icon-colour-day !important;
 
   .night & {
+    background-color: #f2f1ef;
     background-color: $fl-button-bg-colour-night;
     //color: #fefefe !important;
     color: $fl-button-icon-colour-night !important;

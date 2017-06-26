@@ -143,16 +143,18 @@ ul.display {
   li {
     position: relative;
 
-    margin: auto 7px;
+    margin: auto 10px;
     padding: 0 2em;
 
     @media screen and (min-width: 1200px) {
       padding: 0 4em;
     }
     @media screen and (max-width: 900px) {
+      margin: auto 7px;
       padding: 0 2em;
     }
     @media screen and (max-width: 600px) {
+      margin: auto 5px;
       padding: 0 1em;
     }
 
