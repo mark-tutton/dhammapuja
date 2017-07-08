@@ -1,6 +1,12 @@
+body {
 
+}
 
-body, .day {
+body {
+  //transition: color 300ms ease background-color 300ms ease;
+  -webkit-transition: background-color 300ms ease;
+          transition: background-color 300ms ease; // for nightmode toggle of background colour
+
   background-color: $body-bg-colour-day;
   color: $body-txt-colour-day;
 }

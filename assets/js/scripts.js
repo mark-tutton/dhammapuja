@@ -47,30 +47,58 @@ function hasScrolled() {
 // ************************************* //
 // toggleable inverter with sessionStorage
 // from http://stackoverflow.com/questions/28239337/store-a-css-class-on-browser
-  $('#inverter').click(function () {
-    $('body').toggleClass('day night');
-    if ($('body').hasClass('night')) {
-      sessionStorage.setItem('theme', 'night');
+  // $('#inverter').click(function () {
+  //   $('body').toggleClass('day night');
+
+  //   if ($('body').hasClass('night')) {
+  //     sessionStorage.setItem('theme', 'night');
+  //   }
+  //   else if ($('body').hasClass('day')) {
+  //     sessionStorage.setItem('theme', 'day');
+  //   } else {
+  //     $('body').removeClass('night day').addClass('day');
+  //   }
+
+  // });
+
+  // $(document).ready(function() {
+  //   var theme = sessionStorage.getItem('theme');
+  //   if (theme !== '') {
+  //     $('body').addClass(theme);
+  //   }
+  // });
+
+  // $(function() {
+  //   $('.invert').click(function (){
+  //     $(this).find('i').toggleClass('feather-moon feather-sun');
+  //   });
+  // });
+  // *** End Toggleable inverter *** //
+  // ******************************* //
+
+
+  $( '#inverter' ).click(function () {
+    $( 'body' ).toggleClass( 'night' );
+
+    if ($( 'body' ).hasClass( 'night' )) {
+      sessionStorage.setItem( 'theme', 'night' );
     }
-    else if ($('body').hasClass('day')) {
-      sessionStorage.setItem('theme', 'day');
-    } else {
-      $('body').removeClass('night day').addClass('day');
+
+    else {
+      sessionStorage.setItem( 'theme', '' );
     }
 
   });
 
   $(document).ready(function() {
-    var theme = sessionStorage.getItem('theme');
+    var theme = sessionStorage.getItem( 'theme' );
     if (theme !== '') {
-      $('body').addClass(theme);
+      $( 'body' ).addClass(theme);
     }
   });
 
   $(function() {
     $('.invert').click(function (){
-      $(this).find('i').toggleClass('feather-moon feather-sun');
+      $(this).find( 'i' ).toggleClass( 'feather-moon feather-sun' );
     });
   });
-  // *** End Toggleable inverter *** //
-  // ******************************* //

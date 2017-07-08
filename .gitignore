@@ -12,6 +12,7 @@ _site
 .Trashes
 *.cache
 
-ignore/stylesheet.afdesign
+ignore/*
 
-assets/audio/transcript/5-precepts.rtf
+assets/audio/transcript/*
+assets/audio/128kb/*
