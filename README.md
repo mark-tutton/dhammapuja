@@ -6,27 +6,32 @@
 
 >My attempt at updating http://pali.ejinjue.org/ to Bootstrap 3 and transitioning it to GitHub pages.
 
-Updating https://github.com/job-talk/buddhism-resource to materializecss and Jekyll
+Updating https://github.com/job-talk/buddhism-resource to MaterializeCSS and Jekyll
 
-***
-
+***  
+  
+<br />
+  
 ## Credits
 
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) ['Dhamma Schtuff'](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
 ***
-
-#### What does Dhammapuja mean?
-
+  
+<br />
+  
+## What does Dhammapuja mean?
+```
 Pūjā : (1) honour, respect, homage, (2) worship,
 devotional observances, devotional offerings; also
 offerings to monks.
-   (1) The Mahā-mangala Sutta (Sn. 259) says that
+
+(1) The Mahā-mangala Sutta (Sn. 259) says that
 “Honour and respect towards those worthy of it, is
 conducive to great blessing” ( pūjā ca pūjaniyesu etaṃ mangalam uttamaṃ ). See Dhp. 195f.
 
-2) The Buddha did not think much of mere outer
+(2) The Buddha did not think much of mere outer
 worship. “Not thus, Ananda, is the Tathāgata respected,
 venerated, esteemed, worshipped and honoured in the
 highest degree. But, Ananda, whatsoever bhikkhu or
@@ -39,10 +44,12 @@ two kinds of worship: in a material way ( āmisa-pūjā )
 and through ( practice of ) the Dhamma ( dhamma-pūjā ).
 The worship through ( practice of ) the Dhamma is the
 better of the two” ( A. II ).
-
-- http://urbandharma.org/pdf/palidict.pdf pg. 273/402
+```
+- http://urbandharma.org/pdf/palidict.pdf (pg. 273/402)
 
 ***
+
+<br />
 
 ## Project Goals
 
@@ -58,4 +65,4 @@ better of the two” ( A. II ).
 
 - [ ] Speech recognition? See johndyer's [audiosync](https://github.com/johndyer/audiosync) for an idea. Would make adding new chants much less laborious
 
-- [ ] much more to learn, improve..
+- [ ] Much more to learn, improve..
