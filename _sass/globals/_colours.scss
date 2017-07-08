@@ -1,0 +1,133 @@
+
+// ******************* //
+// ******************* //
+//     Day   Mode      //
+// ******************* //
+// ******************* //
+
+// Navbar Day
+
+  // Day-Desktop Nav
+  $nav-active-colour-day: #59C3C3;
+
+  $nav-ul-a-colour-day: #050709;
+
+  $ul-a-colour-day: $nav-ul-a-colour-day;
+
+
+  // Day-Mobile Nav
+
+    // Day-Hamburger
+
+    $nav-hamburger-day: #050709;
+
+
+// Day-Body Colours
+
+  $body-bg-colour-day: #f7f7f7;
+
+  $body-txt-colour-day: #373a3c;
+
+
+// Day-Floating Button
+
+  $fl-button-bg-colour-day: rgba(33, 33, 50, .85);
+
+  $fl-button-icon-colour-day: #f7f7f7;
+
+  $fl-button-icon-feather-sun-colour: gold;
+
+
+
+// Day-Chanting
+
+  $chanting-time-colour: green;
+
+  $chanting-ul-display-time-colour: #cccccc;
+
+  $chanting-highlight-colour-day: #ccffcc;
+
+
+
+// Day-Footer
+
+  $footer-bg-colour-day: #f7f7f7;
+
+  $footer-copyr-bg-colour-day: #e6e6e6;
+
+  $footer-a-colour: #59C3C3; //#1eaedb;
+
+  $footer-h5-colour-day: #000000;
+
+  $footer-p-colour-day: #212132;
+
+
+
+// Link Highlight
+
+  $link-highlight-hover: #16BAC5;
+
+// ******************* //
+// ******************* //
+//     Night Mode      //
+// ******************* //
+// ******************* //
+
+
+// Navbar Night
+
+  // Desktop Navbar
+    $nav-active-colour-night: #a3e7fc;
+
+    $nav-dropdown-content-bg-colour-night: #444444;
+
+    $nav-wrapper-bg-colour-night: #333333;
+
+    $nav-brand-logo-colour-night: #f2f1ef;
+
+    $nav-ul-a-colour-night: #fff;
+
+  // Mobile Nav
+    // SideNav
+      $side-nav-bg-colour-night: #393939;
+
+      $side-nav-a-colour-night: #fff;
+
+    // Hamburger
+      $nav-hamburger-night: rgba(255, 255, 255, 1);
+          $side-nav-collapse-bod-bg-colour-night: #494949;
+
+// Night-Body Colours
+  $body-bg-colour-night: #333333;
+
+  $body-txt-colour-night: #e6e6e6;
+
+// Night-Headers & Paragraph Colours
+  $h3-colour-night: #f2f1ef;
+
+  $p-colour-night: #fefefe;
+
+// Night-Floating Button
+
+  $fl-button-bg-colour-night: rgba(242, 241, 239, 0.8);
+
+  $fl-button-icon-colour-night: #333333;
+
+// Night-Chanting
+
+  $chanting-highlight-colour-night: #ccffe6;
+
+  $chanting-highlight-text-colour-night: #050709;
+
+
+
+// Night-Footer
+  $footer-bg-colour-night: #333333;
+
+  $footer-copyr-bg-colour-night: #222222;
+
+  $footer-a-colour-night: #a3e7fc;
+
+  $footer-h5-colour-night: #f2f1ef;
+
+  $footer-p-colour-night: #f2f1ef;

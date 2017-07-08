@@ -4,24 +4,34 @@
 $baseurl: "{{ site.baseurl }}";
 
 // Third-party
-@import "vendor/materialize/materialize";
-@import "vendor/feather/feather";
+@import
+  'vendor/materialize/materialize',
+  'vendor/feather/feather'
+;
 
-// Modules and Variables
-//@import "modules/base.scss";
-@import "modules/colours";
-@import "modules/mixins";
+// Globals
+@import
+  'globals/colours',
+  'globals/base',
+  'globals/links',
+  'globals/mixins',
+  'globals/typography'
+;
 
-// Partials
-@import "partials/typography";
-@import "partials/nav/desk_nav";
-@import "partials/nav/mob_nav";
-@import "partials/float_button";
-@import "partials/footer";
-@import "partials/chanting";
-@import "partials/home";
-@import "partials/home_chant";
-@import "partials/global";
-@import "partials/links";
+// Sections
+@import
+  'sections/footer',
+  'sections/nav/desk-nav',
+  'sections/nav/mob-nav'
+;
 
-// ...
+// Blocks
+@import
+  'blocks/floating-button'
+;
+
+// Pages
+@import
+  'pages/chanting',
+  'pages/chant-index'
+;

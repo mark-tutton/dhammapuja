@@ -11,3 +11,7 @@ _site
 .Spotlight-V100
 .Trashes
 *.cache
+
+ignore/stylesheet.afdesign
+
+assets/audio/transcript/5-precepts.rtf

@@ -9,10 +9,10 @@
 .a-highlight {
   position: relative;
 
-  color: #1eaedb;
+  color: $footer-a-colour; //#1eaedb;
 
   &:hover {
-    color: #0fa0ce;
+    color: $link-highlight-hover; //#0fa0ce;
 
     -webkit-transform: scaleX(0);
        -moz-transform: scaleX(0);
@@ -40,9 +40,9 @@
     bottom: -.5px;
     left: 0;
 
-    background-color: #1eaedb;
+    background-color: $link-highlight-hover; //#1eaedb;
 
-    content: "";
+    content: " ";
     visibility: hidden;
 
     -webkit-transform: scaleX(0);

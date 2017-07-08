@@ -187,23 +187,26 @@ ul.display {
     font-size: 0.5em;
   }
   .pali {
-    font-weight: 500;
-
-    @media screen and (max-width: 500px) {
-      font-weight: 400;
+    font: {
+      family: 'Open Sans', sans-serif;
+      weight: 500;
     }
+
+    //@media screen and (max-width: 500px) {
+    //  font-weight: normal;
+    //}
   }
   .en {
     margin-left: 1em;
 
     font: {
       style: italic;
-      weight: 400;
+      weight: 300;
     }
 
-    @media screen and (max-width: 600px) {
-      font-weight: 300;
-    }
+    //@media screen and (max-width: 600px) {
+    //  font-weight: 300;
+    //}
   }
 
   .highlight {
