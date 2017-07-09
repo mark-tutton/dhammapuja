@@ -24,9 +24,12 @@
   }
 
   li > a, li > span {
-    //color: $nav-active-colour-day;
-    //color: #050709;
-    color: $night_colour-nav-dropdown-a;
+    color: $nav-ul-a-colour-day;
+
+    .night & {
+      color: $night_colour-nav-dropdown-a;
+    }
+
   }
 
 }
