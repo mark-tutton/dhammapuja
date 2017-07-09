@@ -1,6 +1,7 @@
 #data { display: none; }
 
 #audio {
+
   background-color: #000;
   position: fixed;
   z-index: 1000;
@@ -14,9 +15,11 @@
     width: 100%;
     //height: 100%;
   }
+
 }
 
 #time {
+
   position: fixed;
   z-index: 1000;
   right: 0;
@@ -31,14 +34,18 @@
   vertical-align: bottom;
 
   color: $chanting-time-colour;
+
   border: {
     top: 5px solid $chanting-time-colour;
     left: 5px solid $chanting-time-colour;
   }
+
   font-size: 3em;
+
 }
 
 ul.display {
+
   position: relative;
   display: block;
 
@@ -53,10 +60,10 @@ ul.display {
     padding: 0;
     text-rendering: optimizeLegibility;
     line-height: 2.0;
-    letter-spacing: 0.060em;
+    //letter-spacing: 0.040em;
 
     .night & {
-      letter-spacing: 0.070em;
+      //letter-spacing: 0.050em;
     }
 
     & .un {
@@ -83,12 +90,18 @@ ul.display {
 
           border-style: solid;
         }
+
         & > .u {
           border: {
             width: 0 0.25em 0.15em 0.25em;
             color: transparent transparent #FF8800 transparent;
           }
+
+          .night & {
+            border-color: transparent transparent $night_colour-pali-characters-accents--u transparent;
+          }
         }
+
         & > .d {
           margin-top: 1.2em;
 
@@ -96,13 +109,23 @@ ul.display {
             width: 0.15em 0.25em 0 0.25em;
             color: blue transparent transparent transparent;
           }
+
+          .night & {
+            border-color: $night_colour-pali-characters-accents--d transparent transparent transparent;
+          }
         }
+
         & > .uu {
           border: {
             width: 0 0.5em 0.2em 0.5em;
             color: transparent transparent #FF8800 transparent;
           }
+
+          .night & {
+            border-color: transparent transparent $night_colour-pali-characters-accents--u transparent;
+          }
         }
+
         & > .dd {
           margin-top: 1.2em;
 
@@ -110,41 +133,44 @@ ul.display {
             width: 0.2em 0.5em 0 0.5em;
             color: blue transparent transparent transparent;
           }
+
+          .night & {
+            border-color: $night_colour-pali-characters-accents--dd transparent transparent transparent;
+          }
         }
-        .night & > .d {
-          border-color: #E91E63 transparent transparent transparent;
-        }
+
       }
     }
 
   }
 
-  h1, h2, h3 {
+  h2, h3, h5 {
+
     text-rendering: optimizeLegibility;
-    letter-spacing: 0.025em;
+    //letter-spacing: 0.025em;
 
     .night & {
-      letter-spacing: 0.035em;
+    //  letter-spacing: 0.035em;
     }
+
   }
 
-  //h3 {
-  //  margin-bottom: 8%;
-  //}
-
   hr {
+
     margin-bottom: 5%;
 
     @media screen and (max-width: 600px) {
       margin-bottom: 10%;
     }
+
   }
 
   li {
+
     position: relative;
 
     margin: auto 10px;
-    padding: 0 2em;
+    padding: .01em 2em; // 0 2em
 
     @media screen and (min-width: 1200px) {
       padding: 0 4em;
@@ -173,7 +199,8 @@ ul.display {
 
   }
 
-  .time {
+  .time { // for debugging
+
     position: absolute;
     display: none;
     top: 2.4em;
@@ -182,11 +209,14 @@ ul.display {
 
     text-align: right;
 
-    color: $chanting-ul-display-time-colour;
+    color: $colour-chanting-ul-display-time;
 
     font-size: 0.5em;
+
   }
+
   .pali {
+
     font: {
       family: 'Open Sans', sans-serif;
       weight: 500;
@@ -195,8 +225,15 @@ ul.display {
     //@media screen and (max-width: 500px) {
     //  font-weight: normal;
     //}
+
+    .night & {
+      color: $night_colour-chant-characters--pali;
+    }
+
   }
+
   .en {
+
     margin-left: 1em;
 
     font: {
@@ -207,18 +244,21 @@ ul.display {
     //@media screen and (max-width: 600px) {
     //  font-weight: 300;
     //}
+
   }
 
   .highlight {
+
     background-color: $chanting-highlight-colour-day;
 
     .night & {
-      background-color: $chanting-highlight-colour-night;
+      background-color: $night_colour-chant-highlight;
 
-      & p, h1, h2, h3 { color: $chanting-highlight-text-colour-night; }
+      & p, h2, h3, h5 { color: $night_colour-chant-highlight--text; }
     }
 
   }
+
 }
 
 .stud {

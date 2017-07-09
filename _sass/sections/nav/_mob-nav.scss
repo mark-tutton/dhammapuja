@@ -8,31 +8,40 @@
   color: $nav-hamburger-day;
 
   .night & {
-    color: $nav-hamburger-night;
+    color: $night_colour-nav-hamburger;
   }
+
 }
 
 // sidenav
 
 .side-nav {
+
   .night & {
-    background-color: $side-nav-bg-colour-night;
+    background-color: $night_colour-sidenav-bg;
 
     & a {
-      color: $side-nav-a-colour-night;
+      color: $night_colour-sidenav-a;
     }
 
     & .collapsible-body {
-      background-color: $side-nav-collapse-bod-bg-colour-night;
+      background-color: $night_colour-sidenav-dropdown-bg;
+
+      & li a {
+        color: $night_colour-sidenav-dropdown-a;
+      }
+
     }
+
   }
 
   & li a.active {
     color: $nav-active-colour-day !important;
 
     .night & {
-      color: $nav-active-colour-night !important;
+      color: $night_colour-nav-a--active !important;
     }
+
   }
 
   &-home {
@@ -41,9 +50,11 @@
     &-icon {
       margin-right: 12px !important;
     }
+
   }
+
 }
 
 .night .side-nav li>a>i {
-  color: #fefefe;
+  color: $night_colour-sidenav-a;
 }

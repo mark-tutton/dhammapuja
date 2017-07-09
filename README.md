@@ -57,7 +57,7 @@ better of the two” ( A. II ).
 
 - [ ] Mobile first
 
-- [ ] Collection of Dhamma chants, arranged: [ Morning, Evening, Etc.]
+- [ ] Collection of Dhamma chants, arranged: [ Morning, Evening, Etc. ]
 
 - [ ] Clean, material design
 

@@ -3,21 +3,38 @@
  * Links
  *
  */
+
 // .night .a-highlight {
 //   color: $footer-a-colour-night;
 // }
 
+// a:visited {
+//   .night & {
+//     color: $night_colour-text-link--visited;
+//   }
+// }
+
 .a-highlight {
+
   position: relative;
 
   color: $footer-a-colour; //#1eaedb;
 
   .night & {
-    color: $footer-a-colour-night;
+
+    color: $night_colour-text-link;
+
   }
 
   &:hover {
+
     color: $link-highlight-hover; //#0fa0ce;
+
+    .night & {
+
+      color: $night_colour-text-link--hover;
+
+    }
 
     -webkit-transform: scaleX(0);
        -moz-transform: scaleX(0);
@@ -35,10 +52,13 @@
            -moz-transform: scaleX(1);
              -o-transform: scaleX(1);
                 transform: scaleX(1);
+
     }
+
   }
 
   &:before {
+
     position: absolute;
     width: 100%;
     height: 1.5px;
@@ -46,6 +66,12 @@
     left: 0;
 
     background-color: $link-highlight-hover; //#1eaedb;
+
+    .night & {
+
+      background-color: $night_colour-text-link--hover;
+
+    }
 
     content: " ";
     visibility: hidden;
@@ -63,5 +89,15 @@
        -moz-transition: all 0.2s cubic-bezier(.175,.885,.32,1.075);
          -o-transition: all 0.2s cubic-bezier(.175,.885,.32,1.075);
             transition: all 0.2s cubic-bezier(.175,.885,.32,1.075);
+
   }
+
+}
+
+.footer-copyright a {
+
+  .night &:hover {
+    color: $livid--light;
+  }
+
 }

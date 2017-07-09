@@ -35,3 +35,8 @@ $baseurl: "{{ site.baseurl }}";
   'pages/chanting',
   'pages/chant-index'
 ;
+
+// Overrides
+@import
+  'globals/overrides'
+;

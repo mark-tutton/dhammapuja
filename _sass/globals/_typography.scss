@@ -1,18 +1,41 @@
-html {
-  font-size: 17px;
-  line-height: 26px;
-}
+//html {
+//  font-size: 17px;
+//  line-height: 26px;
+//}
 
 body {
+
   font-family: 'Nunito', sans-serif;
-  font-size: 1em;
-  line-height: 1.52941176em;
+  //font-size: 1em;
+  //line-height: 1.52941176em;
   margin: auto;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+
+  color: $body-txt-colour-day;
+
+  .night & {
+    color: $night_colour-text;
+  }
+
 }
 
+p {
+
+  .night & {
+    color: $night_colour-text;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-family: 'Open Sans', sans-serif;
+
+  .night & {
+    color: $night_colour-text-heading;
+  }
+
+}
+/*
 h1 {
   font-weight: 600;
   font-size: 4.23529412em;

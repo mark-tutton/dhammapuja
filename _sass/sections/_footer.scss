@@ -2,20 +2,21 @@ footer {
   @include box-shadow;
 }
 
-.page-footer {
+.page-footer { // Credits
   background-color: $footer-bg-colour-day !important;
 
   .night & {
-    background-color: $footer-bg-colour-night !important;
+    background-color: $night_colour-footer-credits-bg !important;
   }
 
 
-  a {
+  & a {
     color: $footer-a-colour;
-  }
 
-  .night & a {
-    color: $footer-a-colour-night;
+    .night & {
+      color: $night_colour-footer-credits-a;
+    }
+
   }
 
 
@@ -26,9 +27,11 @@ footer {
 
   & p {
     color: $footer-p-colour-day;
-  }
-  .night & p {
-    color: $footer-p-colour-night;
+
+    .night & {
+      color: $night_colour-footer-credits-text;
+    }
+
   }
 
 }
@@ -38,8 +41,17 @@ footer {
   background-color: $footer-copyr-bg-colour-day !important;
 
   .night & {
-    background-color: $footer-copyr-bg-colour-night !important;
+    background-color: $night_colour-footer-copyright-bg !important;
   }
+
+  & a {
+
+    .night & {
+      color: $night_colour-footer-copyright-a;
+    }
+
+  }
+
 }
 
 .memo { font-size: 13px; }
