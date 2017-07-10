@@ -98,7 +98,7 @@ ul.display {
           }
 
           .night & {
-            border-color: transparent transparent $night_colour-pali-characters-accents--u transparent;
+            border-color: transparent transparent $night_colour-pali-diacritical--u transparent;
           }
         }
 
@@ -111,7 +111,7 @@ ul.display {
           }
 
           .night & {
-            border-color: $night_colour-pali-characters-accents--d transparent transparent transparent;
+            border-color: $night_colour-pali-diacritical--d transparent transparent transparent;
           }
         }
 
@@ -122,7 +122,7 @@ ul.display {
           }
 
           .night & {
-            border-color: transparent transparent $night_colour-pali-characters-accents--u transparent;
+            border-color: transparent transparent $night_colour-pali-diacritical--u transparent;
           }
         }
 
@@ -135,7 +135,7 @@ ul.display {
           }
 
           .night & {
-            border-color: $night_colour-pali-characters-accents--dd transparent transparent transparent;
+            border-color: $night_colour-pali-diacritical--dd transparent transparent transparent;
           }
         }
 
@@ -172,9 +172,10 @@ ul.display {
     margin: auto 10px;
     padding: .01em 2em; // 0 2em
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $screen-large) {
       padding: 0 4em;
     }
+
     @media screen and (max-width: 900px) {
       margin: auto 7px;
       padding: 0 2em;
@@ -227,7 +228,7 @@ ul.display {
     //}
 
     .night & {
-      color: $night_colour-chant-characters--pali;
+      color: $night_colour-chant-text--pali;
     }
 
   }
