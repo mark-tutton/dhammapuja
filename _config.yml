@@ -21,7 +21,7 @@ exclude:
   - todo.txt
   - Gemfile
 
-plugins:
+gems:
   - jekyll-sitemap
   - jekyll-assets
   - jekyll-seo-tag
