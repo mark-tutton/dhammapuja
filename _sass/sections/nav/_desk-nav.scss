@@ -7,8 +7,14 @@
 }
 
 .dropdown-content {
+  background-color: $day_colour-nav-dropdown-bg;
+  .night & {
+    background-color: $night_colour-nav-dropdown-bg;
+  }
+
+
   &.active li > a.active {
-    color: $nav-active-colour-day !important;
+    color: $day_colour-nav-a--active !important;
 
     .night & {
       color: $night_colour-nav-a-dropdown--active !important;
@@ -19,12 +25,9 @@
     background-color: rgba(0,0,0,0.1);
   }
 
-  .night & {
-    background-color: $night_colour-nav-dropdown-bg;
-  }
 
   li > a, li > span {
-    color: $nav-ul-a-colour-day;
+    color: $day_colour-nav-dropdown-a;
 
     .night & {
       color: $night_colour-nav-dropdown-a;
@@ -36,6 +39,8 @@
 
 
 .nav-wrapper {
+  background-color: $day_colour-nav-bg;
+
   .night & {
     background-color: $night_colour-nav-bg !important;
   }
@@ -46,7 +51,7 @@ nav {
     //letter-spacing: .08em;
 
     &.active {
-      color: $nav-active-colour-day;
+      color: $day_colour-nav-a--active;
 
       .night & {
         color: $night_colour-nav-a--active !important;
@@ -67,7 +72,7 @@ nav {
   // }
 
   ul a {
-    //color: $nav-ul-a-colour-day;
+    color: $day_colour-nav-a;
 
     .night & {
       color: $night_colour-nav-a;

@@ -5,7 +5,7 @@
 
 // hamburger
 .feather-menu {
-  color: $nav-hamburger-day;
+  color: $day_colour-nav-hamburger;
 
   .night & {
     color: $night_colour-nav-hamburger;
@@ -16,6 +16,21 @@
 // sidenav
 
 .side-nav {
+  background-color: $day_colour-sidenav-bg;
+
+  li > a, li > a > i {
+    color: $day_colour-sidenav-a;
+  }
+
+  & .collapsible-body {
+
+    & li > a {
+      color: $day_colour-sidenav-dropdown-a;
+    }
+
+    background-color: $day_colour-sidenav-dropdown-bg;
+  }
+
 
   .night & {
     background-color: $night_colour-sidenav-bg;
@@ -36,7 +51,7 @@
   }
 
   & li a.active {
-    color: $nav-active-colour-day !important;
+    color: $day_colour-nav-a-dropdown--active !important;
 
     .night & {
       color: $night_colour-nav-a--active !important;

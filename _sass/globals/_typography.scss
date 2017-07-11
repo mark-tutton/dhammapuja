@@ -10,7 +10,7 @@ body {
   //line-height: 1.52941176em;
   margin: auto;
 
-  color: $body-txt-colour-day;
+  color: $day_colour-text;
 
   .night & {
     color: $night_colour-text;
@@ -29,6 +29,8 @@ p {
 h1, h2, h3, h4, h5, h6 {
 
   font-family: 'Open Sans', sans-serif;
+
+  color: $day_colour-text-heading;
 
   .night & {
     color: $night_colour-text-heading;

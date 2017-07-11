@@ -1,17 +1,7 @@
-/*body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}*/
-
 nav li>a {
   letter-spacing: .06em;
 }
 
-nav li>a.active {
-  color: #16BAC5;
-}
-.night nav li>a.active {
-  color: #a3e7fc;
-}
 nav .brand-logo {
   padding-left: 1%;
   color: #050709;
@@ -19,7 +9,6 @@ nav .brand-logo {
 }
 
 nav ul a {
-  color: #050709;
   font-weight: 500;
 }
 
@@ -43,9 +32,4 @@ body {
           flex-direction: column;
 
   min-height: 100vh;
-}
-
-body {
-  background-color: #f7f7f7;
-  color: #373a3c;
 }

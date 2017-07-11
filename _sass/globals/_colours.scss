@@ -76,6 +76,131 @@
 
 // Colours
 
+  // Day (Default)
+
+    // Whites
+      $white-smoke: #F6F6F6;
+      //$white-smoke-y2: #F7F7F7;
+      $white-smoke-x2: #F3F3F3;
+      $pastel-gray: #CACACA;
+
+      $white-smoke: $white-smoke;
+      $white-smoke--light: $white-smoke-x2;
+      $white-smoke--dark: $pastel-gray;
+
+    // Blacks
+      $onyx: #373A3C;
+      $outer-space-day: #494B4D;
+      $jet-day: #2E3032;
+
+      $onyx: $onyx;
+      $onyx--light: $outer-space-day;
+      $onyx--dark: $jet-day;
+
+    // Grays
+      $black-olive: #393E41;
+      $granite-gray: #5D6163;
+
+      $black-olive: $black-olive;
+      $black-olive--light: $granite-gray;
+
+    // Links
+      $picton-blue: #48ACF0;
+      $very-light-azure: #69BBF2;
+      $tufts-blue: #3B8DC5;
+
+      $picton-blue: $picton-blue;
+      $picton-blue--light: $very-light-azure;
+      $picton-blue--dark: $tufts-blue;
+
+    // End of Day colour declorations
+
+    // Body
+
+      // Background
+        $day_colour-background: $white-smoke; // Main BG
+        $day_colour-background-shade-1: $white-smoke--light; // Navbar & footer credits
+        $day_colour-background-shade-2: $white-smoke--dark; // Footer copyr.
+
+      // Text
+        $day_colour-text: $onyx; // Main Text
+        $day_colour-text-weak: $onyx--light; // Weak Text
+        $day_colour-text-strong: $onyx--dark; // Strong Text
+        $day_colour-text-heading: $onyx--dark; // Headings
+
+
+    // Links
+
+      $day_colour-text-link: $picton-blue;
+      $day_colour-text-link--visited: $picton-blue--dark;
+      $day_colour-text-link--hover: $picton-blue--light;
+
+
+    // Navbar
+
+      // Desktop
+
+        $day_colour-nav-bg: $day_colour-background-shade-1;
+        // $day_colour-brand-logo: ;
+        $day_colour-nav-a: $onyx--light;
+        $day_colour-nav-dropdown-bg: $white-smoke;
+        $day_colour-nav-dropdown-a: $onyx;
+
+        $day_colour-nav-a--active: $picton-blue;
+        $day_colour-nav-a-dropdown--active: $picton-blue;
+
+      // Mobile Sidenav
+
+        // Hamburger
+
+          $day_colour-nav-hamburger: #050709;
+
+        // Sidenav
+
+          $day_colour-sidenav-bg: #fff;
+          $day_colour-sidenav-dropdown-bg: #fefefe;
+
+          $day_colour-sidenav-a: $onyx--dark;
+          $day_colour-sidenav-dropdown-a: $onyx;
+
+
+    // Footer
+
+      $day_colour-footer-credits-bg: $day_colour-background-shade-1;
+      $day_colour-footer-copyright-bg: $white-smoke--dark;
+
+      $day_colour-footer-credits-text: $onyx--dark;
+      // $day_colour-footer-credits-a: ;
+
+      // $day_colour-footer-copyright-a: ;
+
+
+    // Floating Button
+
+      $day_colour-fl-button-bg: $onyx--dark;
+      $day_colour-fl-button-icon: $white-smoke--light;
+      //$day_colour-fl-button-icon--moon: ;
+
+
+    // Chanting
+      $pale-goldenrod: #ECFEAA;
+      $quinacridone-magneta: #912F56;
+      $picton-blue-chant: #30BCED;
+
+      $day_colour-chant-highlight: $pale-goldenrod;
+      // $day_colour-chant-highlight--text: ;
+
+      $day_colour-chant-text-pali: $day_colour-text-strong;
+
+      $day_colour-pali-diacritical--u: $quinacridone-magneta;
+      $day_colour-pali-diacritical--d: $picton-blue-chant;
+      //$day_colour-pali-diacritical--uu: $quinacridone-magneta ;
+      $day_colour-pali-diacritical--dd: $picton-blue-chant;
+
+// ----------------------------
+// ----------------------------
+
+
   // Night
     // Base Definitions
 

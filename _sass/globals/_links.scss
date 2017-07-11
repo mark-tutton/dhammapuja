@@ -18,7 +18,7 @@
 
   position: relative;
 
-  color: $footer-a-colour; //#1eaedb;
+  color: $day_colour-text-link; //#1eaedb;
 
   .night & {
 
@@ -28,7 +28,7 @@
 
   &:hover {
 
-    color: $link-highlight-hover; //#0fa0ce;
+    color: $day_colour-text-link--hover; //#0fa0ce;
 
     .night & {
 
@@ -65,7 +65,7 @@
     bottom: -.5px;
     left: 0;
 
-    background-color: $link-highlight-hover; //#1eaedb;
+    background-color: $day_colour-text-link--hover; //#1eaedb;
 
     .night & {
 
@@ -95,6 +95,7 @@
 }
 
 .footer-copyright a {
+  color: $day_colour-text-link--hover;
 
   .night &:hover {
     color: $livid--light;

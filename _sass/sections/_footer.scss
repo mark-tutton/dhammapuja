@@ -3,7 +3,7 @@ footer {
 }
 
 .page-footer { // Credits
-  background-color: $footer-bg-colour-day !important;
+  background-color: $day_colour-footer-credits-bg;
 
   .night & {
     background-color: $night_colour-footer-credits-bg !important;
@@ -11,7 +11,7 @@ footer {
 
 
   & a {
-    color: $footer-a-colour;
+    color: $day_colour-text-link;
 
     .night & {
       color: $night_colour-footer-credits-a;
@@ -26,7 +26,7 @@ footer {
 
 
   & p {
-    color: $footer-p-colour-day;
+    color: $day_colour-footer-credits-text;
 
     .night & {
       color: $night_colour-footer-credits-text;
@@ -38,7 +38,7 @@ footer {
 
 
 .footer-copyright {
-  background-color: $footer-copyr-bg-colour-day !important;
+  //background-color: $day_colour-footer-copyright-bg !important;
 
   .night & {
     background-color: $night_colour-footer-copyright-bg !important;

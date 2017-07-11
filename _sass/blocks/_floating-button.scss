@@ -2,8 +2,7 @@
 .btn-floating {
 
   margin-bottom: 1.5rem;
-  background-color: #212132;
-  background-color: $fl-button-bg-colour-day;
+  background-color: $day_colour-fl-button-bg;
 
   .night & {
     background-color: $night_colour-fl-button-bg;
@@ -19,10 +18,9 @@
 
 .feather-cog, .feather-chevron-up, .feather-moon, .feather-sun {
 
-  background-color: #212132;
-  background-color: $fl-button-bg-colour-day;
+  background-color: $day_colour-fl-button-bg;
 
-  color: $fl-button-icon-colour-day !important;
+  color: $day_colour-fl-button-icon;
 
   .night & {
     background-color: $night_colour-fl-button-bg;

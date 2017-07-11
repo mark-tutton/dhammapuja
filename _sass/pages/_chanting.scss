@@ -94,7 +94,7 @@ ul.display {
         & > .u {
           border: {
             width: 0 0.25em 0.15em 0.25em;
-            color: transparent transparent #FF8800 transparent;
+            color: transparent transparent $day_colour-pali-diacritical--u transparent;
           }
 
           .night & {
@@ -107,7 +107,7 @@ ul.display {
 
           border: {
             width: 0.15em 0.25em 0 0.25em;
-            color: blue transparent transparent transparent;
+            color: $day_colour-pali-diacritical--d transparent transparent transparent;
           }
 
           .night & {
@@ -118,7 +118,7 @@ ul.display {
         & > .uu {
           border: {
             width: 0 0.5em 0.2em 0.5em;
-            color: transparent transparent #FF8800 transparent;
+            color: transparent transparent $day_colour-pali-diacritical--u transparent;
           }
 
           .night & {
@@ -131,7 +131,7 @@ ul.display {
 
           border: {
             width: 0.2em 0.5em 0 0.5em;
-            color: blue transparent transparent transparent;
+            color: $day_colour-pali-diacritical--dd transparent transparent transparent;
           }
 
           .night & {
@@ -227,6 +227,8 @@ ul.display {
     //  font-weight: normal;
     //}
 
+    color: $day_colour-chant-text-pali;
+
     .night & {
       color: $night_colour-chant-text--pali;
     }
@@ -250,7 +252,7 @@ ul.display {
 
   .highlight {
 
-    background-color: $chanting-highlight-colour-day;
+    background-color: $day_colour-chant-highlight;
 
     .night & {
       background-color: $night_colour-chant-highlight;

@@ -4,7 +4,7 @@ body {
   -webkit-transition: background-color 300ms ease;
           transition: background-color 300ms ease; // for nightmode toggle of background colour
 
-  background-color: $body-bg-colour-day;
+  background-color: $day_colour-background;
 
 }
 
@@ -14,16 +14,9 @@ body {
 
 }
 
-/*
-.night {
-  background-color: $night_colour-background;
-  color: $night_colour-text;
-
-  // h3 {
-  //   color: $h3-colour-night;
-  // }
-  p {
-    color: $p-colour-night;
-  }
-}
-*/
+$mobile-small: 240;
+$mobile-large: 320;
+$tablet-small: 480;
+$tablet-large: 768;
+$screen-small: 1024;
+$screen-large: 1280;
