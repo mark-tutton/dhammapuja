@@ -47,34 +47,6 @@ function hasScrolled() {
 // ************************************* //
 // toggleable inverter with sessionStorage
 // from http://stackoverflow.com/questions/28239337/store-a-css-class-on-browser
-  // $('#inverter').click(function () {
-  //   $('body').toggleClass('day night');
-
-  //   if ($('body').hasClass('night')) {
-  //     sessionStorage.setItem('theme', 'night');
-  //   }
-  //   else if ($('body').hasClass('day')) {
-  //     sessionStorage.setItem('theme', 'day');
-  //   } else {
-  //     $('body').removeClass('night day').addClass('day');
-  //   }
-
-  // });
-
-  // $(document).ready(function() {
-  //   var theme = sessionStorage.getItem('theme');
-  //   if (theme !== '') {
-  //     $('body').addClass(theme);
-  //   }
-  // });
-
-  // $(function() {
-  //   $('.invert').click(function (){
-  //     $(this).find('i').toggleClass('feather-moon feather-sun');
-  //   });
-  // });
-  // *** End Toggleable inverter *** //
-  // ******************************* //
 
 
   $( '#inverter' ).click(function () {
@@ -85,7 +57,7 @@ function hasScrolled() {
     }
 
     else {
-      sessionStorage.setItem( 'theme', '' );
+      sessionStorage.setItem( 'theme', 'day' );
     }
 
   });
@@ -97,8 +69,28 @@ function hasScrolled() {
     }
   });
 
-  $(function() {
-    $('.invert').click(function (){
-      $(this).find( 'i' ).toggleClass( 'feather-moon feather-sun' );
+
+
+  $(document).ready(function() {
+
+    $(function () {
+      $( '.invert i' ).click(function() {
+
+        $(this).toggleClass( 'feather-sun' );
+
+        if ($(this).attr( 'class' ) == 'feather-moon' ) {
+          sessionStorage.class = 'feather-moon';
+        }
+        else if ($(this).attr( 'class' ) == ( 'feather-moon feather-sun' )) {
+          sessionStorage.class = 'feather-sun';
+        }
+
+      });
+
     });
+
+    if(typeof(Storage) !== 'undefined' ) {
+      $( '.invert i' ).addClass(sessionStorage.class);
+    }
+
   });
