@@ -23,6 +23,21 @@ This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) 
 
 ## What does Dhammapuja mean?
 ```
+Dhamma : lit. the 'bearer', constitution (or nature of a thing), norm,
+ law (jus), doctrine; justice, righteousness;
+ quality; thing, object of mind (s. āyatana) 'phenomenon'. 
+
+  The Dhamma, as the liberating law discovered and proclaimed by the Buddha,
+is summed up in the 4 Noble Truths (s. sacca). It forms one of the 3 Gems
+(ti-ratana, q.v.) and one of the 10 recollections (anussati q.v.).
+  
+  Dhamma, as object of the mind (dhammāyatana, s. āyatana) may be
+anything past, present or future, corporeal or mental,
+conditioned or not (cf. sankhāra, 4), real or imaginary.
+```
+- http://urbandharma.org/pdf/palidict.pdf (pg. 97/402)
+
+```
 Pūjā : (1) honour, respect, homage, (2) worship,
 devotional observances, devotional offerings; also
 offerings to monks.
