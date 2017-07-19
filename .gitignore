@@ -1,8 +1,9 @@
-# Jekyll build destination
+############################
+# Jekyll build destination #
+############################
 _site
 
-.sass-cache
-
+######################
 # OS generated files #
 ######################
 .DS_Store
@@ -11,8 +12,42 @@ _site
 .Spotlight-V100
 .Trashes
 *.cache
+Thumbs.db
 
+##################
+# Editor folders #
+##################
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+_notes
+dwsync.xml
+
+#####################################
+# Numerous always-ignore extensions #
+#####################################
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+node_modules/
+.tmp/
+
+####################
+# Project-specific #
+####################
 ignore/*
-
 assets/audio/transcript/*
 assets/audio/128kb/*
