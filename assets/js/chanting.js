@@ -1,4 +1,3 @@
-//= require bootstrap
 //= require vendor/jquery.smooth-scroll
 
 jQuery.fx.interval = 10;
@@ -48,9 +47,11 @@ if (data && data.val()) {
         var timeNode = $('<div class="time" data-time="' + time + '">' + timeToHuman(time) + '</div>');
         node.on("click", function(event) {
           // Binding event
-          audio.oncanplay = function() {
-              console.log("Can start playing audio");
-          };
+          //audio.oncanplay = function() {
+          //  console.log("Can start playing audio");
+          //}
+
+
           audio.currentTime = time;
           audio.play();
         });
