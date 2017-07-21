@@ -34,7 +34,8 @@ $baseurl: "{{ site.baseurl }}";
 // Pages
 @import
   'pages/chanting',
-  'pages/chant-index'
+  'pages/chant-index',
+  'pages/home'
 ;
 
 // Overrides

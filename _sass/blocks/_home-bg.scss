@@ -6,7 +6,8 @@
   background: -webkit-linear-gradient(left, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
   background:         linear-gradient(to right, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
 
-  background: url($baseurl + '/assets/img/chanting/dhammakaya-small.jpg') no-repeat center center;
+  //background: url($baseurl + '/assets/img/chanting/dhammakaya-small.jpg') no-repeat center center;
+  background: url($baseurl + '/assets/img/chanting/tree--forest-buddha-small.jpg') no-repeat center center;
 
   -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -17,14 +18,14 @@
   @media #{$medium-and-up} {
     background: -webkit-linear-gradient(left, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
     background:         linear-gradient(to right, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
-    background: url($baseurl + '/assets/img/chanting/dhammakaya-medium.jpg') no-repeat center center;
+    background: url($baseurl + '/assets/img/chanting/tree--forest-buddha.jpg') no-repeat  30% 40%;
 
   }
 
   @media #{$large-and-up} {
     background: -webkit-linear-gradient(left, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
     background:         linear-gradient(to right, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
-    background: url($baseurl + '/assets/img/chanting/dhammakaya-large.jpeg') no-repeat center center;
+    background: url($baseurl + '/assets/img/chanting/tree--forest-buddha-large-crop.jpg') no-repeat left 30%;
   }
 
 }
