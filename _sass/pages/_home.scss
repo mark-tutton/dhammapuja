@@ -55,12 +55,21 @@
   }
 
   & > .container .collapsible li .collapsible-body span i {
-    color: $platinum;
+    .night & {
+      color: $platinum;
+    }
   }
 
   .collapsible {
     .night & {
       border: 1px solid #333;
     }
+
+    &-body {
+      .night & {
+        border-bottom: 0;
+      }
+    }
   }
+
 }

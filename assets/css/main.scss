@@ -27,8 +27,7 @@ $baseurl: "{{ site.baseurl }}";
 
 // Blocks
 @import
-  'blocks/floating-button',
-  'blocks/home-bg'
+  'blocks/floating-button'
 ;
 
 // Pages
