@@ -37,70 +37,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 }
-/*
-h1 {
-  font-weight: 600;
-  font-size: 4.23529412em;
-  line-height: 1.08333333em;
-  //margin-top: 0.36111111em;
-  margin-top: 0;
-  margin-bottom: 0.36111111em;
-
-  @media screen and (max-width: 993px) {
-    font-size: 3.235em;
-  }
-  @media screen and (max-width: 600px) {
-    font-size: 2.235em;
-  }
-}
-
-h2 {
-  font-size: 2.64705882em;
-  line-height: 1.15555556em;
-  margin-top: 0.57777778em;
-  margin-bottom: 0.57777778em;
-
-  @media screen and (max-width: 600px) {
-    font-size: 1.647em;
-  }
-}
-h3 {
-  font-size: 1.64705882em;
-  line-height: 1.85714286em;
-  margin-top: 0.92857143em;
-  margin-bottom: 0em;
-
-  @media screen and (max-width: 600px) {
-    font-size: 1.2em;
-  }
-}
-
-h4 {
-  font-size: 1em;
-  line-height: 1.52941176em;
-  margin-top: 1.52941176em;
-  margin-bottom: 0em;
-}
 
 
-h5 {
-  font-size: 1em;
-  line-height: 1.52941176em;
-  margin-top: 1.52941176em;
-  margin-bottom: 0em;
-}
-
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0em;
-  margin-bottom: 1.52941176em;
-}
-/*
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0em;
-  margin-bottom: 0em;
-}*/
-
-/* Let's make sure all's aligned */
 hr, .hr {
   border: 1px solid;
   margin: -1px 0;

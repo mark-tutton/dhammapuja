@@ -1,52 +1,43 @@
 @media only screen and (max-width : 992px) {
   .parallax img {
-    max-height: 130%; /* or a little bit higher */
+    max-height: 130%; // or a little bit higher
   }
 }
 
 @media only screen and (min-width: 993px) {
   .parallax img {
-    max-height: 170%; /* or higher percentages. It's up to your taste */
+    max-height: 170%; // or higher percentages. It's up to your taste
   }
 }
 
-.aligner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.aligner-item {
-  max-width: 50%;
-}
+.top-hero {
 
-.aligner-item--top {
-  align-self: flex-start;
-}
-
-.aligner-item--bottom {
-  align-self: flex-end;
-}
-.parallax__p--text {
-
-  //position: absolute;
-  display: block;
-  margin: 0;
-
-
-  color: $white-smoke;
-  //font-weight: 500;
-  //font-size: 2.06rem
-
-  &:before {
-    content: "";
-    display: block;
+  &__text-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
+
+  &__title {
+    color: $white-smoke;
+    text-shadow: 2px 2px 2px $night_colour-background;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    color: $white-smoke--light;
+    text-shadow: 2px 2px 2px $night_colour-background;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
 }
 
-.parallax__a--btn {
-  display: block;
-}
 
 .home--section__bg {
   background-color: $day_colour-background;
