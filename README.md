@@ -17,6 +17,9 @@ Updating https://github.com/job-talk/dhamma-chanting to MaterializeCSS and Jekyl
 
 This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) ['Dhamma Schtuff'](https://pali.ejinjue.org/) project. I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
+Index photos:
+- 'Ta Prohm' by Clay Gilliland: https://www.flickr.com/photos/26781577@N07/12664281874/
+- 'Buddha 2' by Rob Hurson: https://www.flickr.com/photos/robhurson/14109920284/
 ***
 
 <br />
@@ -25,12 +28,12 @@ This site is heavily derived from [John Nishinaga's](https://ejinjue.org/john/) 
 ```
 Dhamma : lit. the 'bearer', constitution (or nature of a thing), norm,
  law (jus), doctrine; justice, righteousness;
- quality; thing, object of mind (s. āyatana) 'phenomenon'. 
+ quality; thing, object of mind (s. āyatana) 'phenomenon'.
 
   The Dhamma, as the liberating law discovered and proclaimed by the Buddha,
 is summed up in the 4 Noble Truths (s. sacca). It forms one of the 3 Gems
 (ti-ratana, q.v.) and one of the 10 recollections (anussati q.v.).
-  
+
   Dhamma, as object of the mind (dhammāyatana, s. āyatana) may be
 anything past, present or future, corporeal or mental,
 conditioned or not (cf. sankhāra, 4), real or imaginary.
