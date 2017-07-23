@@ -30,27 +30,13 @@
   </script>
 
   <script id="loadcss">
-    loadCSS( "https://fonts.googleapis.com/css?family=Nunito|Open+Sans" );
+    loadCSS( "https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" );
     loadCSS( "{{ site.baseurl }}/assets/css/main.css" );
   </script>
 
   <style type="text/css">
-    #home-bg {
-      display: flex;
-      flex: 1;
-      height: 100%;
 
-      background: -webkit-linear-gradient(left, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
-      background: linear-gradient(to right, #714b0e 0%, #895a13 50%, #89550e 75%, #70470b 100%);
-
-      background: url('{{ site.baseurl }}/assets/img/chanting/dhammakaya.svg') no-repeat center center;
-      -webkit-background-size: cover;
-         -moz-background-size: cover;
-           -o-background-size: cover;
-              background-size: cover;
-      }
-
-    footer.page-footer {
+    /*footer.page-footer {
       margin-top: 0;
     }
 
@@ -60,7 +46,7 @@
       height: 20em;
 
       flex: 1 0 auto;
-    }
+    }*/
 
     {% include head/styles/inline.css %}
 
@@ -68,7 +54,7 @@
 
   <noscript>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
   </noscript>
 
   {% seo %}

@@ -48,7 +48,6 @@
 
 nav {
   li > a {
-    //letter-spacing: .08em;
 
     &.active {
       color: $day_colour-nav-a--active;
@@ -65,12 +64,6 @@ nav {
 
   }
 
-  // .brand-logo {
-  //  padding-left: 1%;
-  //  color: #050709;
-  //  font-weight: 600;
-  // }
-
   ul a {
     color: $day_colour-nav-a;
 
@@ -80,7 +73,7 @@ nav {
 
     .night &:hover {
 
-      background-color: $anti-flash-white;//rgba(234, 234, 234, 0.9);
+      background-color: $anti-flash-white;
       color: $jet--dark;
       }
   }
