@@ -1,13 +1,29 @@
-@media only screen and (max-width : 992px) {
-  .parallax img {
-    max-height: 130%; // or a little bit higher
+.parallax-container__top-hero {
+  @media #{$medium-and-down} { max-height: 400px; }
+  @media #{$small-and-down} { max-height: 250px; }
+
+  @media only screen and (max-width: 301px) {
+    max-height: 175px;
   }
+
+  @media only screen and (max-width: 401px) {
+    max-height: 225px;
+  }
+
+  @media only screen and (max-width: 601px) {
+    max-height: 275px;
+  }
+
+  @media only screen and (max-width: 801px) {
+    max-height: 350px;
+  }
+
 }
 
-@media only screen and (min-width: 993px) {
-  .parallax img {
-    max-height: 170%; // or higher percentages. It's up to your taste
-  }
+
+.parallax img {
+  //@media #{$small-and-down} { max-width: 200%; }
+  //@media #{$medium-and-up} { width: 100%; }
 }
 
 
