@@ -1,6 +1,6 @@
 .parallax-container__top-hero {
-  @media #{$medium-and-down} { max-height: 400px; }
-  @media #{$small-and-down} { max-height: 250px; }
+  @media only screen and (min-width: 601px) { max-height: 400px; }
+  @media only screen and (max-width: 600px) { max-height: 250px; }
 
   @media only screen and (max-width: 301px) {
     max-height: 175px;

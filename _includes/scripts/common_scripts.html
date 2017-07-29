@@ -1,29 +1,34 @@
-
-{% js main %}
-
 <script>
-  /* Loads script after DOM finished loading */
-  /* Add a script element as a child of the body */
-   function downloadJSAtOnload() {
-   var element = document.createElement("script");
-   element.src = "{% asset_path scripts.js %}";
-   document.body.appendChild(element);
-   }
-   /* Check for browser support of event handling capability */
-   if (window.addEventListener)
-   window.addEventListener("load", downloadJSAtOnload, false);
-   else if (window.attachEvent)
-   window.attachEvent("onload", downloadJSAtOnload);
-   else window.onload = downloadJSAtOnload;
-</script>
+  var dfLoadStatus = 0;
+  var dfLoadFiles = [
+        ["{% asset_path main.js %}"]
+       ];
 
-<script>
-  $(".button-collapse").sideNav({
-    menuWidth: 270,
-    edge: 'right',
-    closeOnClick: true,
-    draggable: true
-  });
+  function downloadJSAtOnload() {
+      if (!dfLoadFiles.length) return;
 
-  $('.collapsible').collapsible();
+      var dfGroup = dfLoadFiles.shift();
+      dfLoadStatus = 0;
+
+      for(var i = 0; i<dfGroup.length; i++) {
+          dfLoadStatus++;
+          var element = document.createElement('script');
+          element.src = dfGroup[i];
+          element.onload = element.onreadystatechange = function() {
+          if ( ! this.readyState ||
+                 this.readyState == 'complete') {
+              dfLoadStatus--;
+              if (dfLoadStatus==0) downloadJSAtOnload();
+          }
+      };
+      document.body.appendChild(element);
+    }
+
+  }
+
+  if (window.addEventListener)
+      window.addEventListener("load", downloadJSAtOnload, false);
+  else if (window.attachEvent)
+      window.attachEvent("onload", downloadJSAtOnload);
+  else window.onload = downloadJSAtOnload;
 </script>

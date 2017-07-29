@@ -18,7 +18,7 @@ html{
     font-size: 15px;
   }
 
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; // fallback
   font-weight: normal;
   color: $off-black;
 }

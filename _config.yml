@@ -43,13 +43,14 @@ assets:
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
-  digest: true
+  digest: default
 
   assets:
 #    - "*.jpg"
-#    - "*.png"
-#    - "*.svg"
+    - "*.png"
+    - "*.svg"
     - "bundle.css"
+    - "*.xml"
 
   sources:
     - _assets/_sass
