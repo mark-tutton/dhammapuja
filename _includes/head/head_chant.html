@@ -30,19 +30,18 @@
   </script>
   <script id="loadcss">
     loadCSS( "https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" );
-    loadCSS( "{{ site.baseurl }}../../assets/css/main.css" );
   </script>
+  <noscript>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
+  </noscript>
+
+  {% css main %}
 
   <style type="text/css">
     {% include head/styles/inline.css %}
   </style>
 
-  <noscript>
-    <link rel="stylesheet" href="{{ site.baseurl }}../../assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
-  </noscript>
 
   {% seo %}
-
 
 </head>

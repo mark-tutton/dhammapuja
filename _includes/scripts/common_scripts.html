@@ -1,7 +1,21 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" integrity="sha256-3mqgTUhHNgfXgjrzjPOaW03DdQ9hgW92BApzLREoRoA=" crossorigin="anonymous"></script>
+{% js main %}
 
+<script>
+  /* Loads script after DOM finished loading */
+  /* Add a script element as a child of the body */
+   function downloadJSAtOnload() {
+   var element = document.createElement("script");
+   element.src = "{% asset_path scripts.js %}";
+   document.body.appendChild(element);
+   }
+   /* Check for browser support of event handling capability */
+   if (window.addEventListener)
+   window.addEventListener("load", downloadJSAtOnload, false);
+   else if (window.attachEvent)
+   window.attachEvent("onload", downloadJSAtOnload);
+   else window.onload = downloadJSAtOnload;
+</script>
 
 <script>
   $(".button-collapse").sideNav({

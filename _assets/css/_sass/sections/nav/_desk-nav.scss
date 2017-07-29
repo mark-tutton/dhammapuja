@@ -1,5 +1,12 @@
-.brand-logo {
+nav .brand-logo {
   font-family: 'Open Sans', sans-serif;
+  color: $day_colour-nav-hamburger;
+  font-weight: 500;
+
+  @media screen and (min-width: 993px) {
+    padding-left: 1%;
+    font-weight: 600;
+  }
 
   .night & {
     color: $night_colour-brand-logo;
@@ -65,6 +72,7 @@ nav {
   }
 
   ul a {
+    font-weight: 500;
     color: $day_colour-nav-a;
 
     .night & {

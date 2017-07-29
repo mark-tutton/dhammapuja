@@ -31,31 +31,14 @@
 
   <script id="loadcss">
     loadCSS( "https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" );
-    loadCSS( "{{ site.baseurl }}/assets/css/main.css" );
   </script>
 
-  <style type="text/css">
-
-    /*footer.page-footer {
-      margin-top: 0;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      height: 20em;
-
-      flex: 1 0 auto;
-    }*/
-
-    {% include head/styles/inline.css %}
-
-  </style>
-
   <noscript>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
   </noscript>
+
+
+  {% css main rel="preload" %}
 
   {% seo %}
 

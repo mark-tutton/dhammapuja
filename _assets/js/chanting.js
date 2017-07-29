@@ -1,4 +1,4 @@
-//= require vendor/jquery.smooth-scroll
+//= require jquery/jquery.smooth-scroll
 
 jQuery.fx.interval = 10;
 
