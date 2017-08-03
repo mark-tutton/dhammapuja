@@ -21,6 +21,9 @@ exclude:
   - Gemfile
   - node_modules
   - ignore
+  - gulpfile.js
+  - package.json
+  - package-lock.json
 
 gems:
   - jekyll-sitemap
