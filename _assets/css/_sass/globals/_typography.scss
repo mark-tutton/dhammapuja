@@ -1,0 +1,40 @@
+html {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  margin: auto;
+
+  color: $day_colour-text;
+
+  .night & {
+    color: $night_colour-text;
+  }
+
+}
+
+p {
+
+  .night & {
+    color: $night_colour-text;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-family: 'Open Sans', sans-serif;
+
+  color: $day_colour-text-heading;
+
+  .night & {
+    color: $night_colour-text-heading;
+  }
+
+}
+
+
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}

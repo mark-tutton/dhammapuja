@@ -8,7 +8,9 @@ description: Karaoke for Chanting the Five Precepts from the Metta Forest Monast
 <div id="audio">
 
   <audio id="track" controls="controls" preload="auto" ontimeupdate="trackTime(this)">
-  <source src="../../assets/audio/5-precept.mp3" type="audio/mpeg">Your browser does not support the <code>audio</code> element.
+    <source src="{% asset_path 5-precepts.mp3 %}" type="audio/mpeg" />
+    <source src="{% asset_path 5-precepts.ogg %}" type="audio/ogg" />
+      Your browser does not support the <code>audio</code> element.
   </audio>
 
 </div>

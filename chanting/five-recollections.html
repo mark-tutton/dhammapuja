@@ -8,7 +8,9 @@ description: Karaoke for Chanting the Five Recollections from the Metta Forest M
 <div id="audio">
 
     <audio id="track" controls="controls" preload="auto" ontimeupdate="trackTime(this)">
-    <source src="../../assets/audio/five-recollections.mp3" type="audio/mpeg">Your browser does not support the <code>audio</code> element.
+    <source src="{% asset_path five-recollections.mp3 %}" type="audio/mpeg" />
+    <source src="{% asset_path five-recollections.ogg %}" type="audio/ogg" />
+      Your browser does not support the <code>audio</code> element.
   </audio>
 
 </div>

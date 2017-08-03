@@ -3,44 +3,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" sizes="152x152" href="../../assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="../../assets/img/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="../../assets/img/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="../../assets/img/manifest.json">
-  <link rel="mask-icon" href="../../assets/img/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="../../assets/img/favicon.ico">
-  <meta name="msapplication-config" content="../../assets/img/browserconfig.xml">
+  <title>{{ page.title }}</title>
+
+  <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-touch-icon.png %}">
+  <link rel="icon" type="image/png" href="{% asset_path favicon-32x32.png %}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{% asset_path favicon-16x16.png %}" sizes="16x16">
+  <link rel="manifest" href="{% asset_path manifest.json %}">
+  <link rel="mask-icon" href="{% asset_path safari-pinned-tab.svg %}" color="#5bbad5">
+  <link rel="shortcut icon" href="{% asset_path favicon.ico %}">
+  <meta name="msapplication-config" content="{% asset_path browserconfig.xml %}">
   <meta name="theme-color" content="#cccccc">
 
   <link rel="author" href="../../humans.txt" />
 
-  <title>{{ page.title }}</title>
 
-  <script>
-    (function(w){"use strict";var loadCSS=function(href,before,media){var doc=w.document;var ss=doc.createElement("link");var ref;if(before){ref=before;}
-    else{var refs=(doc.body||doc.getElementsByTagName("head")[0]).childNodes;ref=refs[refs.length-1];}
-    var sheets=doc.styleSheets;ss.rel="stylesheet";ss.href=href;ss.media="only x";function ready(cb){if(doc.body){return cb();}
-    setTimeout(function(){ready(cb);});}
-    ready(function(){ref.parentNode.insertBefore(ss,(before?ref:ref.nextSibling));});var onloadcssdefined=function(cb){var resolvedHref=ss.href;var i=sheets.length;while(i--){if(sheets[i].href===resolvedHref){return cb();}}
-    setTimeout(function(){onloadcssdefined(cb);});};function loadCB(){if(ss.addEventListener){ss.removeEventListener("load",loadCB);}
-    ss.media=media||"all";}
-    if(ss.addEventListener){ss.addEventListener("load",loadCB);}
-    ss.onloadcssdefined=onloadcssdefined;onloadcssdefined(loadCB);return ss;};if(typeof exports!=="undefined"){exports.loadCSS=loadCSS;}
-    else{w.loadCSS=loadCSS;}}(typeof global!=="undefined"?global:this));
-  </script>
-  <script id="loadcss">
-    loadCSS( "https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" );
-    loadCSS( "{{ site.baseurl }}../../assets/css/main.css" );
-  </script>
+  <link
+    rel="preload"
+    type="text/css"
+    href="{% asset_path main.scss %}"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
 
-  <style type="text/css">
-    {% include head/styles/inline.css %}
-  </style>
+  <noscript><link rel="stylesheet" href="{% asset_path main.scss %}" /></noscript>
+
+  <!--
+  <link
+    rel="preload"
+    type="text/css"
+    href="{% asset_path non-critical.scss %}"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+
+  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>-->
+
+  <link
+    rel="preload"
+    type="text/css"href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
 
   <noscript>
-    <link rel="stylesheet" href="{{ site.baseurl }}../../assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
+    />
   </noscript>
+
+  {% include scripts/loadcss.html %}
+
+  <link rel="stylesheet" type="text/css" href="{% asset_path non-critical.scss %}"  />
 
   {% seo %}
 

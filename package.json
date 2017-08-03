@@ -1,0 +1,23 @@
+{
+  "name": "dhammapuja",
+  "version": "1.0.0",
+  "description": ">>These are translations of the reading exercises in A New Course in Reading Pāli that I'm working on as a way of learning Pāli.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/job-talk/dhammapuja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/job-talk/dhammapuja/issues"
+  },
+  "homepage": "https://github.com/job-talk/dhammapuja#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}

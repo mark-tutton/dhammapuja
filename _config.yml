@@ -18,7 +18,6 @@ exclude:
   - .gitignore
   - LICENSE
   - README.md
-  - todo.txt
   - Gemfile
   - node_modules
   - ignore
@@ -29,46 +28,42 @@ gems:
   - jekyll-seo-tag
 
 sass:
-  sass_dir: _sass
+  sass_dir: _assets/css/_sass
   style: compressed
 
 assets:
   compress:
-    css: true
-    js: true
-
-  #
+    css: default
+    js: default
 
   autowrite: true
   cache: default
+  cache_type: default
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
-  digest: true
-
-  #
+  digest: default
 
   assets:
-    - "*.png"
-    - "*.jpg"
-    - "*.svg"
-
-  #
+#    - "*.jpg"
+#    - "*.png"
+#    - "*.svg"
+    - "bundle.css"
+    - "*.xml"
 
   sources:
-    - assets/css
-    - assets/_sass
-    - assets/img
-    - assets/js
-    - assets/audio
-
-  #
+    - _assets/css
+#    - _assets/img
+    - _assets/js
+    - _assets/fonts
+    - _assets/audio
 
   features:
-    liquid: false
-    integrity: false
-    automatic_img_size: true
-    automatic_img_alt : true
+    liquid: default
+    integrity: default
+    automatic_img_size: false
+    automatic_img_alt: false
+
 
 seo:
   title: 'Dhammapuja'

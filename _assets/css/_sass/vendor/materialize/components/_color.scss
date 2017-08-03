@@ -1,0 +1,113 @@
+// Utility Color Classes
+
+//.success {
+//
+//}
+
+// Google Color Palette defined: http://www.google.com/design/spec/style/color.html
+
+
+$materialize-red: (
+  "base":       #e51c23,
+  "lighten-2":  #ee6e73,
+);
+
+$red: (
+  "base":       #F44336,
+);
+
+$light-blue: (
+  "base":       #03a9f4,
+  "darken-1":   #039be5,
+);
+
+$teal: (
+  "base":       #009688,
+  "lighten-1":  #26a69a,
+);
+
+$green: (
+  "base":       #4CAF50,
+);
+
+
+
+$orange: (
+  "base":       #ff9800,
+  "accent-2":    #ffab40
+);
+
+
+
+
+
+$grey: (
+  "base":       #9e9e9e,
+  "lighten-2":  #e0e0e0
+);
+
+$shades: (
+  "black":        #000000,
+  "white":        #FFFFFF,
+  "transparent":  transparent
+);
+
+$colors: (
+  "materialize-red": $materialize-red,
+  "red": $red,
+  "light-blue": $light-blue,
+  "teal": $teal,
+  "green": $green,
+  "orange": $orange,
+  "grey": $grey,
+  "shades": $shades
+) !default;
+
+
+// Color Classes
+
+@each $color_name, $color in $colors {
+  @each $color_type, $color_value in $color {
+    @if $color_type == "base" {
+      .#{$color_name} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text {
+        color: $color_value !important;
+      }
+    }
+    @else if $color_name != "shades" {
+      .#{$color_name}.#{$color_type} {
+        background-color: $color_value !important;
+      }
+      .#{$color_name}-text.text-#{$color_type} {
+        color: $color_value !important;
+      }
+    }
+  }
+}
+
+// Shade classes
+@each $color, $color_value in $shades {
+  .#{$color} {
+    background-color: $color_value !important;
+  }
+  .#{$color}-text {
+    color: $color_value !important;
+  }
+}
+
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
+
+@function color($color, $type) {
+  @if map-has-key($colors, $color) {
+    $curr_color: map-get($colors, $color);
+    @if map-has-key($curr_color, $type) {
+      @return map-get($curr_color, $type);
+    }
+  }
+  @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+  @return null;
+}
