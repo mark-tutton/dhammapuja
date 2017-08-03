@@ -2,10 +2,10 @@
 @font-face {
   font-family: 'feather';
   src:
-    url(font_path('feather/feather.eot')) format('embedded-opentype'),
-    url(font_path('feather/feather.ttf')) format('truetype'),
-    url(font_path('feather/feather.woff')) format('woff'),
-    url(font_path('feather/feather.svg')) format('svg');
+    url(asset_path('feather/feather.eot')) format('embedded-opentype'),
+    url(asset_path('feather/feather.ttf')) format('truetype'),
+    url(asset_path('feather/feather.woff')) format('woff'),
+    url(asset_path('feather/feather.svg')) format('svg');
   font-weight: normal;
   font-style: normal;
 }
