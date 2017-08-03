@@ -3,6 +3,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>{{ page.title }}</title>
+
   <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-touch-icon.png %}">
   <link rel="icon" type="image/png" href="{% asset_path favicon-32x32.png %}" sizes="32x32">
   <link rel="icon" type="image/png" href="{% asset_path favicon-16x16.png %}" sizes="16x16">
@@ -14,24 +16,45 @@
 
   <link rel="author" href="../humans.txt" />
 
-  <title>{{ page.title }}</title>
 
+  <link
+    rel="preload"
+    type="text/css"
+    href="{% asset_path main.scss %}"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
 
-  {% css main %}
+  <noscript><link rel="stylesheet" href="{% asset_path main.scss %}" /></noscript>
+  <!--
+  <link
+    rel="preload"
+    type="text/css"
+    href="{% asset_path non-critical.scss %}"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
 
-  {% css non-critical rel="preload" as="style" onload="this.rel='stylesheet'" %}
+  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>-->
 
-  <noscript><link rel="stylesheet" href="{% asset_path non-critical %}" /></noscript>
+  <link
+    rel="preload"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
+    />
+  </noscript>
 
   {% include scripts/loadcss.html %}
 
-  <script id="loadcss">
-    loadCSS( "https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" );
-  </script>
-
-  <noscript>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600" rel="stylesheet">
-  </noscript>
+  <link rel="stylesheet" type="text/css" href="{% asset_path non-critical.scss %}"  />
 
   {% seo %}
 

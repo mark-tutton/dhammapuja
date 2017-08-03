@@ -26,7 +26,7 @@
   />
 
   <noscript><link rel="stylesheet" href="{% asset_path main.scss %}" /></noscript>
-
+<!--
   <link
     rel="preload"
     type="text/css"
@@ -35,7 +35,7 @@
     onload="this.rel='stylesheet'"
   />
 
-  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>
+  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>-->
 
   <link
     rel="preload"
@@ -53,6 +53,7 @@
 
   {% include scripts/loadcss.html %}
 
+  <link rel="stylesheet" type="text/css" href="{% asset_path non-critical.scss %}"  />
 
   {% seo %}
 

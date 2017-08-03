@@ -16,6 +16,7 @@
 
   <link rel="author" href="../../humans.txt" />
 
+
   <link
     rel="preload"
     type="text/css"
@@ -26,6 +27,7 @@
 
   <noscript><link rel="stylesheet" href="{% asset_path main.scss %}" /></noscript>
 
+  <!--
   <link
     rel="preload"
     type="text/css"
@@ -34,11 +36,11 @@
     onload="this.rel='stylesheet'"
   />
 
-  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>
+  <noscript><link rel="stylesheet" href="{% asset_path non-critical.scss %}" /></noscript>-->
 
   <link
     rel="preload"
-    type="text/css" href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
+    type="text/css"href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:300,400,600"
     as="style"
     onload="this.rel='stylesheet'"
   />
@@ -52,7 +54,9 @@
 
   {% include scripts/loadcss.html %}
 
+  <link rel="stylesheet" type="text/css" href="{% asset_path non-critical.scss %}"  />
 
   {% seo %}
+
 
 </head>
