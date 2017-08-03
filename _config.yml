@@ -18,7 +18,6 @@ exclude:
   - .gitignore
   - LICENSE
   - README.md
-  - todo.txt
   - Gemfile
   - node_modules
   - ignore
@@ -47,22 +46,23 @@ assets:
 
   assets:
 #    - "*.jpg"
-    - "*.png"
-    - "*.svg"
+#    - "*.png"
+#    - "*.svg"
     - "bundle.css"
     - "*.xml"
 
   sources:
-    - _assets/_sass
     - _assets/css
-    - _assets/img
+#    - _assets/img
     - _assets/js
+    - _assets/fonts
+    - _assets/audio
 
   features:
     liquid: default
     integrity: default
-    automatic_img_size: default
-    automatic_img_alt: default
+    automatic_img_size: false
+    automatic_img_alt: false
 
 
 seo:
