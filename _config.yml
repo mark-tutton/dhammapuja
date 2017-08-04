@@ -40,12 +40,12 @@ assets:
     js: default
 
   autowrite: true
-  cache: default
+  #cache: false
   cache_type: default
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"
-  digest: default
+  #digest: default
 
   assets:
 #    - "*.jpg"
