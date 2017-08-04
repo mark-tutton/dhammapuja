@@ -24,6 +24,7 @@ exclude:
   - gulpfile.js
   - package.json
   - package-lock.json
+  - .asset-cache
 
 gems:
   - jekyll-sitemap
