@@ -12,10 +12,14 @@ layout: compress
     {% include sidebar.html %}
   </header>
 
-  <main id="main">
-    {% include tog_invert.html %}
-      {{ content }}
-  </main>
+  <div class="container">
+
+    <main id="main">
+      {% include tog_invert.html %}
+        {{ content }}
+    </main>
+
+  </div>
 
   {% include scripts/chant-scripts.html %}
 
