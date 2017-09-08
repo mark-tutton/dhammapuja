@@ -1,10 +1,11 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-{% include head/head_chant.html %}
+{% include head/head_404.html %}
 
 <body>
   {% include old-browser.html %}
@@ -13,16 +14,15 @@ layout: compress
     {% include sidebar.html %}
   </header>
 
-  <div class="container container--chant">
+  <main>
+    {% include tog_invert.html %}
+    {{ content }}
 
-    <main id="main">
-      {% include tog_invert.html %}
-        {{ content }}
-    </main>
+  </main>
 
-  </div>
+  {% include footer.html %}
 
-  {% include scripts/chant-scripts.html %}
+  {% include scripts/common_scripts.html %}
 
 </body>
 

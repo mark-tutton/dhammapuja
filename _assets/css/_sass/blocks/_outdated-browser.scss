@@ -1,0 +1,15 @@
+#outdated-browser{
+  height: 4em;
+  background-color: #EE1700;
+  font-size: 1.25em;
+  line-height: 4em;
+  text-align: center;
+
+  & > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+  }
+}
