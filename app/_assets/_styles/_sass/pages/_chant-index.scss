@@ -1,0 +1,22 @@
+.chant-list {
+  margin-bottom: 0.53em;
+  //text-indent: 0.1%;
+
+  & > li {
+    margin-bottom: 0.1em;
+  }
+
+  & > li > a {
+    font-size: 0.85em;
+    text-indent: 0.1%;
+  }
+
+  & h4 {
+    margin-bottom: 0.5em;
+  }
+
+  .night & > li > i {
+    color: $platinum;
+  }
+
+}

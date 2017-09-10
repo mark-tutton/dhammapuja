@@ -51,4 +51,5 @@ node_modules/
 ignore/*
 assets/audio/transcript/*
 assets/audio/128kb/*
+_assets/scripts/unused/*
 .asset-cache

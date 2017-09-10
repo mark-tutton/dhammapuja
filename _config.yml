@@ -2,17 +2,21 @@
 permalink: pretty
 baseurl:
 
+
 # Structure configuration
-source: ./
-destination: ./_site
+source: app/
+destination: _site/
+
 
 # Site settings
 title: 'Dhammapuja'
-description: 'A Karaoke for Chanting Dhamma in English and Pāli'
+description: 'A Karaoke for Chanting Dhamma in English and Pali'
 url: https://dhammapuja.com
+
 
 # Markdown
 markdown: kramdown
+
 
 exclude:
   - .gitignore
@@ -25,48 +29,12 @@ exclude:
   - package.json
   - package-lock.json
   - .asset-cache
+  - default
 
-gems:
+
+plugins:
   - jekyll-sitemap
-  - jekyll-assets
   - jekyll-seo-tag
-
-sass:
-  sass_dir: _assets/css/_sass
-  style: compressed
-
-assets:
-  compress:
-    css: default
-    js: default
-
-  autowrite: true
-  #cache: false
-  cache_type: default
-  skip_baseurl_with_cdn: false
-  skip_prefix_with_cdn: false
-  prefix: "/assets"
-  #digest: default
-
-  assets:
-#    - "*.jpg"
-#    - "*.png"
-#    - "*.svg"
-    - "bundle.css"
-    - "*.xml"
-
-  sources:
-    - _assets/css
-#    - _assets/img
-    - _assets/js
-    - _assets/fonts
-    - _assets/audio
-
-  features:
-    liquid: default
-    integrity: default
-    automatic_img_size: false
-    automatic_img_alt: false
 
 
 seo:

@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head/head_404.html %}
+
+<body>
+  {% include components/old-browser-warn.html %}
+
+  <header>
+    {% include components/nav.html %}
+  </header>
+
+  <main>
+    {% include components/toggle-invert.html %}
+    {{ content }}
+
+  </main>
+
+  {% include components/footer.html %}
+
+  {% include scripts/common_scripts.html %}
+
+</body>
+
+</html>
