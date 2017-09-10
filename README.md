@@ -4,9 +4,7 @@
 
 >>You can see the results at http://pali.ejinjue.org/.
 
->My attempt at updating http://pali.ejinjue.org/ to Bootstrap 3 and transitioning it to GitHub pages.
-
-Updating https://github.com/job-talk/dhamma-chanting to MaterializeCSS and Jekyll
+My attempt at updating http://pali.ejinjue.org/ to MaterializeCSS and transitioning it to GitHub pages.
 
 ***  
 
@@ -80,7 +78,5 @@ better of the two” ( A. II ).
 - [ ] Clean, material design
 
 - [ ] Ability to toggle a day || night mode
-
-- [ ] Speech recognition? See johndyer's [audiosync](https://github.com/johndyer/audiosync) for an idea. Would make adding new chants much less laborious
 
 - [ ] Much more to learn, improve..

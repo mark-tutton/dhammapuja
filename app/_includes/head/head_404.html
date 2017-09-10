@@ -1,0 +1,63 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="apple-touch-icon" sizes="152x152" href="{{baseurl}}/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="{{baseurl}}/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{baseurl}}/assets/img/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="{{baseurl}}/assets/img/manifest.json">
+  <link rel="mask-icon" href="{{baseurl}}/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="{{baseurl}}/assets/img/favicon.ico">
+  <meta name="msapplication-config" content="{{baseurl}}/assets/img/browserconfig.xml">
+  <meta name="theme-color" content="#cccccc">
+
+  <link rel="author" href="../humans.txt" />
+
+
+  <link
+    rel="preload"
+    type="text/css"
+    href="{{ site.baseurl }}/assets/styles/main.css"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+
+  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css" /></noscript>
+
+  <link
+    rel="preload"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Nunito:400|Open+Sans:300,400,500,600"
+    as="style"
+    onload="this.rel='stylesheet'"
+  />
+
+  <noscript>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:400|Open+Sans:300,400,500,600"
+    />
+  </noscript>
+
+  {% include scripts/loadcss.html %}
+
+  <style>
+    {% include critical-css/404-critical.css %}
+
+    body{
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+
+  {% seo %}
+
+</head>

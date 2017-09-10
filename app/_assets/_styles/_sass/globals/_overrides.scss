@@ -1,0 +1,21 @@
+.collapsible-header {
+  //min-height: $collapsible-height;
+
+  & i {
+    font-size: 1.3rem;
+  }
+
+}
+
+
+.side-nav li > a > i,
+.side-nav li > a > [class^="mdi-"],
+.side-nav li > a li > a > [class*="mdi-"],
+.side-nav li > a > i.material-icons {
+  margin: 0 0 0 0;
+  margin-right: 1rem;
+}
+
+pre {
+  display: none; // fixes the spacing between navbar and chanting display
+}

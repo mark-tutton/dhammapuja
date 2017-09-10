@@ -1,0 +1,26 @@
+/* the humans responsible (http://humanstxt.org) */
+
+/* TEAM */
+	Dev and Designer: Mark Tutton
+	Github: https://github.com/job-talk/
+/* THANKS */
+  John Nishinaga (https://ejinjue.org/john/) for 'Dhamma Schtuff' (https://pali.ejinjue.org/)
+
+/* SITE */
+	Last update: 2017/09/10
+	Language: English
+	Standards: HTML5, CSS3
+	Components: NPM, GulpJS, MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js
+	Software: Atom
+
+
+
+ ______     .---.  .---.    ____    ,---.    ,---.,---.    ,---.   ____    .-------.   ___    _      .-./`)     ____
+|    _ `''. |   |  |_ _|  .'  __ `. |    \  /    ||    \  /    | .'  __ `. \  _(`)_ \.'   |  | |     \ '_ .') .'  __ `.
+| _ | ) _  \|   |  ( ' ) /   '  \  \|  ,  \/  ,  ||  ,  \/  ,  |/   '  \  \| (_ o._)||   .'  | |    (_ (_) _)/   '  \  \
+|( ''_'  ) ||   '-(_{;}_)|___|  /  ||  |\_   /|  ||  |\_   /|  ||___|  /  ||  (_,_) /.'  '_  | |      / .  \ |___|  /  |
+| . (_) `. ||      (_,_)    _.-`   ||  _( )_/ |  ||  _( )_/ |  |   _.-`   ||   '-.-' '   ( \.-.| ___  |-'`|     _.-`   |
+|(_    ._) '| _ _--.   | .'   _    || (_ o _) |  || (_ o _) |  |.'   _    ||   |     ' (`. _` /||   | |   '  .'   _    |
+|  (_.\.' / |( ' ) |   | |  _( )_  ||  (_,_)  |  ||  (_,_)  |  ||  _( )_  ||   |     | (_ (_) _)|   `-'  /   |  _( )_  |
+|       .'  (_{;}_)|   | \ (_ o _) /|  |      |  ||  |      |  |\ (_ o _) //   )      \ /  . \ / \      /    \ (_ o _) /
+'-----'`    '(_,_) '---'  '.(_,_).' '--'      '--''--'      '--' '.(_,_).' `---'       ``-'`-''   `-..-'      '.(_,_).'

@@ -1,0 +1,51 @@
+footer {
+  @include box-shadow;
+}
+
+.page-footer { // Credits
+  background-color: $day_colour-footer-credits-bg;
+
+  .night & {
+    background-color: $night_colour-footer-credits-bg !important;
+  }
+
+
+  & a {
+    color: $day_colour-text-link;
+
+    .night & {
+      color: $night_colour-footer-credits-a;
+    }
+
+  }
+
+  & p {
+    color: $day_colour-footer-credits-text;
+
+    .night & {
+      color: $night_colour-footer-credits-text;
+    }
+
+  }
+
+}
+
+
+.footer-copyright {
+  background-color: $day_colour-footer-copyright-bg !important;
+
+  .night & {
+    background-color: $night_colour-footer-copyright-bg !important;
+  }
+
+  & a {
+
+    .night & {
+      color: $night_colour-footer-copyright-a;
+    }
+
+  }
+
+}
+
+.memo { font-size: 13px; }
