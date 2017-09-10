@@ -1,7 +1,7 @@
 {
   "name": "dhammapuja",
   "version": "1.0.0",
-  "description": ">>These are translations of the reading exercises in A New Course in Reading Pāli that I'm working on as a way of learning Pāli.",
+  "description": "A collection of Dhamma chants in English & Pali",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,8 +24,11 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpeg-recompress": "^5.1.0",
+    "imagemin-pngquant": "^5.0.1"
   }
 }

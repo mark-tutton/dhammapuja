@@ -10,8 +10,8 @@
 	Last update: 2017/09/10
 	Language: English
 	Standards: HTML5, CSS3
-	Components: MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js
-	Software: Atom, Hyper
+	Components: NPM, GulpJS, MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js
+	Software: Atom
 
 
 
