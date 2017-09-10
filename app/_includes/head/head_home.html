@@ -5,16 +5,16 @@
 
   <title>{{ page.title }}</title>
 
-  <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path apple-touch-icon.png %}">
-  <link rel="icon" type="image/png" href="{% asset_path favicon-32x32.png %}" sizes="32x32">
-  <link rel="icon" type="image/png" href="{% asset_path favicon-16x16.png %}" sizes="16x16">
-  <link rel="manifest" href="{% asset_path manifest.json %}">
-  <link rel="mask-icon" href="{% asset_path safari-pinned-tab.svg %}" color="#5bbad5">
-  <link rel="shortcut icon" href="{% asset_path favicon.ico %}">
-  <meta name="msapplication-config" content="{% asset_path browserconfig.xml %}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{baseurl}}/assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="{{baseurl}}/assets/img/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{baseurl}}/assets/img/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="{{baseurl}}/assets/img/manifest.json">
+  <link rel="mask-icon" href="{{baseurl}}/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="{{baseurl}}/assets/img/favicon.ico">
+  <meta name="msapplication-config" content="{{baseurl}}/assets/img/browserconfig.xml">
   <meta name="theme-color" content="#cccccc">
   <meta name="google-site-verification" content="WcutX6Q4SbYC4XgFrRb8Go3hng23vUIKoNG93Qg8Upo" />
-  <link rel="author" href="humans.txt" />
+  <link rel="author" href="{{baseurl}}/humans.txt" />
 
   <style>
     {% include critical-css/home-critical.css %}
