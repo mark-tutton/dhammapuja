@@ -2,17 +2,16 @@
 
 /* TEAM */
 	Dev and Designer: Mark Tutton
-	Twitter: @job_taIk
 	Github: https://github.com/job-talk/
 /* THANKS */
   John Nishinaga (https://ejinjue.org/john/) for 'Dhamma Schtuff' (https://pali.ejinjue.org/)
 
 /* SITE */
-	Last update: 2017/06/17
+	Last update: 2017/09/10
 	Language: English
 	Standards: HTML5, CSS3
-	Components: MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js
-	Software: Atom, Hyper
+	Components: NPM, GulpJS, MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js
+	Software: Atom
 
 
 
