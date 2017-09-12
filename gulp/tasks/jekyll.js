@@ -29,7 +29,7 @@ gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
 /*
  * Build the site in production mode
  */
-gulp.task('jekyll-prod', function(done) {
+gulp.task('jekyll-prod', ['purify'], function(done) {
   browserSync.notify(messages.jekyllProd);
   return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
    .on('close', done);
