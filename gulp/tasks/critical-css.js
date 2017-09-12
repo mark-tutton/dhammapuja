@@ -12,7 +12,7 @@ gulp.task('critical-home', ['jekyll-dev'], function(cb) {
     src: 'index.html',
     css: ['app/assets/styles/main.css'],
     dest: '_includes/critical-css/home-critical.css',
-    minify: false,
+    minify: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
@@ -30,7 +30,7 @@ gulp.task('critical-chant-index', ['jekyll-dev'], function(cb) {
     src: 'chanting/index.html',
     css: ['app/assets/styles/main.css'],
     dest: '_includes/critical-css/chant-index-critical.css',
-    minify: false,
+    minify: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
@@ -48,7 +48,7 @@ gulp.task('critical-chanting', ['jekyll-dev'], function(cb) {
     src: 'chanting/morning.html',
     css: ['app/assets/styles/main.css'],
     dest: '_includes/critical-css/chanting-critical.css',
-    minify: false,
+    minify: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
@@ -66,7 +66,7 @@ gulp.task('critical-404', ['jekyll-dev'], function(cb) {
     src: '404.html',
     css: ['app/assets/styles/main.css'],
     dest: '_includes/critical-css/404-critical.css',
-    minify: false,
+    minify: true,
     width: 320,
     height: 480,
     ignore: ['font-face']
