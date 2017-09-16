@@ -31,5 +31,8 @@
     "gulp-uglify": "^3.0.0",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.1"
+  },
+  "dependencies": {
+    "smooth-scroll": "^12.1.5"
   }
 }
