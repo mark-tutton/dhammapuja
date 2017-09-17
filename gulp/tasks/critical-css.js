@@ -8,7 +8,7 @@ const critical = require('critical');
 /*
  * Critical CSS for home/index
  */
-gulp.task('critical-home', ['jekyll-dev'], function(cb) {
+gulp.task('critical-home', ['jekyll-prod'], function(cb) {
   critical.generate({
     //inline: true,
     base: 'app/',
@@ -26,7 +26,7 @@ gulp.task('critical-home', ['jekyll-dev'], function(cb) {
 /*
  * Critical CSS for chanting index
  */
-gulp.task('critical-chant-index', ['jekyll-dev'], function(cb) {
+gulp.task('critical-chant-index', ['jekyll-prod'], function(cb) {
   critical.generate({
     //inline: true,
     base: 'app/',
@@ -44,7 +44,7 @@ gulp.task('critical-chant-index', ['jekyll-dev'], function(cb) {
 /*
  * Critical CSS for chanting index
  */
-gulp.task('critical-chanting', ['jekyll-dev'], function(cb) {
+gulp.task('critical-chanting', ['jekyll-prod'], function(cb) {
   critical.generate({
     //inline: true,
     base: 'app/',
@@ -62,7 +62,7 @@ gulp.task('critical-chanting', ['jekyll-dev'], function(cb) {
 /*
  * Critical CSS for 404
  */
-gulp.task('critical-404', ['jekyll-dev'], function(cb) {
+gulp.task('critical-404', ['jekyll-prod'], function(cb) {
   critical.generate({
     //inline: true,
     base: 'app/',
