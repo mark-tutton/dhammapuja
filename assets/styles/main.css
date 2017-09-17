@@ -2598,7 +2598,7 @@ nav ul a {
 
 .fixed-action-btn {
   font-size: 2rem;
-  bottom: 30px;
+  bottom: 5%;
 }
 
 .feather-chevron-up,.feather-cog,.feather-moon,.feather-sun {
@@ -2638,10 +2638,9 @@ nav ul a {
 }
 
 #audio {
-  background-color: #333;
   position: fixed;
   z-index: 1000;
-  bottom: 0;
+  bottom: -6px;
   left: 0;
 }
 
