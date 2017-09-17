@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const purify = require('gulp-purifycss');
 
+/*
+ * Removes unused CSS
+ */
 
 gulp.task('purify', ['scripts-prod', 'sass-prod'], function() {
   return gulp.src('app/assets/styles/main.css')

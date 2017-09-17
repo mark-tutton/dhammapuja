@@ -39,8 +39,7 @@ function hasScrolled() {
 
     lastScrollTop = st;
 }
-// *** End Header on scroll down *** //
-// ********************************* //
+
 
 // ************************************* //
 // ** Toggleable Inverter (NightMode) ** //
@@ -95,6 +94,8 @@ function hasScrolled() {
 
   });
 
+
+// Initialize materialize components
 
   $(document).ready(function() {
     $('.parallax').parallax();

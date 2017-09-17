@@ -3,10 +3,13 @@ const imagemin               = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminPngQuant       = require ('imagemin-pngquant');
 
-
+/*
+ * This minifies images from the _assets/_images folder and then pipes them to the assets folder
+ */
 
 gulp.task('images', function() {
   gulp.src('app/_assets/_images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG,gif,GIF}')
+
     .pipe(imagemin([
       imagemin.gifsicle(),
       imageminJpegRecompress({

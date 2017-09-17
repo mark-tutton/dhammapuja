@@ -11,14 +11,12 @@ const sourcemaps  = require('gulp-sourcemaps');
 gulp.task('scripts', function() {
   return gulp.src([
     //'app/_assets/_scripts/vendor/jquery/jquery-3.2.1.min.js',
-    'app/_assets/_scripts/vendor/jquery/jquery-custom.min.js',
+    'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
     //'app/_assets/_scripts/vendor/materialize.min.js',
-    'app/_assets/_scripts/vendor/materialize.js',
+    'app/_assets/_scripts/vendor/materialize-v0.100.2-custom.js',
     'app/_assets/_scripts/scripts.js',
     'app/_assets/_scripts/vendor/jquery/jquery.smooth-scroll.js',
     'app/_assets/_scripts/chanting.js'
-    //'app/_assets/_scripts/vendor/smooth-scroll.js',
-    //'app/_assets/_scripts/chanting-js.js'
   ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
@@ -31,12 +29,13 @@ gulp.task('scripts', function() {
 
 
 /**
- * Compile files from _js into both _site/js (for live injecting) and site (for future jekyll builds)
+ * Compile files from _js into both _site/assests/ (for live injecting) & site (for future jekyll builds)
+ * Run this task before serving site to public
  */
  gulp.task('scripts-prod', function() {
    return gulp.src([
-     'app/_assets/_scripts/vendor/jquery/jquery-custom.min.js',
-     'app/_assets/_scripts/vendor/materialize.js',
+     'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
+     'app/_assets/_scripts/vendor/materialize-v0.100.2-custom.js',
      'app/_assets/_scripts/scripts.js',
      'app/_assets/_scripts/vendor/jquery/jquery.smooth-scroll.js',
      'app/_assets/_scripts/chanting.js'

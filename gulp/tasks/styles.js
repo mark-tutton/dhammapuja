@@ -34,7 +34,8 @@ gulp.task('sass', function() {
 
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile files from _scss into both _site/assets (for live injecting) & site (for future jekyll builds)
+ * Run this task before serving to the public
  */
 
 var sassProdOptions = {

@@ -1,6 +1,9 @@
 const gulp     = require('gulp');
 const critical = require('critical');
 
+/*
+ * This generates the critical CSS for the relevant page. This speeds up the first paint of DOM content
+ */
 
 /*
  * Critical CSS for home/index
