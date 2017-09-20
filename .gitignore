@@ -49,7 +49,9 @@ node_modules/
 # Project-specific #
 ####################
 ignore/*
-assets/audio/transcript/*
-assets/audio/128kb/*
-_assets/scripts/unused/*
+app/assets/audio/transcript/*
+app/assets/audio/128kb/*
+app/assets/styles/*.css
+app/assets/scripts/*.js
+app/_assets/scripts/unused/*
 .asset-cache
