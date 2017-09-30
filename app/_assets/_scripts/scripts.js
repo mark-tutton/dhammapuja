@@ -109,3 +109,12 @@ function hasScrolled() {
 
     $('.collapsible').collapsible();
   });
+
+
+  // Initialize the Jekyll Search plugin
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    exclude: ['Dhammapuja']
+  });
