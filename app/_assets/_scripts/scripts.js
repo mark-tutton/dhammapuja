@@ -116,5 +116,5 @@ function hasScrolled() {
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '/search.json',
-    exclude: ['Dhammapuja']
+    exclude: ["Dhammapuja", "/404.html"]
   });

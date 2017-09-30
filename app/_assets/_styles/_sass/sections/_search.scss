@@ -5,11 +5,9 @@
   }
 
   &-input {
-    color: $day_colour-nav-dropdown-a;
 
-    .night & {
-      color: $night_colour-nav-dropdown-a;
-    }
+    color: $day_colour-nav-dropdown-a;
+    .night & { // color: $night_colour-nav-dropdown-a; }
 
   }
 }
