@@ -17,12 +17,8 @@
 
   &-input {
     padding-left: 0.4em;
-
     color: $day_colour-nav-dropdown-a;
   }
-
-
-
 }
 
 
@@ -31,7 +27,6 @@
   flex-flow: column nowrap;
   overflow-y: scroll;
 
-  background-color: $day_colour-nav-dropdown-bg;
   color: $day_colour-nav-dropdown-a;
 
   .night & {
@@ -40,10 +35,10 @@
   }
 
   & > li {
-    background-color: $day_colour-nav-dropdown-bg;
+    background-color: $day_colour-nav-bg;
 
     .night & {
-      background-color: $night_colour-nav-dropdown-bg;
+      background-color: $night_colour-nav-bg;
     }
 
     & > a {
@@ -56,9 +51,7 @@
           background-color: $anti-flash-white;
           color: $jet--dark;
         }
-
       }
-
     }
 
   }
