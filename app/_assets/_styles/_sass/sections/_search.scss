@@ -1,11 +1,9 @@
 
 #search {
-
   &-field {
     display: inline-block;
     position: relative;
   }
-
 
   &-icon {
     position: absolute;
@@ -13,7 +11,6 @@
     top: 24px;
     color: $day_colour-nav-dropdown-a;
   }
-
 
   &-input {
     padding-left: 0.4em;
