@@ -48,23 +48,23 @@ function hasScrolled() {
 // from http://stackoverflow.com/questions/28239337/store-a-css-class-on-browser
 
 
-  $( '#inverter' ).click(function () {
-    $( 'body' ).toggleClass( 'night' );
+  $('#inverter').click(function () {
+    $('body').toggleClass('night');
 
-    if ($( 'body' ).hasClass( 'night' )) {
-      sessionStorage.setItem( 'theme', 'night' );
+    if ($('body').hasClass('night')) {
+      sessionStorage.setItem('theme', 'night');
     }
 
     else {
-      sessionStorage.setItem( 'theme', 'day' );
+      sessionStorage.setItem('theme', 'day');
     }
 
   });
 
   $(document).ready(function() {
-    var theme = sessionStorage.getItem( 'theme' );
+    var theme = sessionStorage.getItem('theme');
     if (theme !== '') {
-      $( 'body' ).addClass(theme);
+      $('body').addClass(theme);
     }
   });
 
@@ -73,14 +73,14 @@ function hasScrolled() {
   $(document).ready(function() {
 
     $(function () {
-      $( '.invert i' ).click(function() {
+      $('.invert i').click(function() {
 
-        $(this).toggleClass( 'feather-sun' );
+        $(this).toggleClass('feather-sun');
 
-        if ($(this).attr( 'class' ) == 'feather-moon' ) {
+        if ($(this).attr('class') == 'feather-moon') {
           sessionStorage.class = 'feather-moon';
         }
-        else if ($(this).attr( 'class' ) == ( 'feather-moon feather-sun' )) {
+        else if ($(this).attr('class') == ('feather-moon feather-sun')) {
           sessionStorage.class = 'feather-sun';
         }
 
@@ -88,8 +88,8 @@ function hasScrolled() {
 
     });
 
-    if(typeof(Storage) !== 'undefined' ) {
-      $( '.invert i' ).addClass(sessionStorage.class);
+    if(typeof(Storage) !== 'undefined') {
+      $('.invert i').addClass(sessionStorage.class);
     }
 
   });
@@ -115,6 +115,5 @@ function hasScrolled() {
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/search.json',
-    exclude: ["Dhammapuja", "/404.html"]
+    json: '/search.json'
   });
