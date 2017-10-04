@@ -37,6 +37,7 @@ gulp.task('scripts', function() {
    return gulp.src([
      'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
      'app/_assets/_scripts/vendor/materialize-v0.100.2-custom.js',
+     'app/_assets/_scripts/vendor/simple-jekyll-search.min.js',
      'app/_assets/_scripts/scripts.js',
      'app/_assets/_scripts/vendor/jquery/jquery.smooth-scroll.js',
      'app/_assets/_scripts/chanting.js'
