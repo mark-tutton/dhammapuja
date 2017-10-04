@@ -16,6 +16,10 @@
     padding-left: 0.4em;
     color: $day_colour-nav-dropdown-a;
   }
+
+  &-no-results {
+    padding-left: 1em;
+  }
 }
 
 
@@ -23,11 +27,12 @@
   display: flex;
   flex-flow: column nowrap;
   overflow-y: scroll;
-
+  // padding-left: 1em;
   color: $day_colour-nav-dropdown-a;
+  background-color: $day_colour-nav-bg;
 
   .night & {
-    background-color: $night_colour-nav-dropdown-bg;
+    background-color: $night_colour-nav-bg;
     color: $night_colour-nav-dropdown-a;
   }
 
@@ -39,6 +44,7 @@
     }
 
     & > a {
+      // padding: 0 !important;
       color: $day_colour-nav-dropdown-a;
 
       .night & {

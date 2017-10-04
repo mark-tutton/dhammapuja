@@ -115,5 +115,6 @@ function hasScrolled() {
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
-    json: '/search.json'
+    json: '/search.json',
+    noResultsText: '<span id="search-no-results">No results found</span>'
   });
