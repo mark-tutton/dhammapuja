@@ -1,8 +1,8 @@
-
 @font-face {
   font-family: 'feather';
+  src:  url('fonts/feather.eot');
   src:
-    url('fonts/feather/feather.eot') format('embedded-opentype'),
+    url('fonts/feather.eot') format('embedded-opentype'),
     url('fonts/feather/feather.ttf') format('truetype'),
     url('fonts/feather/feather.woff') format('woff'),
     url('fonts/feather/feather.svg') format('svg');
@@ -11,7 +11,7 @@
 }
 
 [class^="feather-"], [class*=" feather-"] {
-  // use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'feather' !important;
   speak: none;
   font-style: normal;
@@ -20,14 +20,11 @@
   text-transform: none;
   line-height: 1;
 
-  // Better Font Rendering =========== */
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.feather-github:before {
-  content: "\e915";
-}
 .feather-arrow-down:before {
   content: "\e900";
 }
@@ -52,10 +49,10 @@
 .feather-chevron-up:before {
   content: "\e907";
 }
-.feather-cog:before {
+.feather-droplet:before {
   content: "\e908";
 }
-.feather-droplet:before {
+.feather-github:before {
   content: "\e909";
 }
 .feather-home:before {
@@ -76,6 +73,12 @@
 .feather-more-vertical:before {
   content: "\e90f";
 }
-.feather-sun:before {
+.feather-search:before {
   content: "\e910";
+}
+.feather-cog:before {
+  content: "\e911";
+}
+.feather-sun:before {
+  content: "\e912";
 }

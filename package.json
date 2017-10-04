@@ -32,5 +32,7 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "simple-jekyll-search": "^1.5.0"
+  }
 }

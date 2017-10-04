@@ -21,7 +21,8 @@ $baseurl: "{{ site.baseurl }}";
 @import
   '_sass/sections/footer',
   '_sass/sections/nav/desk-nav',
-  '_sass/sections/nav/mob-nav'
+  '_sass/sections/nav/mob-nav',
+  '_sass/sections/search'
 ;
 
 // Blocks

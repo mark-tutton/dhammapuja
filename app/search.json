@@ -1,0 +1,27 @@
+---
+searchable: false
+---
+
+{% assign items = site.html_pages %}
+
+[
+  {% for item in items %}
+
+    {% if item.searchable == false %}
+      {
+        "title"      : " ",
+        "url"        : " ",
+        "searchable" : 0
+      }
+    {% else %}
+      {
+        "title"      : {{ item.title | jsonify }},
+        "url"        : {{ item.url | jsonify }},
+        "searchable" : 1
+      }
+    {% endif %}
+
+    {% unless forloop.last %}, {% endunless %}
+
+  {% endfor %}
+]
