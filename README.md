@@ -4,11 +4,8 @@ Dhammapuja is a learning aid for Theravadian chants. The official website is loc
 - [Why Chant?](#why-chant)
 - [What does Dhammapuja mean?](#what-does-dhammapuja-mean)
 - [Credits](#credits)
-- [Project Goals](#project-goals)
 - [Wiki](https://github.com/job-talk/dhammapuja/wiki)
 
-
-***
 
 
 ## Why chant?
@@ -25,8 +22,6 @@ From the BSWA - [Chanting the Dhamma](https://bswa.org/practices/chanting-dhamma
 
 [Ajahn Brahm - Regarding Chanting](https://youtu.be/7a9TRG8soYQ)
 
-
-***
 
 
 ## What does Dhammapuja mean?
@@ -71,8 +66,6 @@ better of the two” ( A. II ).
 - http://urbandharma.org/pdf/palidict.pdf (pg. 273/402)
 
 
-***
-
 
 ## Credits
 
@@ -83,21 +76,3 @@ I would like to take this opportunity to thank John for providing this excellent
 Index photos:
 - 'Ta Prohm' by Clay Gilliland: https://www.flickr.com/photos/26781577@N07/12664281874/
 - 'Buddha 2' by Rob Hurson: https://www.flickr.com/photos/robhurson/14109920284/
-
-
-***
-
-
-## Project Goals
-
-- [ ] Responsively designed
-
-- [ ] Mobile first
-
-- [ ] Collection of Dhamma chants, arranged: [ Morning, Evening, Etc. ]
-
-- [ ] Clean, material design
-
-- [ ] Ability to toggle a day || night mode
-
-- [ ] Much more to learn, improve..
