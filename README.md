@@ -7,6 +7,8 @@ Dhammapuja is a learning aid for Theravadian chants. The official website is loc
 - [Wiki](https://github.com/job-talk/dhammapuja/wiki)
 
 
+<br />
+
 
 ## Why chant?
 
@@ -22,6 +24,8 @@ From the BSWA - [Chanting the Dhamma](https://bswa.org/practices/chanting-dhamma
 
 [Ajahn Brahm - Regarding Chanting](https://youtu.be/7a9TRG8soYQ)
 
+
+<br />
 
 
 ## What does Dhammapuja mean?
@@ -65,6 +69,8 @@ better of the two” ( A. II ).
 ```
 - http://urbandharma.org/pdf/palidict.pdf (pg. 273/402)
 
+
+<br />
 
 
 ## Credits
