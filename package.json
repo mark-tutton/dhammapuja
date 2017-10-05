@@ -33,6 +33,7 @@
     "imagemin-pngquant": "^5.0.1"
   },
   "dependencies": {
+    "plyr": "^2.0.16",
     "simple-jekyll-search": "^1.5.0"
   }
 }

@@ -1,7 +1,7 @@
 
 .btn-floating {
 
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
   background-color: $day_colour-fl-button-bg;
 
   .night & {
@@ -13,7 +13,12 @@
 
 .fixed-action-btn {
   font-size: 2rem;
-  bottom: 5%;
+  // bottom: 5%;
+  bottom: 11%;
+
+  @media screen and (min-width: 750px) {
+    bottom: 9%;
+  }
 }
 
 
