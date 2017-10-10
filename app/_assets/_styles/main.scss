@@ -5,7 +5,8 @@ $baseurl: "{{ site.baseurl }}";
 // Third-party
 @import
   '_sass/vendor/materialize/materialize',
-  '_sass/vendor/feather/feather'
+  '_sass/vendor/feather/feather',
+  '_sass/vendor/plyr/plyr'
 ;
 
 // Globals

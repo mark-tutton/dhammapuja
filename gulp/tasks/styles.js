@@ -47,7 +47,7 @@ gulp.task('sass-prod', function () {
   return gulp.src(mainScss)
     .pipe(sass(sassProdOptions).on('error', sass.logError))
     .pipe(prefix(autoPrefixerOptions, { cascade: true }))
-    .pipe(cssnano())
+    // .pipe(cssnano())
     .pipe(gulp.dest('_site/assets/styles/'))
     .pipe(gulp.dest('app/assets/styles/'));
 });

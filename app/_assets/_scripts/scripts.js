@@ -118,3 +118,6 @@ function hasScrolled() {
     json: '/search.json',
     noResultsText: '<span id="search-no-results">No results found</span>'
   });
+
+  // Initialize plyr
+  plyr.setup('#track');
