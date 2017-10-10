@@ -1,6 +1,6 @@
-const gulp = require('gulp');
-const purify = require('gulp-purifycss');
-const cssnano     = require('gulp-cssnano');
+const gulp    = require('gulp');
+const purify  = require('gulp-purifycss');
+const cssnano = require('gulp-cssnano');
 
 /*
  * Removes unused CSS
