@@ -24,7 +24,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
@@ -33,7 +33,8 @@
     "imagemin-pngquant": "^5.0.1"
   },
   "dependencies": {
-    "plyr": "^2.0.16",
+    "jquery-smooth-scroll": "^2.2.0",
+    "plyr": "^2.0.17",
     "simple-jekyll-search": "^1.5.0"
   }
 }
