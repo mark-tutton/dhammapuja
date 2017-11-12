@@ -10,14 +10,12 @@ const sourcemaps  = require('gulp-sourcemaps');
 
 gulp.task('scripts', function() {
   return gulp.src([
-    //'app/_assets/_scripts/vendor/jquery/jquery-3.2.1.min.js',
     'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
-    //'app/_assets/_scripts/vendor/materialize.min.js',
     'app/_assets/_scripts/vendor/materialize-v0.100.2-custom.js',
-    'app/_assets/_scripts/vendor/simple-jekyll-search.min.js',
+    './node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js',
     './node_modules/plyr/dist/plyr.js',
     'app/_assets/_scripts/scripts.js',
-    'app/_assets/_scripts/vendor/jquery/jquery.smooth-scroll.js',
+    './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
     'app/_assets/_scripts/chanting.js'
   ])
     .pipe(sourcemaps.init())
@@ -38,14 +36,14 @@ gulp.task('scripts', function() {
    return gulp.src([
      'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
      'app/_assets/_scripts/vendor/materialize-v0.100.2-custom.js',
-     'app/_assets/_scripts/vendor/simple-jekyll-search.min.js',
+     './node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js',
      './node_modules/plyr/dist/plyr.js',
      'app/_assets/_scripts/scripts.js',
-     'app/_assets/_scripts/vendor/jquery/jquery.smooth-scroll.js',
+     './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
      'app/_assets/_scripts/chanting.js'
    ])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/scripts/'))
-    .pipe(gulp.dest('app/assets/scripts/'));;
+    .pipe(gulp.dest('app/assets/scripts/'));
 });

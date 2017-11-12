@@ -9,7 +9,7 @@ const browserSync = require('browser-sync');
 /*
  * Compile files from _scss into both _site/assets (live injecting) & site (for future jekyll builds)
  */
-const mainScss    = 'app/_assets/_styles/main.scss';
+const mainScss   = 'app/_assets/_styles/main.scss';
 
 var sassOptions = {
   errLogToConsole: true,
@@ -21,8 +21,8 @@ var autoPrefixerOptions = {
 };
 
 gulp.task('sass', function() {
-  return gulp.src([mainScss])
-    .pipe(sourcemaps.init())
+  return gulp.src(mainScss)
+   .pipe(sourcemaps.init())
    .pipe(sass(sassOptions).on('error', sass.logError))
    .pipe(prefix(autoPrefixerOptions, { cascade: true }))
    .pipe(sourcemaps.write())

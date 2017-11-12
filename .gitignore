@@ -3,6 +3,16 @@
 ############################
 _site
 
+
+####################
+# Project-specific #
+####################
+ignore/*
+./app/assets/styles/main.css
+./app/assets/scripts/main.js
+.asset-cache
+
+
 ######################
 # OS generated files #
 ######################
@@ -13,6 +23,7 @@ _site
 .Trashes
 *.cache
 Thumbs.db
+
 
 ##################
 # Editor folders #
@@ -29,6 +40,7 @@ nbproject
 _notes
 dwsync.xml
 
+
 #####################################
 # Numerous always-ignore extensions #
 #####################################
@@ -44,14 +56,3 @@ dwsync.xml
 *.sass-cache
 node_modules/
 .tmp/
-
-####################
-# Project-specific #
-####################
-ignore/*
-app/assets/audio/transcript/*
-app/assets/audio/128kb/*
-app/assets/styles/*.css
-app/assets/scripts/*.js
-app/_assets/scripts/unused/*
-.asset-cache
