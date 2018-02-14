@@ -187,6 +187,11 @@
                 <li><a href="{{ site.baseurl }}/chanting/reflections/the-highest-blessings-eng/" class="waves-effect waves-light">The Highest Blessings (Eng.)</a></li>
               {% endif %}
 
+              {% if page.active == "four-requisites" %}
+                <li><a href="{{ site.baseurl }}/chanting/reflections/four-requisites/" class="waves-effect waves-light active">The Four Requisites</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/reflections/four-requisites/" class="waves-effect waves-light">The Four Requisites</a></li>
+              {% endif %}
 
               <li class="divider"></li>
               {% if page.active == "metta-sutta-pali" %}
