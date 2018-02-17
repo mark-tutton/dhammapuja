@@ -20,30 +20,7 @@
     {% include critical-css/chant-index-critical.css %}
   </style>
 
-  <link
-    rel="preload"
-    type="text/css"
-    href="{{ site.baseurl }}/assets/styles/main.css"
-    as="style"
-    onload="this.rel='stylesheet'"
-  />
-
-  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css" /></noscript>
-
-  <link
-    rel="preload"
-    type="text/css"
-    href="https://fonts.googleapis.com/css?family=Nunito:400|Open+Sans:300,400,500,600"
-    as="style"
-    onload="this.rel='stylesheet'"
-  />
-
-  <noscript>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Nunito:400|Open+Sans:300,400,500,600"
-    />
-  </noscript>
+  {% include head/preload.html %}
 
   {% include scripts/loadcss.html %}
 
