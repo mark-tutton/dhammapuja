@@ -197,6 +197,18 @@
 
     
       {
+        "title"      : "Request Paritta Chanting",
+        "url"        : "/chanting/requests/request-paritta/",
+        "searchable" : 1
+      }
+    
+
+    , 
+
+  
+
+    
+      {
         "title"      : "Sublime Attitudes",
         "url"        : "/chanting/reflections/sublime-attitudes/",
         "searchable" : 1
