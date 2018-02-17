@@ -139,6 +139,12 @@
                 <li><a href="{{ site.baseurl }}/chanting/requests/eight-precepts/" class="waves-effect waves-light">Eight Precepts</a></li>
               {% endif %}
 
+              {% if page.active == "request-paritta" %}
+                <li><a href="{{ site.baseurl }}/chanting/requests/request-paritta/" class="waves-effect waves-light active">Request Paritta</a></li>
+              {% else %}
+                <li><a href="{{ site.baseurl }}/chanting/requests/request-paritta/" class="waves-effect waves-light">Request Paritta</a></li>
+              {% endif %}
+
 
               <li class="divider"></li>
               {% if page.active == "body-contemplation" %}
