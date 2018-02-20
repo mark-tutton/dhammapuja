@@ -4,7 +4,8 @@ $baseurl: "{{ site.baseurl }}";
 
 // Third-party
 @import
-  '_sass/vendor/materialize/materialize',
+  // '_sass/vendor/materialize/materialize',
+  './node_modules/materialize-css/sass/materialize',
   '_sass/vendor/feather/feather',
   './node_modules/plyr/src/scss/plyr'
 ;
