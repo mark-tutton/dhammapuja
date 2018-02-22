@@ -13,7 +13,6 @@ var parallaxInstance = M.Parallax.init(parallax, {
   responsiveThreshold: 0
 });
 
-
 var collapsible = document.querySelector('.collapsible');
 var collapsibleInstance = M.Collapsible.init(collapsible, {
   accordion: false
