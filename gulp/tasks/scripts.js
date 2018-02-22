@@ -17,7 +17,6 @@ gulp.task('scripts', function() {
     './node_modules/plyr/dist/plyr.js',
     'app/_assets/_scripts/modules/header-scroll.js',
     'app/_assets/_scripts/modules/night-mode.js',
-    'app/_assets/_scripts/scripts.js',
     'app/_assets/_scripts/init.js',
     './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
     'app/_assets/_scripts/modules/chanting.js'
