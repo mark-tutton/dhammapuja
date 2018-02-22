@@ -15,10 +15,12 @@ gulp.task('scripts', function() {
     './node_modules/materialize-css/dist/js/materialize.min.js',
     './node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js',
     './node_modules/plyr/dist/plyr.js',
+    'app/_assets/_scripts/modules/header-scroll.js',
+    'app/_assets/_scripts/modules/night-mode.js',
     'app/_assets/_scripts/scripts.js',
     'app/_assets/_scripts/init.js',
     './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
-    'app/_assets/_scripts/chanting.js'
+    'app/_assets/_scripts/modules/chanting.js'
   ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))

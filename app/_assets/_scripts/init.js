@@ -21,3 +21,6 @@ var collapsible = document.querySelector('.collapsible');
 var collapsibleInstance = M.Collapsible.init(collapsible, {
   accordion: false
 });
+
+var elem = document.querySelector('.fixed-action-btn');
+var instance = M.FloatingActionButton.init(elem);
