@@ -1,5 +1,5 @@
 
-#search {
+.search {
   &-field {
     display: inline-block;
     position: relative;
@@ -23,7 +23,7 @@
 }
 
 
-#results-container {
+.results-container {
   display: flex;
   flex-flow: column nowrap;
   // overflow-y: scroll;
