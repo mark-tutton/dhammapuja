@@ -7,24 +7,18 @@ var sideNavInstance = M.Sidenav.init(sideNav, {
 });
 
 
-
 var parallax = document.querySelector('.parallax');
 var parallaxInstance = M.Parallax.init(parallax, {
   responsiveThreshold: 0
 });
 
-var collapsible = document.querySelector('.collapsible');
-var collapsibleInstance = M.Collapsible.init(collapsible, {
-  accordion: false
-});
 
-var homeCollapsible = document.querySelector('.collapsible-home');
-var homeCollapsibleInstance = M.Collapsible.init(collapsible, {
-  accordion: false
-});
+var collapsible = document.querySelectorAll('.collapsible');
+var collapsibleInstance = M.Collapsible.init(collapsible);
 
-var elem = document.querySelector('.fixed-action-btn');
-var instance = M.FloatingActionButton.init(elem);
+
+var fixedActionBtn = document.querySelector('.fixed-action-btn');
+var fixedActionBtnInstance = M.FloatingActionButton.init(fixedActionBtn);
 
 
 // Initialize the Jekyll Search plugin
