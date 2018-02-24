@@ -1,5 +1,5 @@
 
-#search {
+.search {
   &-field {
     display: inline-block;
     position: relative;
@@ -15,6 +15,10 @@
   &-input {
     padding-left: 0.4em;
     color: $day_colour-nav-dropdown-a;
+
+    .night & {
+      color: $night_colour-nav-dropdown-a;
+    }
   }
 
   &-no-results {
@@ -23,7 +27,7 @@
 }
 
 
-#results-container {
+.results-container {
   display: flex;
   flex-flow: column nowrap;
   // overflow-y: scroll;

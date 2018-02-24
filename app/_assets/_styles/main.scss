@@ -4,7 +4,7 @@ $baseurl: "{{ site.baseurl }}";
 
 // Third-party
 @import
-  '_sass/vendor/materialize/materialize',
+  './node_modules/materialize-css/sass/materialize',
   '_sass/vendor/feather/feather',
   './node_modules/plyr/src/scss/plyr'
 ;
@@ -21,15 +21,16 @@ $baseurl: "{{ site.baseurl }}";
 // Sections
 @import
   '_sass/sections/footer',
-  '_sass/sections/nav/desk-nav',
-  '_sass/sections/nav/mob-nav',
+  '_sass/sections/nav/desknav',
+  '_sass/sections/nav/sidenav',
   '_sass/sections/search'
 ;
 
 // Blocks
 @import
   '_sass/blocks/floating-button',
-  '_sass/blocks/outdated-browser'
+  '_sass/blocks/outdated-browser',
+  '_sass/blocks/plyr'
 ;
 
 // Pages

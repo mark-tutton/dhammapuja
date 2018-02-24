@@ -1,6 +1,5 @@
 
 .btn-floating {
-
   // margin-bottom: 1.5rem;
   background-color: $day_colour-fl-button-bg;
 
@@ -13,24 +12,25 @@
 
 .fixed-action-btn {
   font-size: 2rem;
-  // bottom: 5%;
   bottom: 11%;
 
   @media screen and (min-width: 750px) {
+    font-size: 1rem;
     bottom: 9%;
   }
 }
 
 
-.feather-cog, .feather-chevron-up, .feather-moon, .feather-sun {
+.feather-cog,
+.feather-chevron-up,
+.feather-moon,
+.feather-sun {
 
   background-color: $day_colour-fl-button-bg;
-
   color: $day_colour-fl-button-icon;
 
   .night & {
     background-color: $night_colour-fl-button-bg;
-
     color: $night_colour-fl-button-icon !important;
   }
 

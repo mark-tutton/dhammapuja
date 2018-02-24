@@ -1,0 +1,10 @@
+.night {
+  & .plyr--audio .plyr__controls {
+    background-color: $night_colour-footer-credits-bg;
+    border-color: rgba(0,0,0,0.14);
+
+    & button, .plyr__time {
+      color: $night_colour-footer-credits-text;
+    }
+  }
+}

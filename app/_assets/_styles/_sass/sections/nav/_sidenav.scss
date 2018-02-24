@@ -1,0 +1,76 @@
+nav .sidenav-trigger {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+// hamburger
+.feather-menu {
+  color: $day_colour-nav-hamburger;
+
+  .night & {
+    color: $night_colour-nav-hamburger;
+  }
+}
+
+// sidenav
+
+.sidenav {
+  background-color: $day_colour-sidenav-bg;
+
+  .night & {
+    background-color: $night_colour-sidenav-bg;
+  }
+
+
+  li > a, li > a > i {
+    margin: 0 12px 0 0;
+    color: $day_colour-sidenav-a;
+
+    .night & {
+      color: $night_colour-sidenav-a;
+    }
+  }
+
+
+  li > a {
+    padding: 0 24px;
+  }
+
+
+  .collapsible-header {
+    & a, i {
+      color: $day_colour-sidenav-a;
+
+      .night & {
+        color: $night_colour-sidenav-a;
+      }
+    }
+  }
+
+
+  & .collapsible-body {
+    background-color: $day_colour-sidenav-dropdown-bg;
+
+    & li > a {
+      color: $day_colour-sidenav-dropdown-a;
+    }
+
+    .night & {
+      background-color: $night_colour-sidenav-dropdown-bg;
+
+      li a {
+        color: $night_colour-sidenav-dropdown-a;
+      }
+    }
+  }
+
+
+  // Color link-active state
+  & li a.active, .collapsible-header a.active  {
+    color: $day_colour-nav-a-dropdown--active !important;
+
+    .night & {
+      color: $night_colour-nav-a--active !important;
+    }
+  }
+}
