@@ -29,7 +29,8 @@ $baseurl: "{{ site.baseurl }}";
 // Blocks
 @import
   '_sass/blocks/floating-button',
-  '_sass/blocks/outdated-browser'
+  '_sass/blocks/outdated-browser',
+  '_sass/blocks/plyr'
 ;
 
 // Pages
