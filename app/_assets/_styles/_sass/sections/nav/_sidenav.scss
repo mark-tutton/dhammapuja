@@ -1,4 +1,4 @@
-.button-collapse {
+nav .sidenav-trigger {
   font-size: 2.5rem;
   cursor: pointer;
 }
@@ -10,7 +10,6 @@
   .night & {
     color: $night_colour-nav-hamburger;
   }
-
 }
 
 // sidenav
@@ -18,58 +17,60 @@
 .sidenav {
   background-color: $day_colour-sidenav-bg;
 
-  li > a, li > a > i {
-    color: $day_colour-sidenav-a;
+  .night & {
+    background-color: $night_colour-sidenav-bg;
   }
 
+
+  li > a, li > a > i {
+    margin: 0 12px 0 0;
+    color: $day_colour-sidenav-a;
+
+    .night & {
+      color: $night_colour-sidenav-a;
+    }
+  }
+
+
+  li > a {
+    padding: 0 24px;
+  }
+
+
+  .collapsible-header {
+    & a, i {
+      color: $day_colour-sidenav-a;
+
+      .night & {
+        color: $night_colour-sidenav-a;
+      }
+    }
+  }
+
+
   & .collapsible-body {
+    background-color: $day_colour-sidenav-dropdown-bg;
 
     & li > a {
       color: $day_colour-sidenav-dropdown-a;
     }
 
-    background-color: $day_colour-sidenav-dropdown-bg;
-  }
-
-
-  .night & {
-    background-color: $night_colour-sidenav-bg;
-
-    & a {
-      color: $night_colour-sidenav-a;
-    }
-
-    & .collapsible-body {
+    .night & {
       background-color: $night_colour-sidenav-dropdown-bg;
 
-      & li a {
+      li a {
         color: $night_colour-sidenav-dropdown-a;
       }
-
     }
-
   }
 
-  & li a.active {
+
+  // Color link-active state
+  & li a.active, .collapsible-header a.active  {
     color: $day_colour-nav-a-dropdown--active !important;
 
     .night & {
       color: $night_colour-nav-a--active !important;
     }
-
   }
-
-  // &-home {
-  //   padding: 0 22px !important;
-  //
-  //   &-icon {
-  //     margin-right: 12px !important;
-  //   }
-  //
-  // }
-
-}
-
-.night .side-nav li>a>i {
-  color: $night_colour-sidenav-a;
 }

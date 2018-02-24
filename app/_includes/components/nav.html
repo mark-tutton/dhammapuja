@@ -2,21 +2,29 @@
 <ul id="slide-out" class="sidenav">
   {% if page.active == "home" %}
     <li class="no-padding">
-      <a href="{{ site.baseurl }}/" class="waves-effect waves-light active side-nav-home">
+      <a href="{{ site.baseurl }}/" class="active">
         <i class="feather-home sidenav-home-icon" aria-hidden="true" aria-label="Home"></i>Home
       </a>
     </li>
   {% else %}
     <li class="no-padding">
-      <a href="{{ site.baseurl }}/" class="waves-effect waves-light side-nav-home"><i class="feather-home sidenav-home-icon" aria-hidden="true" aria-label="Home"></i>Home
+      <a href="{{ site.baseurl }}/" class="">
+        <i class="feather-home sidenav-home-icon" aria-hidden="true" aria-label="Home"></i>Home
       </a>
     </li>
   {% endif %}
 
   <li class="no-padding">
-    <ul class="collapsible collapsible-accordion">
+    <ul class="collapsible">
       <li>
-        <a class="collapsible-header"><i class="fa feather-chevron-down" aira-hidden="true" aria-label="Chanting dropdown menu"></i><a href="{{ site.baseurl }}/chanting/">Chanting</a></a>
+        <div class="collapsible-header">
+          <i class="feather-chevron-down" aira-hidden="true" aria-label="Chanting dropdown menu"></i>
+          {% if page.active == "chant-home" %}
+            <a class="active" href="{{ site.baseurl }}/chanting/">Chanting</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/chanting/">Chanting</a>
+          {% endif %}
+        </div>
 
         <div class="collapsible-body">
           <ul>

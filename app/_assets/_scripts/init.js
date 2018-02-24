@@ -18,7 +18,9 @@ var collapsibleInstance = M.Collapsible.init(collapsible);
 
 
 var fixedActionBtn = document.querySelector('.fixed-action-btn');
-var fixedActionBtnInstance = M.FloatingActionButton.init(fixedActionBtn);
+var fixedActionBtnInstance = M.FloatingActionButton.init(fixedActionBtn, {
+  hoverEnabled: false
+});
 
 
 // Initialize the Jekyll Search plugin

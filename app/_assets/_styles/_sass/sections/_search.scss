@@ -15,6 +15,10 @@
   &-input {
     padding-left: 0.4em;
     color: $day_colour-nav-dropdown-a;
+
+    .night & {
+      color: $night_colour-nav-dropdown-a;
+    }
   }
 
   &-no-results {
