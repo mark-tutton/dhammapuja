@@ -1,9 +1,16 @@
 
 <ul id="slide-out" class="sidenav">
   {% if page.active == "home" %}
-    <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light active side-nav-home"><i class="feather-home side-nav-home-icon" aria-hidden="true" aria-label="Home"></i>Home</a></li>
+    <li class="no-padding">
+      <a href="{{ site.baseurl }}/" class="waves-effect waves-light active side-nav-home">
+        <i class="feather-home sidenav-home-icon" aria-hidden="true" aria-label="Home"></i>Home
+      </a>
+    </li>
   {% else %}
-    <li><a href="{{ site.baseurl }}/" class="waves-effect waves-light side-nav-home"><i class="feather-home side-nav-home-icon" aria-hidden="true" aria-label="Home"></i>Home</a></li>
+    <li class="no-padding">
+      <a href="{{ site.baseurl }}/" class="waves-effect waves-light side-nav-home"><i class="feather-home sidenav-home-icon" aria-hidden="true" aria-label="Home"></i>Home
+      </a>
+    </li>
   {% endif %}
 
   <li class="no-padding">

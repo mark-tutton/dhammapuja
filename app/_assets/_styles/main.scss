@@ -21,8 +21,8 @@ $baseurl: "{{ site.baseurl }}";
 // Sections
 @import
   '_sass/sections/footer',
-  '_sass/sections/nav/desk-nav',
-  '_sass/sections/nav/mob-nav',
+  '_sass/sections/nav/desknav',
+  '_sass/sections/nav/sidenav',
   '_sass/sections/search'
 ;
 

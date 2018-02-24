@@ -15,7 +15,7 @@
 
 // sidenav
 
-.side-nav {
+.sidenav {
   background-color: $day_colour-sidenav-bg;
 
   li > a, li > a > i {
@@ -59,14 +59,14 @@
 
   }
 
-  &-home {
-    padding: 0 22px !important;
-
-    &-icon {
-      margin-right: 12px !important;
-    }
-
-  }
+  // &-home {
+  //   padding: 0 22px !important;
+  //
+  //   &-icon {
+  //     margin-right: 12px !important;
+  //   }
+  //
+  // }
 
 }
 
