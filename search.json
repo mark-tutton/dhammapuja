@@ -197,6 +197,18 @@
 
     
       {
+        "title"      : "Namo Tassa",
+        "url"        : "/chanting/parittas/namo-tassa/",
+        "searchable" : 1
+      }
+    
+
+    , 
+
+  
+
+    
+      {
         "title"      : "Request Paritta Chanting",
         "url"        : "/chanting/requests/request-paritta/",
         "searchable" : 1
