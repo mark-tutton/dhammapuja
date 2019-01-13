@@ -27,6 +27,8 @@ require('./gulp/tasks/images');
  *
  */
 
-gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
+// gulp.task('default', gulp.series(gulp.parallel('browser-sync', 'watch')));
+gulp.task('default', gulp.series('sass', 'scripts', 'watch', 'browser-sync'));
+
 gulp.task('critical', gulp.series(gulp.parallel('critical-home', 'critical-chant-index', 'critical-chanting', 'critical-404')));
 gulp.task('build', gulp.series('scripts-prod', 'sass-prod', 'purify', 'jekyll-prod'));
