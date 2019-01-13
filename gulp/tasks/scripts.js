@@ -10,9 +10,10 @@ const sourcemaps  = require('gulp-sourcemaps');
 
 gulp.task('scripts', function() {
   return gulp.src([
-    'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
+    // 'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
+    'app/_assets/_scripts/vendor/jquery/jquery-3.3.2-custom.min.js',
     './node_modules/materialize-css/dist/js/materialize.min.js',
-    './node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js',
+    'app/_assets/_scripts/vendor/simple-jekyll-search.min.js',
     './node_modules/plyr/dist/plyr.js',
     'app/_assets/_scripts/modules/header-scroll.js',
     'app/_assets/_scripts/modules/night-mode.js',
@@ -38,7 +39,7 @@ gulp.task('scripts', function() {
    return gulp.src([
      'app/_assets/_scripts/vendor/jquery/jquery-3.2.1-custom.min.js',
      './node_modules/materialize-css/dist/js/materialize.min.js',
-    './node_modules/simple-jekyll-search/dest/simple-jekyll-search.min.js',
+     'app/_assets/_scripts/vendor/simple-jekyll-search.min.js',
      './node_modules/plyr/dist/plyr.js',
      'app/_assets/_scripts/modules/header-scroll.js',
      'app/_assets/_scripts/modules/night-mode.js',

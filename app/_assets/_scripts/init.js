@@ -7,7 +7,7 @@ var sideNavInstance = M.Sidenav.init(sideNav, {
 });
 
 
-var parallax = document.querySelector('.parallax');
+var parallax = document.querySelectorAll('.parallax');
 var parallaxInstance = M.Parallax.init(parallax, {
   responsiveThreshold: 0
 });
@@ -29,7 +29,7 @@ SimpleJekyllSearch({
   resultsContainer: document.querySelector('.results-container'),
   json: '/search.json',
   noResultsText: '<span class="search-no-results">No results found</span>'
-});
+})
 
 // SimpleJekyllSearch({
 //   searchInput: document.getElementById('mob-search-input'),

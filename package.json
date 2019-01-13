@@ -35,7 +35,6 @@
   "dependencies": {
     "jquery-smooth-scroll": "^2.2.0",
     "materialize-css": "^1.0.0",
-    "plyr": "^2.0.18",
-    "simple-jekyll-search": "^1.7.2"
+    "plyr": "^2.0.18"
   }
 }
