@@ -1,4 +1,4 @@
-Dhammapuja is a learning aid for Theravadian chants. The official website is located at https://dhammapuja.com/
+Dhammapuja is a tool for learning Theravadin Buddhist chants. The website is located at https://dhammapuja.com/
 
 
 - [Why Chant?](#why-chant)
@@ -75,7 +75,7 @@ better of the two” ( A. II ).
 
 ## Credits
 
-Dhammapuja is the continuation of [John Nishinaga's](https://ejinjue.org/) (now Jāgaro Bhikkhu at the Abhayagiri Buddhist Monastery) project ['Dhamma Schtuff'](https://pali.ejinjue.org/).
+Dhammapuja is a continuation of [John Nishinaga's](https://ejinjue.org/) (now Jāgaro Bhikkhu at the Abhayagiri Buddhist Monastery) project ['Dhamma Schtuff'](https://pali.ejinjue.org/).
 
 I would like to take this opportunity to thank John for providing this excellent resource to make Dhamma study/practice easier and more enjoyable.
 
