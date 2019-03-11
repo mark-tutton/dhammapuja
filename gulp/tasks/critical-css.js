@@ -1,77 +1,49 @@
-const gulp     = require('gulp');
-const critical = require('critical');
+const gulp = require('gulp');
+const log = require('fancy-log');
+const critical = require('critical').stream;
 
-/*
- * This generates the critical CSS for the relevant page. This speeds up the first paint of DOM content
- */
+// Generate & Inline Critical-path CSS
 
-/*
- * Critical CSS for home/index
- */
-gulp.task('critical-home', ['jekyll-prod'], function(cb) {
-  critical.generate({
-    //inline: true,
-    base: 'app/',
-    src: 'index.html',
-    css: ['app/assets/styles/main.css'],
-    dest: '_includes/critical-css/home-critical.css',
-    minify: true,
-    width: 320,
-    height: 480,
-    ignore: ['font-face']
-  });
+gulp.task('critical-home', function(done) {
+  return gulp
+    .src('app/index.html')
+    .pipe(critical({base: 'app/', inline: false, css: ['app/assets/styles/main.css']}))
+    .on('error', function(err) {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('app/_includes/critical-css/'));
+    done();
 });
 
-
-/*
- * Critical CSS for chanting index
- */
-gulp.task('critical-chant-index', ['jekyll-prod'], function(cb) {
-  critical.generate({
-    //inline: true,
-    base: 'app/',
-    src: 'chanting/index.html',
-    css: ['app/assets/styles/main.css'],
-    dest: '_includes/critical-css/chant-index-critical.css',
-    minify: true,
-    width: 320,
-    height: 480,
-    ignore: ['font-face']
-  });
+gulp.task('critical-chant-index', function(done) {
+  return gulp
+    .src('app/chanting/index.html')
+    .pipe(critical({base: 'app/', inline: false, css: ['app/assets/styles/main.css']}))
+    .on('error', function(err) {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('app/_includes/critical-css/'));
+    done();
 });
 
-
-/*
- * Critical CSS for chanting index
- */
-gulp.task('critical-chanting', ['jekyll-prod'], function(cb) {
-  critical.generate({
-    //inline: true,
-    base: 'app/',
-    src: 'chanting/morning.html',
-    css: ['app/assets/styles/main.css'],
-    dest: '_includes/critical-css/chanting-critical.css',
-    minify: true,
-    width: 320,
-    height: 480,
-    ignore: ['font-face']
-  });
+gulp.task('critical-chanting', function(done) {
+  return gulp
+    .src('app/chanting/morning.html')
+    .pipe(critical({base: 'app/', inline: false, css: ['app/assets/styles/main.css']}))
+    .on('error', function(err) {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('app/_includes/critical-css/'));
+    done();
 });
 
-
-/*
- * Critical CSS for 404
- */
-gulp.task('critical-404', ['jekyll-prod'], function(cb) {
-  critical.generate({
-    //inline: true,
-    base: 'app/',
-    src: '404.html',
-    css: ['app/assets/styles/main.css'],
-    dest: '_includes/critical-css/404-critical.css',
-    minify: true,
-    width: 320,
-    height: 480,
-    ignore: ['font-face']
-  });
+gulp.task('critical-404', function(done) {
+  return gulp
+    .src('app/404.html')
+    .pipe(critical({base: 'app/', inline: false, css: ['app/assets/styles/main.css']}))
+    .on('error', function(err) {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('app/_includes/critical-css/'));
+    done();
 });

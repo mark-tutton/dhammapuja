@@ -7,7 +7,7 @@ var sideNavInstance = M.Sidenav.init(sideNav, {
 });
 
 
-var parallax = document.querySelector('.parallax');
+var parallax = document.querySelectorAll('.parallax');
 var parallaxInstance = M.Parallax.init(parallax, {
   responsiveThreshold: 0
 });

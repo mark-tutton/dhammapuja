@@ -4,12 +4,13 @@ const gulp = require('gulp');
 
 require('./gulp/tasks/styles');
 require('./gulp/tasks/scripts');
+require('./gulp/tasks/purifycss');
 require('./gulp/tasks/jekyll');
 require('./gulp/tasks/watch');
 require('./gulp/tasks/browser-sync');
 require('./gulp/tasks/critical-css');
 require('./gulp/tasks/images');
-require('./gulp/tasks/purifycss');
+
 
 
 /**
@@ -26,6 +27,8 @@ require('./gulp/tasks/purifycss');
  *
  */
 
-gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('critical', ['critical-home', 'critical-chant-index', 'critical-chanting', 'critical-404']);
-gulp.task('build', ['scripts-prod', 'sass-prod', 'purify', 'jekyll-prod']);
+gulp.task('default', gulp.series('sass', 'scripts', 'watch', 'browser-sync'));
+
+gulp.task('critical', gulp.series(gulp.parallel('critical-home', 'critical-chant-index', 'critical-chanting', 'critical-404')));
+
+gulp.task('build', gulp.series('scripts-prod', 'sass-prod', 'jekyll-prod', 'critical'));
