@@ -28,8 +28,8 @@
     "gulp-imagemin": "^3.4.0",
     "gulp-purifycss": "^0.2.0",
     "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^5.1.0"
   },

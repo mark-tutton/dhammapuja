@@ -29,7 +29,7 @@ SimpleJekyllSearch({
   resultsContainer: document.querySelector('.results-container'),
   json: '/search.json',
   noResultsText: '<span class="search-no-results">No results found</span>'
-})
+});
 
 // SimpleJekyllSearch({
 //   searchInput: document.getElementById('mob-search-input'),

@@ -8,8 +8,8 @@ _site
 # Project-specific #
 ####################
 ignore/*
-./app/assets/styles/main.css
-./app/assets/scripts/main.js
+app/assets/styles/main.css
+app/assets/scripts/main.js
 .asset-cache
 
 
