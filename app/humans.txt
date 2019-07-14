@@ -7,7 +7,7 @@
   John Nishinaga (https://ejinjue.org/john/) for 'Dhamma Schtuff' (https://pali.ejinjue.org/)
 
 /* SITE */
-	Last update: 2019/01/13
+	Last update: 2019/07/14
 	Language: English
 	Standards: HTML5, CSS3
 	Components: NPM, GulpJS, MaterialzeCSS, jQuery, loadcss, jquery.smooth-scroll.js

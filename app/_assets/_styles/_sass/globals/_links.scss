@@ -4,6 +4,13 @@
 //*
 //*
 
+a:hover {
+  color: $day_colour-text-link--hover;
+
+  .night & {
+    color: $night_colour-text-link--hover;
+  }
+}
 
 .footer-copyright a {
   color: $day_colour-text-link--hover;
