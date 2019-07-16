@@ -1,0 +1,17 @@
+pages_list_title: Site Navigation
+pages:
+
+  toc:
+    - title: Morning
+      - page: Morning
+        url: /morning.html
+
+    - title: Evening
+      - page: Evening (Eng.)
+        url: /evening-eng.html
+
+      - page: Evening (Pali)
+        url: /evening-pali.html
+
+    - title:
+        url:
