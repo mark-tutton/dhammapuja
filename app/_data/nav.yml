@@ -4,14 +4,26 @@ pages:
   toc:
     - title: Morning
       - page: Morning
-        url: /morning.html
+        url: /chanting/morning/
+
 
     - title: Evening
       - page: Evening (Eng.)
-        url: /evening-eng.html
+        url: /chanting/evening-eng/
 
       - page: Evening (Pali)
-        url: /evening-pali.html
+        url: /chanting/evening-pali/
 
-    - title:
-        url:
+
+    - title: Reflections
+        - page: Body Contemplation
+          url: /chanting/reflections/body-contemplation/
+
+        - page: The Sublime Attitudes
+          url: /chanting/reflections/sublime-attitudes/
+
+        - page: Verses of Sharing and Aspiration (Pali)
+          url: /chanting/reflections/verses-of-sharing-and-aspiration-pali/
+
+        - page: Verses of Sharing and Aspiration (Eng)
+          url: /chanting/reflections/verses-of-sharing-and-aspiration-eng/
