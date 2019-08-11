@@ -151,6 +151,14 @@
 
 
             <li class="divider"></li>
+            {% if page.active == "dhammacakkappavattana" %}
+              <li><a href="{{ site.baseurl }}/chanting/suttas/dhammacakkappavattana/" class="waves-effect waves-light active">Dhammacakkappavattana</a></li>
+            {% else %}
+              <li><a href="{{ site.baseurl }}/chanting/suttas/dhammacakkappavattana/" class="waves-effect waves-light">Dhammacakkappavattana</a></li>
+            {% endif %}
+
+
+            <li class="divider"></li>
             {% if page.active == "chant-of-metta" %}
               <li><a href="{{ site.baseurl }}/chanting/extras/chant-of-metta/" class="waves-effect waves-light active">The Chant of Metta</a></li>
             {% else %}
