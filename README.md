@@ -31,9 +31,12 @@ From the BSWA - [Chanting the Dhamma](https://bswa.org/practices/chanting-dhamma
 
 ## What does Dhammapuja mean?
 ```
-Dhamma : The Teaching of the Buddha as contained in the scriptures; not dogmatic in character, but more like a raft or vehicle to convey the disciple to deliverance. Also, the Truth towards which that Teaching points; that which is beyond words, concepts or intellectual understanding.
+Dhamma : The Teaching of the Buddha as contained in the scriptures;
+not dogmatic in character, but more like a raft or vehicle to convey the disciple to deliverance.
+Also, the Truth towards which that Teaching points;
+that which is beyond words, concepts or intellectual understanding.
 ```
-- https://cd1.amaravati.org/wp-content/uploads/2014/09/Amaravati-Chanting-Book.pdf (pg. 68/70)
+- https://cd1.amaravati.org/wp-content/uploads/2014/09/Amaravati-Chanting-Book.pdf (pg. 68/72)
 
 ```
 Pūjā : (1) honour, respect, homage, (2) worship,
