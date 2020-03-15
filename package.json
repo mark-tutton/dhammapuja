@@ -36,7 +36,7 @@
   "dependencies": {
     "jquery-smooth-scroll": "^2.2.0",
     "materialize-css": "^1.0.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "plyr": "^2.0.18"
   }
 }
