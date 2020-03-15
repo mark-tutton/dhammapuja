@@ -41,6 +41,18 @@
 
     
       {
+        "title"      : "Dhammacakkappavattana Sutta",
+        "url"        : "/chanting/suttas/dhammacakkappavattana/",
+        "searchable" : 1
+      }
+    
+
+    , 
+
+  
+
+    
+      {
         "title"      : "Eight Precepts",
         "url"        : "/chanting/requests/eight-precepts/",
         "searchable" : 1
@@ -259,6 +271,18 @@
       {
         "title"      : "The Highest Blessings",
         "url"        : "/chanting/reflections/the-highest-blessings-eng/",
+        "searchable" : 1
+      }
+    
+
+    , 
+
+  
+
+    
+      {
+        "title"      : "The Three Refuges",
+        "url"        : "/chanting/parittas/three-refuges/",
         "searchable" : 1
       }
     

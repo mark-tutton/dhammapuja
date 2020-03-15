@@ -7,6 +7,9 @@
 <loc>http://localhost:4000/chanting/extras/chant-of-metta/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/chanting/suttas/dhammacakkappavattana/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/chanting/requests/eight-precepts/</loc>
 </url>
 <url>
@@ -62,6 +65,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/chanting/reflections/the-highest-blessings-eng/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/chanting/parittas/three-refuges/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/chanting/reflections/verses-of-sharing-and-aspiration-eng/</loc>
