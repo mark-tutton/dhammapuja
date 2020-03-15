@@ -23,6 +23,7 @@ From the BSWA - [Chanting the Dhamma](https://bswa.org/practices/chanting-dhamma
 
 
 [Ajahn Brahm - Regarding Chanting](https://youtu.be/7a9TRG8soYQ)
+[The Practice of Chanting in Buddhism - Bhikkhu Dhammasami](https://www.urbandharma.org/udharma2/chanting.html)
 
 
 <br />
@@ -30,19 +31,12 @@ From the BSWA - [Chanting the Dhamma](https://bswa.org/practices/chanting-dhamma
 
 ## What does Dhammapuja mean?
 ```
-Dhamma : lit. the 'bearer', constitution (or nature of a thing), norm,
- law (jus), doctrine; justice, righteousness;
- quality; thing, object of mind (s. āyatana) 'phenomenon'.
-
-  The Dhamma, as the liberating law discovered and proclaimed by the Buddha,
-is summed up in the 4 Noble Truths (s. sacca). It forms one of the 3 Gems
-(ti-ratana, q.v.) and one of the 10 recollections (anussati q.v.).
-
-  Dhamma, as object of the mind (dhammāyatana, s. āyatana) may be
-anything past, present or future, corporeal or mental,
-conditioned or not (cf. sankhāra, 4), real or imaginary.
+Dhamma : The Teaching of the Buddha as contained in the scriptures;
+not dogmatic in character, but more like a raft or vehicle to convey the disciple to deliverance.
+Also, the Truth towards which that Teaching points;
+that which is beyond words, concepts or intellectual understanding.
 ```
-- http://urbandharma.org/pdf/palidict.pdf (pg. 97/402)
+- https://cd1.amaravati.org/wp-content/uploads/2014/09/Amaravati-Chanting-Book.pdf (pg. 68/72)
 
 ```
 Pūjā : (1) honour, respect, homage, (2) worship,

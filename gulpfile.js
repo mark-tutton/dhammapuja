@@ -14,16 +14,16 @@ require('./gulp/tasks/images');
 
 
 /**
- * Default task, running just `gulp` will compile the sass, concats scripts,
- * and build the jekyll site, launch BrowserSync & watch files. (Adds sourcemaps to main.js and main.css)
+ * Default task: Running `gulp` will compile the sass, concats scripts,
+ * build the jekyll site, launch BrowserSync, and watch files. (Adds sourcemaps to main.js and main.css)
  *
  *
- * Critical task, generates the critical CSS of each html file
+ * Critical task: Generates the critical CSS of each html file.
  *
  *
- * Build task, running 'gulp build' will compile the sass,
- * concats scripts, cleans unused CSS,
- * and then builds the jekyll site. (Minifys Sass & scripts. No sourcemaps)
+ * Build task: Running 'gulp build' will compile the sass,
+ * concat scripts, clean unused CSS,
+ * and then build the jekyll site. (Minifys Sass & scripts. No sourcemaps)
  *
  */
 

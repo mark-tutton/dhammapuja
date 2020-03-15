@@ -11,6 +11,7 @@ ignore/*
 app/assets/styles/main.css
 app/assets/scripts/main.js
 .asset-cache
+app/.jekyll-cache/*
 
 
 ######################
