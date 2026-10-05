@@ -1,0 +1,317 @@
+[00:00.0] ### The Chant of Metta
+[00:00.3] ##### by Imee Ooi
+---
+
+[00:21.0] Aham avero homi
+> May I be free from enmity and danger
+
+[00:28.0] Abyapajjho homi
+> May I be free from mental suffering
+
+[00:36.0] Anigha homi
+> May I be free from physical suffering
+
+[00:42.0] Sukhi - attanam pariharami
+> May I take care of myself happily
+
+[00:53.0] Mama matapitu
+> May my parents
+
+[00:57.0] Acariya ca natimitta ca
+> Teacher relatives and friends
+
+[01:06.0] Sabrahma - carino ca
+> Fellow Dhammafarers
+
+[01:12.0] Avera hontu
+> Be free from enmity and danger
+
+[01:16.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[01:20.0] Anigha hontu
+> Be free from physical suffering
+
+[01:23.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[01:30.0] Imasmim aramê sabbê yogino
+> May all meditators in this compound
+
+[01:38.0] Avera hontu
+> Be free from enmity and danger
+
+[01:42.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[01:46.0] Anigha hontu
+> Be free from physical suffering
+
+[01:49.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[01:57.0] Imasmim aramê sabbê bhikkhû
+> May all monks in this compound
+
+[02:04.0] Sâmañerâ ca
+> Novice monks
+
+[02:08.0] Upasaka - upasikaya ca
+> Laymen and laywomen disciples
+
+[02:15.0] Avera hontu
+> Be free from enmity and danger
+
+[02:19.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[02:23.0] Anigha hontu
+> Be free from physical suffering
+
+[02:27.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[02:34.0] Amhakam catupaccaya - dayaka
+> May our donors of the four supports: clothing, food, medicine and lodging
+
+[02:39.0] Avera hontu
+> Be free from enmity and danger
+
+[02:43.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[02:47.0] Anigha hontu
+> Be free from physical suffering
+
+[02:50.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[02:58.0] Amhakam arakkha dêva ta
+> May our guardian devas (angels, saints)
+
+[03:04.0] Ismasmim viharê
+> In this monastery
+
+[03:07.0] Ismasmim avasê
+> In this dwelling
+
+[03:11.0] Ismasmim aramê
+> In this compound
+
+[03:15.0] Arakkha dêva ta
+> May the guardian devas
+
+[03:19.0] Avera hontu
+> Be free from enmity and danger
+
+[03:22.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[03:26.0] Anigha hontu
+> Be free from physical suffering
+
+[03:30.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[03:37.0] Sabbê sattâ
+> May all beings
+
+[03:41.0] Sabbê pana
+> All breathing things
+
+[03:44.0] Sabbê bhuta
+> All creatures
+
+[03:48.0] Sabbê puggala
+> All individuals (all beings)
+
+[03:52.0] Sabbê attabhava - pariyapanna
+> All personalities (all beings with mind and body)
+
+[03:59.0] Sabbê itthi yo
+> May all females
+
+[04:03.0] Sabbê purisa
+> All males
+
+[04:06.0] Sabbê ariya
+> All noble ones (saints)
+
+[04:09.30] Sabbê anariya
+> All worldlings (those yet to attain sainthood)
+
+[04:13.0] Sabbê dêva
+> All devas (deities)
+
+[04:18.0] Sabbê manussa
+> All humans
+
+[04:21.0] Sabbê vinipatika
+> All those in the four woeful planes
+
+[04:29.0] Avera hontu
+> Be free from enmity and dangers
+
+[04:32.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[04:36.0] Anigha hontu
+> Be free from physical suffering
+
+[04:40.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[04:47.0] Dukkha muccantu
+> May all being be free from suffering
+
+[04:51.0] Yatthâ-laddha-sampattito mavigacchantu
+> May whatever they have gained not be lost
+
+[05:01.0] Kammassaka
+> All beings are owners of their own Kamma
+
+[05:06.0] Purathimaya disaya
+> In the eastern direction
+
+[05:09.0] Pacchimaya disaya
+> in the western direction
+
+[05:13.0] Uttara disaya
+> In the northern direction
+
+[05:17.0] Dakkhinâyâ disaya
+> In the southern direction
+
+[05:20.0] Purathimaya anudisaya
+> In the southeast direction
+
+[05:24.0] Pacchimaya anudisaya
+> In the northwest direction
+
+[05:28.0] Uttara anudisaya
+> In the northeast direction
+
+[05:32.0] Dakkhinâyâ anudisaya
+> In the southwest direction
+
+[05:35.0] Hetthimaya disaya
+> In the direction below
+
+[05:39.0] Uparimaya disaya
+> In the direction above
+
+[05:46.0] Sabbê sattâ
+> May all beings
+
+[05:50.0] Sabbê pana
+> All breathing things
+
+[05:54.0] Sabbê bhutta
+> all creatures
+
+[05:57.0] Sabbê puggala
+> All individuals (all beings)
+
+[06:01.0] Sabbê attabhava - pariyapanna
+> All personalities (all beings with mind and body)
+
+[06:08.0] Sabbê itthoyo
+> May all females
+
+[06:12.0] Sabbê purisa
+> All males
+
+[06:16.0] Sabbê ariya
+> All noble ones (saints)
+
+[06:20.0] Sabbê anariya
+> All worldlings (those yet to attain sainthood)
+
+[06:23.0] Sabbê dêva
+> All devas (deities)
+
+[06:26.0] Sabbê manussa
+> All humans
+
+[06:31.0] Sabbê vinipatika
+> All those in the four woeful planes
+
+[06:38.0] Avera hontu
+> Be free from enmity and dangers
+
+[06:42.0] Abyapajjha hontu
+> Be free from mental suffering
+
+[06:45.0] Anigha hontu
+> Be free from physical suffering
+
+[06:49.0] Sukhi - attanam pariharantu
+> May they take care of themselves happily
+
+[06:57.0] Dukkha muccantu
+> May all beings be free from suffering
+
+[07:00.0] Yathâ-laddha-sampattito mavigacchantu
+> May whatever they have gained not be lost
+
+[07:11.0] Kammassaka
+> All beings are owners of their own Kamma
+
+[07:16.0] Uddham yava bhavagga ca
+> As far as the highest plane of existence
+
+[07:23.0] Adho yava aviccito
+> To as far down as the lowest plane
+
+[07:28.0] Samanta cakkavalesu
+> In the entire universe
+
+[07:32.0] Yê sattâ pathavicara
+> Whatever beings that move on earth
+
+[07:36.0] Abyapajjha nivera ca
+> May they be free of mental suffering and enmity
+
+[07:40.0] Nidukkha ca nupaddava
+> And from physical suffering and danger
+
+[07:47.0] Uddham yava bhavagga ca
+> As far as the highest plane of existence
+
+[07:54.0] Adho yava aviccito
+> To as far down as the lowest plane
+
+[07:59.0] Samanta cakkavalesu
+> In the entire universe
+
+[08:04.0] Yê sattâ udakecara
+> Whatever beings that move on water
+
+[08:07.0] Abyapajjha nivera ca
+> May they be free of mental suffering and enmity
+
+[08:11.0] Nidukkha ca nupaddava
+> And from physical suffering and danger
+
+[08:18.0] Uddham yava bhavagga ca
+> As far as the highest plane of existence
+
+[08:26.0] Adho yava aviccito
+> To as far down as the lowest plane
+
+[08:31.0] Samanta cakkavalesu
+> In the entire universe
+
+[08:35.0] Yê sattâ akasecara
+> Whatever beings that move in air
+
+[08:38.0] Abyapajjha nivera ca
+> May they be free of mental suffering and enmity
+
+[08:42.0] Nidukkha ca nupaddava
+> And from physical suffering and danger
+
+---
+
+> Metta is a Pâli word meaning loving-kindness.
+> Metta chanting is the radiation of loving-kindness towards all living beings
