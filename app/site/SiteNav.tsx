@@ -2,6 +2,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { chantPath, chants } from "../chants/catalog";
 import { ChevronDown, Home, Menu } from "../icons";
+import { SiteSearch } from "./SiteSearch";
 import { menuGroups } from "./menu";
 import { type NavScroll, nextNavScroll } from "./scroll";
 
@@ -45,6 +46,9 @@ export function SiteNav() {
               <NavLink to="/chanting/" end>
                 Chanting
               </NavLink>
+            </li>
+            <li>
+              <SiteSearch />
             </li>
           </ul>
           <button
