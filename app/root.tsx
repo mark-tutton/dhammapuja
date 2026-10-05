@@ -1,6 +1,8 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import type { Route } from "./+types/root";
+import { SiteNav } from "./site/SiteNav";
 import "./styles/base.css";
+import "./styles/nav.css";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -21,6 +23,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <header>
+          <SiteNav />
+        </header>
         {children}
         <ScrollRestoration />
         <Scripts />

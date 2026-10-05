@@ -104,6 +104,11 @@ a:hover {
   color: var(--link-hover);
 }
 
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
 .container {
   width: 90%;
   max-width: 1280px;

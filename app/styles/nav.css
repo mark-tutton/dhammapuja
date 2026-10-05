@@ -1,0 +1,224 @@
+/* Top bar and side menu. Sizes and colours measured off the old site
+   (materialize navbar and sidenav plus legacy sass/sections/nav). */
+
+:root {
+  --nav-bg: #f3f3f3;
+  --nav-link: #494b4d;
+  --nav-active: #48acf0;
+  --nav-brand: #050709;
+  --side-bg: #fff;
+  --side-link: #2e3032;
+  --side-chants-bg: #fefefe;
+  --side-chants-link: #373a3c;
+  --nav-height: 56px;
+}
+
+.night {
+  --nav-bg: #2a2a2a;
+  --nav-link: #eaeaea;
+  --nav-active: #62b6cb;
+  --nav-brand: #f1f1f1;
+  --side-bg: #2a2a2a;
+  --side-link: #eaeaea;
+  --side-chants-bg: #333333;
+  --side-chants-link: #e6e6e6;
+}
+
+@media (min-width: 601px) {
+  :root {
+    --nav-height: 64px;
+  }
+}
+
+/* Holds the bar's place in the page; the bar itself is fixed. */
+.navbar {
+  position: relative;
+  z-index: 997;
+  height: var(--nav-height);
+}
+
+.navbar nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: var(--nav-height);
+  line-height: var(--nav-height);
+  background-color: var(--nav-bg);
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: top 0.2s ease-in-out;
+}
+
+.navbar--hidden nav {
+  top: -70px;
+}
+
+.navbar .brand-logo {
+  position: absolute;
+  left: 50%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--nav-brand);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.navbar__links {
+  display: none;
+  margin: 0;
+  padding: 0 30px 0 0;
+  list-style: none;
+}
+
+.navbar__links a {
+  display: block;
+  padding: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--nav-link);
+  transition: background-color 0.3s;
+}
+
+.navbar__links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.night .navbar__links a:hover {
+  color: #2a2a2a;
+  background-color: #f1f1f1;
+}
+
+.navbar__links a.active,
+.night .navbar__links a.active {
+  color: var(--nav-active);
+}
+
+.navbar__trigger {
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  margin: 0 18px;
+  padding: 0;
+  font-size: 24px;
+  color: var(--nav-brand);
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+@media (min-width: 993px) {
+  .navbar .brand-logo {
+    left: 0;
+    padding-left: 1%;
+    transform: none;
+  }
+
+  .navbar__links {
+    display: flex;
+  }
+
+  .navbar__trigger {
+    display: none;
+  }
+}
+
+.side-menu__overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 300px;
+  max-width: 85%;
+  height: 100%;
+  padding-bottom: 60px;
+  overflow-y: auto;
+  background-color: var(--side-bg);
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transform: translateX(105%);
+  transition: transform 0.3s;
+}
+
+.side-menu--open {
+  transform: none;
+}
+
+.side-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.side-menu a {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  margin-right: 12px;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  color: var(--side-link);
+}
+
+.side-menu a .icon {
+  width: 24px;
+  margin-right: 12px;
+}
+
+.side-menu a.active {
+  color: var(--nav-active);
+}
+
+.side-menu__header {
+  display: flex;
+  padding: 0 16px;
+  line-height: 48px;
+}
+
+.side-menu__header button {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  margin: 0 15px 0 0;
+  padding: 0;
+  font-size: 1.3rem;
+  color: var(--side-link);
+  cursor: pointer;
+  background: none;
+  border: 0;
+}
+
+.side-menu__header a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.side-menu__chants {
+  background-color: var(--side-chants-bg);
+}
+
+.side-menu__chants a {
+  padding: 0 23.5px 0 31px;
+  color: var(--side-chants-link);
+}
+
+.side-menu__chants .divider {
+  margin-top: 8px;
+}
