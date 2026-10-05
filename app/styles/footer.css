@@ -1,0 +1,77 @@
+/* Footer. Sizes measured off the old site (materialize page-footer and grid
+   plus legacy sass/sections/_footer.scss). */
+
+:root {
+  --footer-bg: #f3f3f3;
+  --footer-text: #2e3032;
+  --footer-link: #48acf0;
+  --footer-copyright-bg: rgba(51, 51, 51, 0.08);
+}
+
+.night {
+  --footer-bg: #585858;
+  --footer-text: #e6e6e6;
+  --footer-link: #62b6cb;
+  --footer-copyright-bg: #2a2a2a;
+}
+
+.page-footer {
+  padding-top: 20px;
+  background-color: var(--footer-bg);
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.page-footer a {
+  color: var(--footer-link);
+}
+
+.page-footer__row {
+  margin-bottom: 20px;
+}
+
+/* Wide screens: memo takes 4 of 12 columns, one empty, then two link lists of 2. */
+@media (min-width: 993px) {
+  .page-footer__row {
+    display: grid;
+    grid-template-columns: 4fr 1fr 2fr 2fr 3fr;
+  }
+
+  .page-footer__row > ul:nth-of-type(1) {
+    grid-column: 3;
+  }
+
+  .page-footer__row > ul:nth-of-type(2) {
+    grid-column: 4;
+  }
+}
+
+.page-footer .memo {
+  margin: 1em 0;
+  font-size: 13px;
+  color: var(--footer-text);
+}
+
+.page-footer ul {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.page-footer__row > * {
+  padding: 0 0.75rem;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 10px 0;
+  background-color: var(--footer-copyright-bg);
+}
+
+.footer-copyright .container {
+  display: flex;
+  justify-content: space-between;
+}
