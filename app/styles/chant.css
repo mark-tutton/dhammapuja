@@ -36,9 +36,13 @@
   width: 100%;
 }
 
-#audio audio {
-  display: block;
-  width: 100%;
+/* Video.js skin picks light or dark colours from the colour scheme. */
+#audio {
+  color-scheme: light;
+}
+
+.night #audio {
+  color-scheme: dark;
 }
 
 /* Running time and per-line stamps: only for timing new chants. Hidden. */

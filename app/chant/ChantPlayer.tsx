@@ -1,4 +1,6 @@
+import { Audio, AudioPlayer, NeutralAudioSkin } from "@videojs/react/audio";
 import { useCallback, useEffect, useRef, useState } from "react";
+import "@videojs/react/audio/neutral-skin.css";
 import { ChantLines } from "./ChantLines";
 import type { ChantLine } from "./parse";
 import { timeToHuman } from "./time";
@@ -7,13 +9,15 @@ import { activeLineIndex } from "./timeline";
 type Props = {
   // Audio path without extension.
   audio: string;
+  // Shown by the player and on the lock screen.
+  title: string;
   lines: readonly ChantLine[];
 };
 
 // Gap kept between active line and screen edge before scrolling to it. Same as legacy.
 const EDGE = 150;
 
-export function ChantPlayer({ audio, lines }: Props) {
+export function ChantPlayer({ audio, title, lines }: Props) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   // Null until audio first reports a time: nothing highlighted before play.
@@ -39,18 +43,21 @@ export function ChantPlayer({ audio, lines }: Props) {
 
   return (
     <>
+      {/* Video.js draws the controls. Underneath is a plain <audio>, so time
+          updates and seeking work exactly as with the browser's own player. */}
       <div id="audio">
-        {/* biome-ignore lint/a11y/useMediaCaption: the page itself is the transcript, highlighted in time with the audio */}
-        <audio
-          ref={audioRef}
-          controls
-          preload="auto"
-          onTimeUpdate={(event) => setTime(event.currentTarget.currentTime)}
-        >
-          <source src={`${audio}.mp3`} type="audio/mpeg" />
-          <source src={`${audio}.ogg`} type="audio/ogg" />
-          Your browser does not support the <code>audio</code> element.
-        </audio>
+        <AudioPlayer title={title}>
+          <NeutralAudioSkin>
+            <Audio
+              ref={audioRef}
+              preload="auto"
+              onTimeUpdate={(event) => setTime(event.currentTarget.currentTime)}
+            >
+              <source src={`${audio}.mp3`} type="audio/mpeg" />
+              <source src={`${audio}.ogg`} type="audio/ogg" />
+            </Audio>
+          </NeutralAudioSkin>
+        </AudioPlayer>
       </div>
       <div id="time">{timeToHuman(time ?? 0)}</div>
       <div ref={listRef}>

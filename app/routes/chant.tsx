@@ -34,7 +34,7 @@ export default function ChantPage({ loaderData }: Route.ComponentProps) {
   return (
     <div className="container container--chant">
       <main id="main">
-        <ChantPlayer audio={chant.audio} lines={lines} />
+        <ChantPlayer audio={chant.audio} title={chant.title} lines={lines} />
       </main>
     </div>
   );
