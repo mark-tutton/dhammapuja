@@ -16,6 +16,7 @@ export function SiteSearch() {
     <div className="search">
       <input
         type="search"
+        name="q"
         className="search__input"
         aria-label="Search chants"
         placeholder="Search..."
