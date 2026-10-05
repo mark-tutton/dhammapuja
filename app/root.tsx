@@ -1,5 +1,13 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  ScrollRestoration,
+  isRouteErrorResponse,
+} from "react-router";
 import type { Route } from "./+types/root";
+import { NotFound } from "./site/NotFound";
 import { SiteNav } from "./site/SiteNav";
 import { SiteSettings } from "./site/SiteSettings";
 import { themeBootScript } from "./site/theme";
@@ -49,4 +57,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return <Outlet />;
+}
+
+// A chant url with no such chant lands here as a 404. Anything else is a crash.
+export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+  if (isRouteErrorResponse(error) && error.status === 404) return <NotFound />;
+  return (
+    <main className="container not-found">
+      <h1>Something went wrong</h1>
+      <p className="flow-text">Try reloading the page.</p>
+    </main>
+  );
 }
