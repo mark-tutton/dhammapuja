@@ -1,5 +1,6 @@
 import { ChantLinkList } from "../chants/ChantLinkList";
 import { indexRows } from "../chants/index-rows";
+import { ParallaxBand } from "../site/ParallaxBand";
 import { SiteFooter } from "../site/SiteFooter";
 import { pageMeta, SITE_DESCRIPTION, SITE_NAME } from "../site/seo";
 import "../styles/footer.css";
@@ -18,7 +19,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <div className="hero hero--top">
+        <ParallaxBand className="hero hero--top">
           <img
             src="/assets/img/home/ta-prohm/ta-prohm-medium--500-g.jpg"
             srcSet={photo("ta-prohm", [
@@ -34,7 +35,7 @@ export default function Home() {
             <h3>Welcome to Dhammapuja</h3>
             <h5>A tool for learning Theravadin chants</h5>
           </div>
-        </div>
+        </ParallaxBand>
 
         <div className="home-chants">
           <div className="container">
@@ -47,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero">
+        <ParallaxBand className="hero">
           <img
             src="/assets/img/home/buddha-radial/buddha-radial-medium--500.jpg"
             srcSet={photo("buddha-radial", [
@@ -61,7 +62,7 @@ export default function Home() {
             loading="lazy"
             alt="Radial Buddha statue"
           />
-        </div>
+        </ParallaxBand>
       </main>
       <SiteFooter />
     </>

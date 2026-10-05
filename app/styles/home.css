@@ -13,7 +13,7 @@
   --home-group-line: #444;
 }
 
-/* Photo band. Old site slid the photo on scroll; here it stays put, cropped to fit. */
+/* Photo band. By default the photo fills the band and stays put. */
 .hero {
   position: relative;
   height: 500px;
@@ -37,6 +37,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* Set by script once parallax is running: photo keeps its own height, taller
+   than the band, anchored to the bottom, and script slides it as the page scrolls. */
+.hero--parallax img {
+  inset: auto 0 0;
+  height: auto;
+  min-height: 100%;
+  will-change: transform;
 }
 
 .hero__text {
