@@ -1,0 +1,59 @@
+/* Floating settings button. Sizes measured off the old site
+   (materialize fixed-action-btn plus legacy sass/blocks/_floating-button). */
+
+:root {
+  --fab-bg: #2e3032;
+  --fab-icon: #fff;
+}
+
+.night {
+  --fab-bg: #fff;
+  --fab-icon: #333333;
+}
+
+.settings {
+  position: fixed;
+  right: 23px;
+  bottom: 11%;
+  z-index: 997;
+}
+
+@media (min-width: 750px) {
+  .settings {
+    bottom: 9%;
+  }
+}
+
+.settings ul {
+  position: absolute;
+  right: 0;
+  bottom: 64px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.settings li {
+  margin-bottom: 15px;
+}
+
+.settings button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 24px;
+  color: var(--fab-icon);
+  cursor: pointer;
+  background-color: var(--fab-bg);
+  border: 0;
+  border-radius: 50%;
+  box-shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
