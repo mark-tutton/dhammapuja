@@ -1,0 +1,45 @@
+name: ci
+
+# Pull requests only. A push to master is always a merged pull request that
+# already ran these checks, so running again there would spend minutes twice.
+# workflow_dispatch: run by hand when wanted.
+on:
+  pull_request:
+    paths-ignore:
+      - "legacy/**"
+      - "**.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# New push to the same branch cancels the run still going for the old one.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # Whole job normally takes about a minute. Stuck run is killed here.
+    timeout-minutes: 5
+    steps:
+      # Skip the old site and 127 MB of chant audio: checks need neither.
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/legacy/
+            !/public/assets/audio/
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
