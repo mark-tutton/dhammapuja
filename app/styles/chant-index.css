@@ -1,0 +1,53 @@
+/* Chant index page. From legacy sass/pages/_chant-index.scss plus the
+   materialize row, column and divider it used. */
+
+/* flow-root: keeps list margins inside the row, as the old floated columns did. */
+.row {
+  display: flow-root;
+  margin-bottom: 20px;
+  padding: 0 0.75rem;
+}
+
+@media (min-width: 601px) {
+  .row--columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.chant-list {
+  margin: 1em 0 0.53em;
+}
+
+.chant-list h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.chant-list ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.chant-list li {
+  margin-bottom: 0.1em;
+}
+
+.chant-list li .icon {
+  vertical-align: -0.125em;
+}
+
+.chant-list li a {
+  font-size: 0.85em;
+}
+
+.night .chant-list li .icon {
+  color: #e6e6e6;
+}

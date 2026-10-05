@@ -95,6 +95,11 @@ hr {
   border: 1px solid;
 }
 
+a {
+  color: #039be5;
+  text-decoration: none;
+}
+
 a:hover {
   color: var(--link-hover);
 }
