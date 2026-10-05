@@ -1,0 +1,28 @@
+import { data } from "react-router";
+import { ChantPlayer } from "../chant/ChantPlayer";
+import { loadChant } from "../chants/load";
+import type { Route } from "./+types/chant";
+
+export async function loader({ params }: Route.LoaderArgs) {
+  const loaded = await loadChant(params["*"]);
+  if (!loaded) throw data(null, { status: 404 });
+  return loaded;
+}
+
+export function meta({ loaderData }: Route.MetaArgs) {
+  if (!loaderData) return [{ title: "Dhammapuja" }];
+  const { chant } = loaderData;
+  return [
+    { title: `${chant.title} | Dhammapuja` },
+    { name: "description", content: chant.description },
+  ];
+}
+
+export default function ChantPage({ loaderData }: Route.ComponentProps) {
+  const { chant, lines } = loaderData;
+  return (
+    <main id="main">
+      <ChantPlayer audio={chant.audio} lines={lines} />
+    </main>
+  );
+}

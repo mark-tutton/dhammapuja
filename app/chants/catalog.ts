@@ -203,3 +203,8 @@ export const chants: readonly Chant[] = [
 export function findChant(slug: string): Chant | undefined {
   return chants.find((chant) => chant.slug === slug);
 }
+
+// Trailing slash: same urls the legacy site served.
+export function chantPath(chant: Pick<Chant, "slug">): string {
+  return `/chanting/${chant.slug}/`;
+}
