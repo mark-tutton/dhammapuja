@@ -1,0 +1,124 @@
+/* Site-wide base. Values carried over from legacy sass and the parts of
+   materialize it relied on. Colours are variables so night mode is one class. */
+
+:root {
+  --bg: #f6f6f6;
+  --text: #373a3c;
+  --heading: #2e3032;
+  --link-hover: #69bbf2;
+}
+
+.night {
+  --bg: #333333;
+  --text: #e6e6e6;
+  --heading: #eaeaea;
+  --link-hover: #7ec3d4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 300ms ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--heading);
+}
+
+h3 {
+  margin: 1.9466rem 0 1.168rem;
+  font-size: 2.92rem;
+}
+
+h4 {
+  margin: 1.52rem 0 0.912rem;
+  font-size: 2.28rem;
+}
+
+h5 {
+  margin: 1.0933rem 0 0.656rem;
+  font-size: 1.64rem;
+}
+
+@media (max-width: 400px) {
+  h3 {
+    font-size: 2.72rem;
+  }
+
+  h4 {
+    font-size: 1.48rem;
+  }
+
+  h5 {
+    font-size: 1.38rem;
+  }
+}
+
+hr {
+  margin: -1px 0;
+  border: 1px solid;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 601px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 993px) {
+  .container {
+    width: 70%;
+  }
+}
+
+/* Text that grows with screen width: 1.2rem at 360px up to 1.68rem at 960px. */
+.flow-text {
+  font-size: clamp(1.2rem, calc(1.2rem + (100vw - 360px) * 0.0115), 1.68rem);
+  font-weight: 300;
+}
