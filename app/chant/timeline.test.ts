@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { findLineByTime } from "./timeline";
+import { parseChant } from "./parse";
+import { activeLineIndex, findLineByTime } from "./timeline";
 
 const lines = [{ time: 10 }, { time: 20 }, { time: 30 }];
 
@@ -34,5 +35,24 @@ describe("findLineByTime", () => {
         expect(findLineByTime(list, time)).toBe(expected);
       }
     }
+  });
+});
+
+describe("activeLineIndex", () => {
+  const chant = parseChant(
+    ["### Title", "---", "[00:10.0] a", "> untimed", "[00:20.0] b"].join("\n"),
+  );
+
+  it("returns the position, among all lines, of the latest timed line started", () => {
+    expect(activeLineIndex(chant, 15)).toBe(2);
+    expect(activeLineIndex(chant, 20)).toBe(4);
+  });
+
+  it("returns the first timed line before anything has started", () => {
+    expect(activeLineIndex(chant, 0)).toBe(2);
+  });
+
+  it("returns null when no line has a time", () => {
+    expect(activeLineIndex(parseChant("a\n---\nb"), 5)).toBeNull();
   });
 });
