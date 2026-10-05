@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { parseChant } from "../chant/parse";
 import { chants, findChant } from "./catalog";
+import { indexRows } from "./index-rows";
 import { loadChantSource, sourceSlugs } from "./sources";
 
 describe("catalog", () => {
@@ -17,6 +18,7 @@ describe("catalog", () => {
     for (const chant of chants) {
       expect(chant.title, chant.slug).not.toBe("");
       expect(chant.label, chant.slug).not.toBe("");
+      expect(chant.indexTitle, chant.slug).not.toBe("");
       expect(chant.description, chant.slug).not.toBe("");
       expect(chant.audio, chant.slug).toMatch(/^\/assets\/audio\/[\w/-]+$/);
     }
@@ -25,6 +27,21 @@ describe("catalog", () => {
   it("finds a chant by slug", () => {
     expect(findChant("morning")?.title).toBe("Morning Puja");
     expect(findChant("nope")).toBeUndefined();
+  });
+});
+
+describe("indexRows", () => {
+  const slugs = indexRows.flatMap((row) => row.groups.flatMap((group) => group.slugs));
+
+  it("lists every listed chant exactly once, and no unlisted one", () => {
+    const listed = chants.filter((chant) => chant.listed).map((chant) => chant.slug);
+    expect([...slugs].sort()).toEqual([...listed].sort());
+  });
+
+  it("gives every group a heading", () => {
+    for (const row of indexRows) {
+      for (const group of row.groups) expect(group.heading).not.toBe("");
+    }
   });
 });
 
