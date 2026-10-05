@@ -20,3 +20,7 @@ node_modules/
 Thumbs.db
 
 
+
+### React Router ###
+/.react-router/
+/build/
