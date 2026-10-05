@@ -120,5 +120,4 @@ a:hover {
 /* Text that grows with screen width: 1.2rem at 360px up to 1.68rem at 960px. */
 .flow-text {
   font-size: clamp(1.2rem, calc(1.2rem + (100vw - 360px) * 0.0115), 1.68rem);
-  font-weight: 300;
 }
