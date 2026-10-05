@@ -1,8 +1,6 @@
 import { Fragment } from "react";
-import { Link } from "react-router";
-import { chantPath, findChant } from "../chants/catalog";
+import { ChantLinkList } from "../chants/ChantLinkList";
 import { indexRows } from "../chants/index-rows";
-import { ChevronRight } from "../icons";
 import { SiteFooter } from "../site/SiteFooter";
 import "../styles/chant-index.css";
 import "../styles/footer.css";
@@ -26,18 +24,7 @@ export default function ChantIndex() {
                 {row.groups.map((group) => (
                   <section key={group.heading} className="chant-list flow-text">
                     <h4>{group.heading}</h4>
-                    <ul>
-                      {group.slugs.map((slug) => {
-                        const chant = findChant(slug);
-                        if (!chant) return null;
-                        return (
-                          <li key={slug}>
-                            <ChevronRight />
-                            <Link to={chantPath(chant)}>{chant.indexTitle}</Link>
-                          </li>
-                        );
-                      })}
-                    </ul>
+                    <ChantLinkList slugs={group.slugs} />
                   </section>
                 ))}
               </div>
