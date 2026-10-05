@@ -28,6 +28,12 @@ describe("catalog", () => {
     expect(findChant("morning")?.title).toBe("Morning Puja");
     expect(findChant("nope")).toBeUndefined();
   });
+
+  it("finds a chant by slug with a trailing slash, as urls have", () => {
+    expect(findChant("blessings/metta-sutta-pali/")?.slug).toBe("blessings/metta-sutta-pali");
+    expect(findChant("")).toBeUndefined();
+    expect(findChant("/")).toBeUndefined();
+  });
 });
 
 describe("indexRows", () => {

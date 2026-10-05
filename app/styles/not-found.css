@@ -1,0 +1,20 @@
+/* 404 page. */
+
+.not-found {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 2.8rem 0 1.68rem;
+  font-size: 4.2rem;
+}
+
+.not-found h2 {
+  font-weight: 400;
+}
+
+.not-found ul {
+  padding-left: 0;
+  list-style: none;
+}
