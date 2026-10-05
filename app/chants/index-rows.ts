@@ -48,11 +48,7 @@ export const indexRows: readonly IndexRow[] = [
     groups: [
       {
         heading: "Formal Requests",
-        slugs: [
-          "requests/five-precepts",
-          "requests/eight-precepts",
-          "requests/request-paritta",
-        ],
+        slugs: ["requests/five-precepts", "requests/eight-precepts", "requests/request-paritta"],
       },
     ],
   },
@@ -60,11 +56,7 @@ export const indexRows: readonly IndexRow[] = [
     groups: [
       {
         heading: "Parittas",
-        slugs: [
-          "parittas/invitation-to-devas",
-          "parittas/namo-tassa",
-          "parittas/three-refuges",
-        ],
+        slugs: ["parittas/invitation-to-devas", "parittas/namo-tassa", "parittas/three-refuges"],
       },
     ],
   },

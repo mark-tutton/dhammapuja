@@ -5,7 +5,9 @@ describe("sitemapXml", () => {
   const xml = sitemapXml(["/", "/chanting/morning/"]);
 
   it("is a sitemap document", () => {
-    expect(xml).toMatch(/^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+    expect(xml).toMatch(
+      /^<\?xml version="1\.0" encoding="UTF-8"\?>\n<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/,
+    );
     expect(xml.trimEnd()).toMatch(/<\/urlset>$/);
   });
 

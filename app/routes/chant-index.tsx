@@ -20,7 +20,7 @@ export default function ChantIndex() {
       <main>
         <div className="container">
           {indexRows.map((row, index) => (
-            <Fragment key={index}>
+            <Fragment key={row.groups[0].heading}>
               {index > 0 && !row.joined && <div className="divider" />}
               <div className={row.columns ? "row row--columns" : "row"}>
                 {row.groups.map((group) => (

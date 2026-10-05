@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router";
+import { useState } from "react";
+import { Link } from "react-router";
 import { chantPath, chants } from "../chants/catalog";
 import { Search } from "../icons";
 import { searchChants } from "./search";
 
+// Parent gives this a key per page, so the query clears on navigation.
 export function SiteSearch() {
   const [query, setQuery] = useState("");
-  const { pathname } = useLocation();
   const results = searchChants(chants, query);
   const searching = query.trim() !== "";
-
-  useEffect(() => setQuery(""), [pathname]);
 
   return (
     <div className="search">

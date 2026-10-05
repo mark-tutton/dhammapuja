@@ -1,10 +1,10 @@
 import {
+  isRouteErrorResponse,
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-  isRouteErrorResponse,
 } from "react-router";
 import type { Route } from "./+types/root";
 import { NotFound } from "./site/NotFound";
@@ -40,6 +40,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
         <Meta />
         <Links />
+        {/* biome-ignore lint/security/noDangerouslySetInnerHtml: fixed string from theme.ts, must run before first paint */}
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
       </head>
       <body>

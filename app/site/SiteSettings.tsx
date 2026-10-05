@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronUp, Moon, Settings, Sun } from "../icons";
-import { NIGHT_CLASS, type Theme, readTheme, storeTheme } from "./theme";
+import { NIGHT_CLASS, readTheme, storeTheme, type Theme } from "./theme";
 
 // Floating button, bottom right: opens jump-to-top and night mode.
 export function SiteSettings() {

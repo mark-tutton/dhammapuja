@@ -2,8 +2,8 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { chantPath, chants } from "../chants/catalog";
 import { ChevronDown, Home, Menu } from "../icons";
-import { SiteSearch } from "./SiteSearch";
 import { menuGroups } from "./menu";
+import { SiteSearch } from "./SiteSearch";
 import { type NavScroll, nextNavScroll } from "./scroll";
 
 const groups = menuGroups(chants);
@@ -14,7 +14,13 @@ export function SiteNav() {
   const hidden = useNavHidden();
   const { pathname } = useLocation();
 
-  useEffect(() => setMenuOpen(false), [pathname]);
+  // Close the menu when the page changes. Done while rendering, not in an
+  // effect, so the closed menu is what first paints on the new page.
+  const [seenPath, setSeenPath] = useState(pathname);
+  if (seenPath !== pathname) {
+    setSeenPath(pathname);
+    setMenuOpen(false);
+  }
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -48,7 +54,7 @@ export function SiteNav() {
               </NavLink>
             </li>
             <li>
-              <SiteSearch />
+              <SiteSearch key={pathname} />
             </li>
           </ul>
           <button
@@ -64,7 +70,14 @@ export function SiteNav() {
         </nav>
       </div>
 
-      {menuOpen && <div className="side-menu__overlay" onClick={() => setMenuOpen(false)} />}
+      {menuOpen && (
+        <button
+          type="button"
+          className="side-menu__overlay"
+          aria-label="Close menu"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
 
       <aside
         id="side-menu"
@@ -96,7 +109,7 @@ export function SiteNav() {
             <ul id="side-menu-chants" className="side-menu__chants" hidden={!chantsOpen}>
               {groups.map((group, index) => (
                 <Fragment key={group[0].slug}>
-                  {index > 0 && <li className="divider" role="separator" />}
+                  {index > 0 && <li className="divider" aria-hidden="true" />}
                   {group.map((chant) => (
                     <li key={chant.slug}>
                       <NavLink to={chantPath(chant)}>{chant.label}</NavLink>
