@@ -281,12 +281,13 @@
   pointer-events: none;
 }
 
-/* Drops below the bar, right edges aligned, as wide as its longest title. */
+/* Drops below the bar, right edges aligned. Fixed width, wide enough for the
+   longest chant title, so the box does not change size as results change. */
 .search__results {
   position: absolute;
   top: var(--nav-height);
   right: 0;
-  min-width: 100%;
+  width: 280px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -296,6 +297,8 @@
 }
 
 .search__results a {
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--search-text);
 }
 
