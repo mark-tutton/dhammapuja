@@ -225,8 +225,10 @@ export const chants: readonly Chant[] = [
   },
 ];
 
+// Trailing slash allowed: slug often comes straight from a url.
 export function findChant(slug: string): Chant | undefined {
-  return chants.find((chant) => chant.slug === slug);
+  const wanted = slug.replace(/\/$/, "");
+  return chants.find((chant) => chant.slug === wanted);
 }
 
 // Trailing slash: same urls the legacy site served.

@@ -1,6 +1,6 @@
 import { data } from "react-router";
 import { ChantPlayer } from "../chant/ChantPlayer";
-import { chantPath } from "../chants/catalog";
+import { chantPath, findChant } from "../chants/catalog";
 import { loadChant } from "../chants/load";
 import { SITE_NAME, pageMeta } from "../site/seo";
 import "../styles/chant.css";
@@ -10,6 +10,13 @@ export async function loader({ params }: Route.LoaderArgs) {
   const loaded = await loadChant(params["*"]);
   if (!loaded) throw data(null, { status: 404 });
   return loaded;
+}
+
+// In the browser: unknown chant is a 404 before any data file is asked for.
+// Without this, the missing data file would surface as a crash, not a 404.
+export async function clientLoader({ params, serverLoader }: Route.ClientLoaderArgs) {
+  if (!findChant(params["*"])) throw data(null, { status: 404 });
+  return serverLoader();
 }
 
 export function meta({ loaderData }: Route.MetaArgs) {
