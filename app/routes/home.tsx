@@ -1,6 +1,7 @@
 import { ChantLinkList } from "../chants/ChantLinkList";
 import { indexRows } from "../chants/index-rows";
 import { SiteFooter } from "../site/SiteFooter";
+import { SITE_DESCRIPTION, SITE_NAME, pageMeta } from "../site/seo";
 import "../styles/footer.css";
 import "../styles/home.css";
 import type { Route } from "./+types/home";
@@ -11,13 +12,7 @@ const photo = (name: string, sizes: readonly [string, number][]) =>
   sizes.map(([file, width]) => `/assets/img/home/${name}/${file}.jpg ${width}w`).join(", ");
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Dhammapuja" },
-    {
-      name: "description",
-      content: "A Karaoke for Chanting Dhamma in English and Pāli",
-    },
-  ];
+  return pageMeta({ title: SITE_NAME, description: SITE_DESCRIPTION, path: "/" });
 }
 
 export default function Home() {

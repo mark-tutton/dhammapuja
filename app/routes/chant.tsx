@@ -1,6 +1,8 @@
 import { data } from "react-router";
 import { ChantPlayer } from "../chant/ChantPlayer";
+import { chantPath } from "../chants/catalog";
 import { loadChant } from "../chants/load";
+import { SITE_NAME, pageMeta } from "../site/seo";
 import "../styles/chant.css";
 import type { Route } from "./+types/chant";
 
@@ -11,12 +13,13 @@ export async function loader({ params }: Route.LoaderArgs) {
 }
 
 export function meta({ loaderData }: Route.MetaArgs) {
-  if (!loaderData) return [{ title: "Dhammapuja" }];
+  if (!loaderData) return [{ title: SITE_NAME }];
   const { chant } = loaderData;
-  return [
-    { title: `${chant.title} | Dhammapuja` },
-    { name: "description", content: chant.description },
-  ];
+  return pageMeta({
+    title: chant.title,
+    description: chant.description,
+    path: chantPath(chant),
+  });
 }
 
 export default function ChantPage({ loaderData }: Route.ComponentProps) {
