@@ -1,0 +1,187 @@
+/* Chant page. Carried over from legacy sass/pages/_chanting.scss. */
+
+:root {
+  --pali: #2e3032;
+  --highlight: #ecfeaa;
+  --tone-up: #912f56;
+  --tone-down: #30bced;
+  --tone-down-double: #30bced;
+}
+
+.night {
+  --pali: #eaeaea;
+  --highlight: #d6ffb7;
+  --highlight-text: #2a2a2a;
+  --tone-up: #f86624;
+  --tone-down: #d81e5b;
+  --tone-down-double: #2ec0f9;
+}
+
+@media (min-width: 993px) {
+  .container--chant {
+    width: 75%;
+  }
+}
+
+/* Room for the audio bar fixed to the bottom. */
+.container--chant {
+  padding-bottom: 5rem;
+}
+
+#audio {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#audio audio {
+  display: block;
+  width: 100%;
+}
+
+/* Running time and per-line stamps: only for timing new chants. Hidden. */
+#time,
+ul.display .time {
+  display: none;
+}
+
+ul.display {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  overflow-x: auto;
+}
+
+ul.display li {
+  position: relative;
+  padding: 0 5px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 1s linear;
+}
+
+ul.display p {
+  margin: 0.5em auto;
+  padding: 0;
+  line-height: 2;
+  text-rendering: optimizeLegibility;
+}
+
+ul.display h3,
+ul.display h4,
+ul.display h5 {
+  text-rendering: optimizeLegibility;
+}
+
+ul.display h3 {
+  font-weight: 600;
+}
+
+ul.display h4 {
+  font-weight: 500;
+}
+
+/* Subtitle under the chant title. Legacy wrapped each one in <i>. */
+ul.display h5 {
+  font-style: italic;
+  font-weight: 300;
+}
+
+ul.display hr {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 600px) {
+  ul.display hr {
+    margin-bottom: 10%;
+  }
+}
+
+.night ul.display hr {
+  border: 1px solid #e6e6e6;
+}
+
+ul.display .pali {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: var(--pali);
+}
+
+ul.display .en {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Response line: pali repeated back after the leader. */
+ul.display .stud {
+  color: #363636;
+}
+
+.night ul.display .stud {
+  color: var(--text);
+}
+
+ul.display .highlight {
+  background-color: var(--highlight);
+}
+
+.night ul.display .highlight :is(p, h3, h4, h5) {
+  color: var(--highlight-text);
+}
+
+ul.display .un {
+  text-decoration: underline;
+}
+
+/* Tone marks: small triangle above (rising) or below (falling) one letter.
+   .t wraps the letter; its inner span is a wide box centred on the letter,
+   so the triangle inside can be wider than the letter and still centre. */
+ul.display span.t {
+  position: relative;
+  white-space: pre;
+}
+
+ul.display span.t > span {
+  position: absolute;
+  top: 0;
+  left: -200%;
+  display: inline-block;
+  width: 500%;
+  height: 100%;
+}
+
+ul.display span.t > span > span {
+  display: block;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-style: solid;
+}
+
+ul.display span.t .u {
+  border-width: 0 0.25em 0.15em;
+  border-color: transparent transparent var(--tone-up);
+}
+
+ul.display span.t .uu {
+  border-width: 0 0.5em 0.2em;
+  border-color: transparent transparent var(--tone-up);
+}
+
+ul.display span.t .d {
+  margin-top: 1.2em;
+  border-width: 0.15em 0.25em 0;
+  border-color: var(--tone-down) transparent transparent;
+}
+
+ul.display span.t .dd {
+  margin-top: 1.2em;
+  border-width: 0.2em 0.5em 0;
+  border-color: var(--tone-down-double) transparent transparent;
+}
