@@ -11,6 +11,7 @@
   --side-chants-bg: #fefefe;
   --side-chants-link: #373a3c;
   --nav-height: 56px;
+  --search-text: #373a3c;
 }
 
 .night {
@@ -22,6 +23,7 @@
   --side-link: #eaeaea;
   --side-chants-bg: #333333;
   --side-chants-link: #e6e6e6;
+  --search-text: #fff;
 }
 
 @media (min-width: 601px) {
@@ -221,4 +223,75 @@
 
 .side-menu__chants .divider {
   margin-top: 8px;
+}
+
+/* Search box in the top bar. Sizes measured off the old site. */
+.search {
+  position: relative;
+  width: 177px;
+  height: var(--nav-height);
+  padding-top: 8px;
+}
+
+.search__input {
+  display: block;
+  box-sizing: content-box;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--search-text);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+}
+
+.search__input::placeholder {
+  color: #d1d1d1;
+}
+
+.search__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search__input:focus {
+  border-bottom-color: #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+
+.search .icon {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  font-size: 15px;
+  color: var(--search-text);
+  pointer-events: none;
+}
+
+/* Drops below the bar, right edges aligned, as wide as its longest title. */
+.search__results {
+  position: absolute;
+  top: var(--nav-height);
+  right: 0;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+  color: var(--search-text);
+  background-color: var(--nav-bg);
+}
+
+.search__results a {
+  color: var(--search-text);
+}
+
+.search__none {
+  padding-left: 15px;
+  font-size: 1rem;
 }

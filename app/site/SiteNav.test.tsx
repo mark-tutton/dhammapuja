@@ -63,3 +63,11 @@ describe("SiteNav on the chant index", () => {
     expect(activeLinks(html("/chanting/"))).toEqual(["/chanting/", "/chanting/"]);
   });
 });
+
+describe("SiteNav search", () => {
+  it("has a labelled search box, with no results shown before typing", () => {
+    const out = html("/");
+    expect(out).toContain('aria-label="Search chants"');
+    expect(out).not.toContain("search__results");
+  });
+});
