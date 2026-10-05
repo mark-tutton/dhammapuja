@@ -19,6 +19,14 @@ describe("SiteFooter", () => {
     expect(link("Why Chant\\?")).toMatch(/\/wiki#why-chant$/);
   });
 
+  it("points project links at the repo's current home", () => {
+    const repo = "https://github.com/mark-tutton/dhammapuja";
+    expect(link("GitHub")).toBe(repo);
+    expect(link("Wiki")).toBe(`${repo}/wiki`);
+    expect(link("Made with ♥")).toBe(repo);
+    expect(out).not.toContain("job-talk");
+  });
+
   it("links to the licence", () => {
     expect(link("GPL-3.0")).toBe("https://gnu.org/licenses/quick-guide-gplv3.html");
   });
