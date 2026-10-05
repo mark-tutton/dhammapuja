@@ -2,14 +2,16 @@ import { Fragment } from "react";
 import { ChantLinkList } from "../chants/ChantLinkList";
 import { indexRows } from "../chants/index-rows";
 import { SiteFooter } from "../site/SiteFooter";
+import { pageMeta } from "../site/seo";
 import "../styles/chant-index.css";
 import "../styles/footer.css";
 
 export function meta() {
-  return [
-    { title: "Chanting | Dhammapuja" },
-    { name: "description", content: "Index of Chants in Pali and English" },
-  ];
+  return pageMeta({
+    title: "Chanting",
+    description: "Index of Chants in Pali and English",
+    path: "/chanting/",
+  });
 }
 
 export default function ChantIndex() {
