@@ -47,11 +47,52 @@ describe("parseLine", () => {
   });
 
   it("keeps lines without a timestamp, time null, as pali", () => {
-    expect(parseLine("      <hr />")).toEqual({
+    expect(parseLine("      Pūjā ca pūjanīyānaṁ")).toEqual({
       kind: "pali",
       time: null,
-      text: "<hr />",
+      text: "Pūjā ca pūjanīyānaṁ",
     });
+  });
+
+  it("reads > as english, with or without a timestamp", () => {
+    expect(parseLine("    > May I be free from enmity")).toEqual({
+      kind: "english",
+      time: null,
+      text: "May I be free from enmity",
+    });
+    expect(parseLine("[00:21.0] >May I be free")).toEqual({
+      kind: "english",
+      time: 21,
+      text: "May I be free",
+    });
+  });
+
+  it("reads >> as a response line", () => {
+    expect(parseLine("[0:28.5] >> Namo tassa")).toEqual({
+      kind: "response",
+      time: 28.5,
+      text: "Namo tassa",
+    });
+    expect(parseLine(">> Namo tassa")).toEqual({
+      kind: "response",
+      time: null,
+      text: "Namo tassa",
+    });
+  });
+
+  it("treats > with nothing after it as plain text", () => {
+    expect(parseLine("[00:01.0] >")).toEqual({ kind: "pali", time: 1, text: ">" });
+  });
+
+  it("reads three or more dashes as a divider", () => {
+    expect(parseLine("---")).toEqual({ kind: "divider" });
+    expect(parseLine("    -----  ")).toEqual({ kind: "divider" });
+    expect(parseLine("[00:01.0] ---")).toEqual({ kind: "divider" });
+  });
+
+  it("does not read dashes with other text as a divider", () => {
+    expect(parseLine("--")?.kind).toBe("pali");
+    expect(parseLine("--- more")?.kind).toBe("pali");
   });
 
   it("gives null time for an unreadable timestamp", () => {
@@ -63,13 +104,13 @@ describe("parseLine", () => {
   });
 
   it("trims trailing whitespace", () => {
-    expect(parseLine("[00:01.0] Namo tassa  \r")?.text).toBe("Namo tassa");
+    expect(parseLine("[00:01.0] Namo tassa  \r")).toMatchObject({ text: "Namo tassa" });
   });
 
-  it("leaves tone marks, underscores and html untouched", () => {
-    expect(parseLine("[00:01.0] S^aṅghaṃ _n`amāmi_ <i>x</i>")?.text).toBe(
-      "S^aṅghaṃ _n`amāmi_ <i>x</i>",
-    );
+  it("leaves tone marks and underscores untouched", () => {
+    expect(parseLine("[00:01.0] S^aṅghaṃ _n`amāmi_")).toMatchObject({
+      text: "S^aṅghaṃ _n`amāmi_",
+    });
   });
 
   it("returns null for blank lines", () => {
@@ -83,7 +124,7 @@ describe("parseChant", () => {
     const source = [
       "",
       "    [00:00.0] ### Morning Puja",
-      "      <hr />",
+      "    ---",
       "",
       "    [00:02.0] Namo tassa",
       "    [00:12.5]   Homage to him",
@@ -92,7 +133,7 @@ describe("parseChant", () => {
 
     expect(parseChant(source)).toEqual([
       { kind: "heading", depth: 3, time: 0, text: "Morning Puja" },
-      { kind: "pali", time: null, text: "<hr />" },
+      { kind: "divider" },
       { kind: "pali", time: 2, text: "Namo tassa" },
       { kind: "english", time: 12.5, text: "Homage to him" },
     ]);
