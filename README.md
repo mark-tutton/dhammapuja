@@ -67,6 +67,44 @@ better of the two” ( A. II ).
 <br />
 
 
+## Development
+
+Needs Node 24 (`nvm use` reads `.nvmrc`).
+
+```
+npm install
+npm run dev        # local site with live reload
+npm test           # unit tests
+npm run typecheck
+npm run build      # static site into build/client
+```
+
+Chant text lives in `app/chants/<slug>.txt`, one file per chant, listed in `app/chants/catalog.ts`. Line format is described at the top of `app/chant/parse.ts`. Audio goes in `public/assets/audio/`.
+
+The old Jekyll site is kept under `legacy/` for reference. Nothing builds from it.
+
+
+<br />
+
+
+## Deploy
+
+By hand. GitHub Pages serves the `gh-pages` branch, so publishing means replacing its contents with a fresh build.
+
+```
+npm test && npm run build
+git worktree add ../dhammapuja-pages gh-pages     # first time only
+rsync -a --delete --exclude .git build/client/ ../dhammapuja-pages/
+cd ../dhammapuja-pages
+git add -A && git commit -m "deploy" && git push
+```
+
+`build/client` already holds what Pages needs: `CNAME`, `404.html`, `sitemap.xml`, and `.nojekyll`. Keep `.nojekyll`: without it Pages drops every file whose name starts with an underscore, and chant pages stop loading when reached by a link.
+
+
+<br />
+
+
 ## Credits
 
 Dhammapuja is a continuation of [John Nishinaga's](https://ejinjue.org/) (now Jāgaro Bhikkhu at the Abhayagiri Buddhist Monastery) project ['Dhamma Schtuff'](https://pali.ejinjue.org/).
