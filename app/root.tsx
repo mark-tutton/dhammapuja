@@ -8,6 +8,12 @@ import "./styles/nav.css";
 import "./styles/settings.css";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "apple-touch-icon", sizes: "152x152", href: "/assets/img/apple-touch-icon.png" },
+  { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/img/favicon-32x32.png" },
+  { rel: "icon", type: "image/png", sizes: "16x16", href: "/assets/img/favicon-16x16.png" },
+  { rel: "manifest", href: "/assets/img/manifest.json" },
+  { rel: "mask-icon", href: "/assets/img/safari-pinned-tab.svg", color: "#5bbad5" },
+  { rel: "shortcut icon", href: "/assets/img/favicon.ico" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
   {
@@ -22,6 +28,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#cccccc" />
+        <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
         <Meta />
         <Links />
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
