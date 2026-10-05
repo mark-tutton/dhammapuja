@@ -1,6 +1,7 @@
 import { data } from "react-router";
 import { ChantPlayer } from "../chant/ChantPlayer";
 import { loadChant } from "../chants/load";
+import "../styles/chant.css";
 import type { Route } from "./+types/chant";
 
 export async function loader({ params }: Route.LoaderArgs) {
@@ -21,8 +22,10 @@ export function meta({ loaderData }: Route.MetaArgs) {
 export default function ChantPage({ loaderData }: Route.ComponentProps) {
   const { chant, lines } = loaderData;
   return (
-    <main id="main">
-      <ChantPlayer audio={chant.audio} lines={lines} />
-    </main>
+    <div className="container container--chant">
+      <main id="main">
+        <ChantPlayer audio={chant.audio} lines={lines} />
+      </main>
+    </div>
   );
 }
