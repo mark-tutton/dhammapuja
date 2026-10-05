@@ -30,7 +30,8 @@ export const chants: readonly Chant[] = [
     title: "Evening Puja (Pali)",
     label: "Evening (Pāḷi)",
     indexTitle: "Evening [Pāḷi]",
-    description: "Karaoke for Chanting the Evening Puja in Pali from the Abhayagiri Forest Monastery",
+    description:
+      "Karaoke for Chanting the Evening Puja in Pali from the Abhayagiri Forest Monastery",
     audio: "/assets/audio/evening-chant-pali",
     listed: true,
   },
@@ -39,7 +40,8 @@ export const chants: readonly Chant[] = [
     title: "Evening Puja (Eng.)",
     label: "Evening (Eng.)",
     indexTitle: "Evening [Eng.]",
-    description: "Karaoke for Chanting the Evening Puja in English from the Abhayagiri Forest Monastery",
+    description:
+      "Karaoke for Chanting the Evening Puja in English from the Abhayagiri Forest Monastery",
     audio: "/assets/audio/evening-chant-eng",
     listed: true,
   },
@@ -57,7 +59,8 @@ export const chants: readonly Chant[] = [
     title: "Eight Precepts",
     label: "Eight Precepts",
     indexTitle: "Taking the Eight Precepts",
-    description: "Karaoke for Chanting the Three Refuges and Eight Precepts from the Abhayagiri Forest Monastery",
+    description:
+      "Karaoke for Chanting the Three Refuges and Eight Precepts from the Abhayagiri Forest Monastery",
     audio: "/assets/audio/requests/three-refuges-eight-precepts",
     listed: true,
   },
@@ -102,7 +105,8 @@ export const chants: readonly Chant[] = [
     title: "Sharing and Aspiration (Pali)",
     label: "Verses of Sharing (Pāḷi)",
     indexTitle: "Verses of Sharing and Aspiration [Pāḷi]",
-    description: "Karaoke for Chanting the Verses of Sharing and Aspiration in Pali from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Verses of Sharing and Aspiration in Pali from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/sharing-blessings-pali",
     listed: true,
   },
@@ -111,7 +115,8 @@ export const chants: readonly Chant[] = [
     title: "Sharing and Aspiration (Eng)",
     label: "Verses of Sharing (Eng.)",
     indexTitle: "Verses of Sharing and Aspiration [Eng.]",
-    description: "Karaoke for Chanting the Verses of Sharing and Aspiration in English from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Verses of Sharing and Aspiration in English from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/sharing-blessings-eng",
     listed: true,
   },
@@ -120,7 +125,8 @@ export const chants: readonly Chant[] = [
     title: "Divine Abidings (Pali)",
     label: "Suffusion - Divine Abidings (Pāḷi)",
     indexTitle: "Suffusion With the Divine Abidings [Pāḷi]",
-    description: "Karaoke for Chanting the Suffusion with the Divine Abidings in Pali from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Suffusion with the Divine Abidings in Pali from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/suffusion-divine-abidings-pali",
     listed: true,
   },
@@ -129,7 +135,8 @@ export const chants: readonly Chant[] = [
     title: "Divine Abidings (Eng.)",
     label: "Suffusion - Divine Abidings (Eng.)",
     indexTitle: "Suffusion With the Divine Abidings [Eng.]",
-    description: "Karaoke for Chanting the Suffusion with the Divine Abidings in English from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Suffusion with the Divine Abidings in English from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/suffusion-divine-abidings-eng",
     listed: true,
   },
@@ -138,7 +145,8 @@ export const chants: readonly Chant[] = [
     title: "The Highest Blessings",
     label: "The Highest Blessings (Eng.)",
     indexTitle: "The Highest Blessings [Eng.]",
-    description: "Karaoke for Chanting The Highest Blessings in English from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting The Highest Blessings in English from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/the-highest-blessings-eng",
     listed: true,
   },
@@ -147,7 +155,8 @@ export const chants: readonly Chant[] = [
     title: "Four Requisites",
     label: "The Four Requisites",
     indexTitle: "The Four Requisites",
-    description: "Karaoke for Chanting the Reflection on the Four Requisites in Pali & English from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Reflection on the Four Requisites in Pali & English from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/reflections/four-requistes-pali-and-eng",
     listed: true,
   },
@@ -156,7 +165,8 @@ export const chants: readonly Chant[] = [
     title: "Metta Sutta (Pali)",
     label: "Metta Sutta (Pāḷi)",
     indexTitle: "Karanīya Metta Sutta (The Discourse on Goodwill) [Pāḷi]",
-    description: "Karaoke for Chanting the Karaniya Metta Sutta in Pali from the Metta Forest Monastery",
+    description:
+      "Karaoke for Chanting the Karaniya Metta Sutta in Pali from the Metta Forest Monastery",
     audio: "/assets/audio/blessings/karaniya-metta-sutta-pali",
     listed: true,
   },
@@ -165,7 +175,8 @@ export const chants: readonly Chant[] = [
     title: "Metta Sutta (Eng.)",
     label: "Metta Sutta (Eng.)",
     indexTitle: "Karanīya Metta Sutta (The Discourse on Goodwill) [Eng.]",
-    description: "Karaoke for Chanting the Karaniya Mettā Sutta in English from the Abhayagiri Forest Monastery",
+    description:
+      "Karaoke for Chanting the Karaniya Mettā Sutta in English from the Abhayagiri Forest Monastery",
     audio: "/assets/audio/blessings/karaniya-metta-sutta-eng",
     listed: true,
   },
@@ -174,7 +185,8 @@ export const chants: readonly Chant[] = [
     title: "Invitation to Devas",
     label: "Invitation to the Devas",
     indexTitle: "Invitation to the Devas",
-    description: "Karaoke for Chanting the Invitation to the Devas in Pali from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting the Invitation to the Devas in Pali from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/parittas/invitation-to-devas",
     listed: true,
   },
@@ -192,7 +204,8 @@ export const chants: readonly Chant[] = [
     title: "The Three Refuges",
     label: "Three Refuges",
     indexTitle: "Three Refuges",
-    description: "Karaoke for Chanting The Three Refuges in Pali from the Amarvati Buddhist Monastery.",
+    description:
+      "Karaoke for Chanting The Three Refuges in Pali from the Amarvati Buddhist Monastery.",
     audio: "/assets/audio/parittas/three-refuges",
     listed: true,
   },
@@ -201,7 +214,8 @@ export const chants: readonly Chant[] = [
     title: "Dhammacakkappavattana Sutta",
     label: "Dhammacakkappavattana",
     indexTitle: "Dhammacakkappavattana Sutta",
-    description: "Karaoke for Chanting the Dhammacakkappavattana Sutta from the Amarvati Buddhist Monastery",
+    description:
+      "Karaoke for Chanting the Dhammacakkappavattana Sutta from the Amarvati Buddhist Monastery",
     audio: "/assets/audio/suttas/dhammacakkappavattana",
     listed: true,
   },

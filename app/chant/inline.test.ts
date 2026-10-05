@@ -40,12 +40,7 @@ describe("parseInline", () => {
   });
 
   it("marks an accented letter", () => {
-    expect(parseInline("s^ammā `ā")).toEqual([
-      "s",
-      tone("a", "up"),
-      "mmā ",
-      tone("ā", "down"),
-    ]);
+    expect(parseInline("s^ammā `ā")).toEqual(["s", tone("a", "up"), "mmā ", tone("ā", "down")]);
   });
 
   it("keeps a trailing mark with nothing after it as text", () => {
@@ -61,10 +56,7 @@ describe("parseInline", () => {
   });
 
   it("keeps tone marks inside an underline", () => {
-    expect(parseInline("_^all_ beings")).toEqual([
-      underline(tone("a", "up"), "ll"),
-      " beings",
-    ]);
+    expect(parseInline("_^all_ beings")).toEqual([underline(tone("a", "up"), "ll"), " beings"]);
   });
 
   it("keeps a lone underscore as text", () => {

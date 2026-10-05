@@ -28,7 +28,8 @@ export function ChantPlayer({ audio, lines }: Props) {
   }, []);
 
   useEffect(() => {
-    const active = listRef.current?.querySelector("li.highlight");
+    if (activeIndex === null) return;
+    const active = listRef.current?.querySelectorAll("li")[activeIndex];
     if (!active) return;
     const { top, bottom } = active.getBoundingClientRect();
     if (top < EDGE || bottom > window.innerHeight - EDGE) {
@@ -39,6 +40,7 @@ export function ChantPlayer({ audio, lines }: Props) {
   return (
     <>
       <div id="audio">
+        {/* biome-ignore lint/a11y/useMediaCaption: the page itself is the transcript, highlighted in time with the audio */}
         <audio
           ref={audioRef}
           controls

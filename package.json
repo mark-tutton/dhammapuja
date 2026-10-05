@@ -7,7 +7,9 @@
     "dev": "react-router dev",
     "build": "react-router build",
     "typecheck": "react-router typegen && tsc",
-    "test": "vitest run"
+    "test": "vitest run",
+    "lint": "biome check",
+    "format": "biome check --write"
   },
   "dependencies": {
     "@react-router/node": "^8.4.0",
@@ -17,6 +19,7 @@
     "react-router": "^8.4.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.14",
     "@react-router/dev": "^8.4.0",
     "@types/node": "^24.13.6",
     "@types/react": "^19.3.0",

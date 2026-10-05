@@ -1,17 +1,16 @@
 import { ChantLinkList } from "../chants/ChantLinkList";
 import { indexRows } from "../chants/index-rows";
 import { SiteFooter } from "../site/SiteFooter";
-import { SITE_DESCRIPTION, SITE_NAME, pageMeta } from "../site/seo";
+import { pageMeta, SITE_DESCRIPTION, SITE_NAME } from "../site/seo";
 import "../styles/footer.css";
 import "../styles/home.css";
-import type { Route } from "./+types/home";
 
 const groups = indexRows.flatMap((row) => row.groups);
 
 const photo = (name: string, sizes: readonly [string, number][]) =>
   sizes.map(([file, width]) => `/assets/img/home/${name}/${file}.jpg ${width}w`).join(", ");
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return pageMeta({ title: SITE_NAME, description: SITE_DESCRIPTION, path: "/" });
 }
 

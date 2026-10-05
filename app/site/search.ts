@@ -3,11 +3,7 @@ import { type Chant, chantPath } from "../chants/catalog";
 const LIMIT = 10;
 
 // Lower case, accents stripped: "Pāḷi" and "pali" compare equal.
-const fold = (text: string) =>
-  text
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase();
+const fold = (text: string) => text.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
 // Listed chants whose title or url contains every word of the query.
 // Old site matched the query as one phrase, accents exact. This is looser.

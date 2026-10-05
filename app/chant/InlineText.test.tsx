@@ -3,8 +3,7 @@ import { describe, expect, it } from "vitest";
 import { InlineText } from "./InlineText";
 import { parseInline } from "./inline";
 
-const html = (text: string) =>
-  renderToStaticMarkup(<InlineText segments={parseInline(text)} />);
+const html = (text: string) => renderToStaticMarkup(<InlineText segments={parseInline(text)} />);
 
 describe("InlineText", () => {
   it("renders plain text as is", () => {

@@ -2,7 +2,7 @@ import { data } from "react-router";
 import { ChantPlayer } from "../chant/ChantPlayer";
 import { chantPath, findChant } from "../chants/catalog";
 import { loadChant } from "../chants/load";
-import { SITE_NAME, pageMeta } from "../site/seo";
+import { pageMeta, SITE_NAME } from "../site/seo";
 import "../styles/chant.css";
 import type { Route } from "./+types/chant";
 

@@ -22,7 +22,9 @@ export function ChantLines({ lines, activeIndex, onSeek }: Props) {
       {lines.map((line, index) => {
         const time = line.kind === "divider" ? null : line.time;
         return (
+          // biome-ignore lint/a11y/useKeyWithClickEvents: known gap, lines cannot be reached by keyboard yet. Needs its own change to markup.
           <li
+            // biome-ignore lint/suspicious/noArrayIndexKey: lines have no id and never reorder
             key={index}
             className={index === activeIndex ? "highlight" : undefined}
             onClick={time === null ? undefined : () => onSeek(time)}

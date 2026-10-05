@@ -43,7 +43,11 @@ describe("pageMeta", () => {
 
   it("names the one true address of the page", () => {
     const url = "https://dhammapuja.com/chanting/morning/";
-    expect(find(tags, "rel", "canonical")).toEqual({ tagName: "link", rel: "canonical", href: url });
+    expect(find(tags, "rel", "canonical")).toEqual({
+      tagName: "link",
+      rel: "canonical",
+      href: url,
+    });
     expect(find(tags, "property", "og:url")?.content).toBe(url);
   });
 
