@@ -1,4 +1,14 @@
+import { ChantLinkList } from "../chants/ChantLinkList";
+import { indexRows } from "../chants/index-rows";
+import { SiteFooter } from "../site/SiteFooter";
+import "../styles/footer.css";
+import "../styles/home.css";
 import type { Route } from "./+types/home";
+
+const groups = indexRows.flatMap((row) => row.groups);
+
+const photo = (name: string, sizes: readonly [string, number][]) =>
+  sizes.map(([file, width]) => `/assets/img/home/${name}/${file}.jpg ${width}w`).join(", ");
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,5 +21,55 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <h1>Dhammapuja</h1>;
+  return (
+    <>
+      <main>
+        <div className="hero hero--top">
+          <img
+            src="/assets/img/home/ta-prohm/ta-prohm-medium--500-g.jpg"
+            srcSet={photo("ta-prohm", [
+              ["ta-prohm-medium--640-g", 640],
+              ["ta-prohm-large--1024-g", 1024],
+              ["ta-prohm-large--1600-g", 1600],
+              ["ta-prohm-large--2048-g", 2048],
+            ])}
+            sizes="100vw"
+            alt="Ta Prohm Buddhist Temple"
+          />
+          <div className="hero__text">
+            <h3>Welcome to Dhammapuja</h3>
+            <h5>A tool for learning Theravadin chants</h5>
+          </div>
+        </div>
+
+        <div className="home-chants">
+          <div className="container">
+            {groups.map((group) => (
+              <details key={group.heading} name="home-chants">
+                <summary>{group.heading}</summary>
+                <ChantLinkList slugs={group.slugs} />
+              </details>
+            ))}
+          </div>
+        </div>
+
+        <div className="hero">
+          <img
+            src="/assets/img/home/buddha-radial/buddha-radial-medium--500.jpg"
+            srcSet={photo("buddha-radial", [
+              ["buddha-radial-medium--640", 640],
+              ["buddha-radial-medium--800", 800],
+              ["buddha-radial-large--1024", 1024],
+              ["buddha-radial-large--1600", 1600],
+              ["buddha-radial-large--2048", 2048],
+            ])}
+            sizes="100vw"
+            loading="lazy"
+            alt="Radial Buddha statue"
+          />
+        </div>
+      </main>
+      <SiteFooter />
+    </>
+  );
 }
