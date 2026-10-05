@@ -4,7 +4,7 @@ Dhammapuja is a tool for learning Theravadin Buddhist chants. The website is loc
 - [Why Chant?](#why-chant)
 - [What does Dhammapuja mean?](#what-does-dhammapuja-mean)
 - [Credits](#credits)
-- [Wiki](https://github.com/job-talk/dhammapuja/wiki)
+- [Wiki](https://github.com/mark-tutton/dhammapuja/wiki)
 
 
 <br />

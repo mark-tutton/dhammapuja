@@ -1,4 +1,4 @@
-const REPO = "https://github.com/job-talk/dhammapuja";
+const REPO = "https://github.com/mark-tutton/dhammapuja";
 
 // Shown on home and chant index. Chant pages have none: audio bar sits there.
 export function SiteFooter() {

@@ -2,7 +2,7 @@
 
 /* TEAM */
 	Dev and Designer: Mark Tutton
-	Github: https://github.com/job-talk/
+	Github: https://github.com/mark-tutton/dhammapuja
 /* THANKS */
   John Nishinaga (https://ejinjue.org/john/) for 'Dhamma Schtuff' (https://pali.ejinjue.org/)
 
